@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "id": "hammurabi",
+    "wikidata": "Q36359",
+    "wikipedia_ar": "حمورابي",
+    "name_ar": "حمورابي",
+    "name_en": "Hammurabi",
+    "kind": "sage",
+    "legendary": false,
+    "civilization": "mesopotamia",
+    "era": "mesopotamia",
+    "tradition_ar": "شريعة بابل وفلسفة العدالة",
+    "birth": { "year": -1810, "approx": true },
+    "death": { "year": -1750, "approx": false },
+    "active": { "from": -1792, "to": -1750 },
+    "location": {
+      "lat": 32.5364,
+      "lng": 44.4208,
+      "place_ar": "بابل",
+      "modern_country_ar": "العراق"
+    },
+    "tags": ["law", "ethics", "justice"],
+    "notes": "سادس ملوك بابل ومشرع شريعة حمورابي إحدى أقدم الشرائع المكتوبة في التاريخ"
+  }
+]

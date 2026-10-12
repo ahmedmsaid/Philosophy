@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "id": "ptahhotep",
+    "wikidata": "Q573606",
+    "wikipedia_ar": "بتاح حتب",
+    "name_ar": "بتاح حتب",
+    "name_en": "Ptahhotep",
+    "kind": "sage",
+    "legendary": false,
+    "civilization": "egypt",
+    "era": "ancient-egypt",
+    "tradition_ar": "أدب الحكمة المصري القديم (سيبايت)",
+    "birth": { "year": -2500, "approx": true },
+    "death": { "year": -2400, "approx": true },
+    "active": { "from": -2450, "to": -2400 },
+    "location": {
+      "lat": 29.8713,
+      "lng": 31.2164,
+      "place_ar": "منف (سقارة)",
+      "modern_country_ar": "مصر"
+    },
+    "tags": ["ethics", "wisdom-literature", "sebayt"],
+    "notes": "وزير مصري قديم ومؤلف تعاليم بتاح حتب الشهيرة في أدب الحكمة"
+  }
+]

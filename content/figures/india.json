@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "id": "buddha",
+    "wikidata": "Q9441",
+    "wikipedia_ar": "غوتاما بوذا",
+    "name_ar": "غوتاما بوذا",
+    "name_en": "Gautama Buddha",
+    "kind": "religious-thinker",
+    "legendary": false,
+    "civilization": "india",
+    "era": "ancient-india",
+    "tradition_ar": "الفلسفة البوذية المبكرة",
+    "birth": { "year": -563, "approx": true },
+    "death": { "year": -483, "approx": true },
+    "active": { "from": -535, "to": -483 },
+    "location": {
+      "lat": 24.6951,
+      "lng": 84.9913,
+      "place_ar": "بود جايا",
+      "modern_country_ar": "الهند"
+    },
+    "tags": ["buddhism", "ethics", "epistemology", "mind"],
+    "notes": "المعلم والمفكر الروحي الذي أسس البوذية وأرسى مبادئ الحقائق الأربع النبيلة وطريق الانعتاق"
+  }
+]

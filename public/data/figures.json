@@ -1,5 +1,146 @@
 [
   {
+    "id": "confucius",
+    "wikidata": "Q4604",
+    "wikipedia_ar": "كونفوشيوس",
+    "name_ar": "كونفوشيوس",
+    "name_en": "Confucius",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "china",
+    "era": "ancient-china",
+    "tradition_ar": "الكونفوشية",
+    "birth": {
+      "year": -551,
+      "approx": false
+    },
+    "death": {
+      "year": -479,
+      "approx": false
+    },
+    "active": {
+      "from": -520,
+      "to": -479
+    },
+    "location": {
+      "lat": 35.5947,
+      "lng": 116.9859,
+      "place_ar": "تشوفو (ولاية لو)",
+      "modern_country_ar": "الصين"
+    },
+    "tags": [
+      "ethics",
+      "political-philosophy",
+      "virtue"
+    ],
+    "notes": "فيلسوف صيني بارز ركز على الأخلاق والعدالة والواجب الاجتماعي والوئام الإنساني",
+    "summary_ar": "كونفوشيوس أو كُنفُشيُس هو أول فيلسوف صيني يفلح في إقامة مذهب يتضمن كل التقاليد الصينية عن السلوك الاجتماعي والأخلاقي. ففلسفته قائمة على القيم الأخلاقية الشخصية وعلى أن تكون هناك حكومة تخدم الشعب تطبيقاً لمثل أخلاقي أعلى. ولقد كانت تعاليمه وفلسفته ذات تأثير عميق في الفكر والحياة الصينية والكورية واليابانية والتايوانية والفيتنامية. ويلقب بنبي الصين.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D9%83%D9%88%D9%86%D9%81%D9%88%D8%B4%D9%8A%D9%88%D8%B3",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Confucius%2C_fresco_from_a_Western_Han_tomb_of_Dongping_County%2C_Shandong_province%2C_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Confucius%2C_fresco_from_a_Western_Han_tomb_of_Dongping_County%2C_Shandong_province%2C_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Anonymous Chinese painter of the Western Han period",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Confucius,_fresco_from_a_Western_Han_tomb_of_Dongping_County,_Shandong_province,_China.jpg"
+    },
+    "fetched_at": "2026-10-12T11:40:59.588Z"
+  },
+  {
+    "id": "laozi",
+    "wikidata": "Q9333",
+    "wikipedia_ar": "لاوتزه",
+    "name_ar": "لاوتزه",
+    "name_en": "Laozi",
+    "kind": "philosopher",
+    "legendary": true,
+    "civilization": "china",
+    "era": "ancient-china",
+    "tradition_ar": "الطاوية",
+    "birth": {
+      "year": -600,
+      "approx": true
+    },
+    "death": {
+      "year": -500,
+      "approx": true
+    },
+    "active": {
+      "from": -570,
+      "to": -500
+    },
+    "location": {
+      "lat": 34,
+      "lng": 115,
+      "place_ar": "ولاية تشو القديمة",
+      "modern_country_ar": "الصين"
+    },
+    "tags": [
+      "daoism",
+      "metaphysics",
+      "wu-wei"
+    ],
+    "notes": "شخصية فلسفية مؤسسة للطاوية ومؤلف كتاب داو دي جينغ مع وجود خلافات تاريخية حول تفاصيل حياته",
+    "summary_ar": "لاو تزه أو لاو تسي أو لاوتزو فيلسوف صيني قديم وشخصية مهمة في الطاوية ولد 604 ق.م. تعني الكلمة السيد القديم وتعتبر لقب تفخيم. ومن ألقابه تايشانغ لاوجون وهو أحد الأنقياء الثلاثة في الطاوية. حسب التقليد الصيني عاش لاوتزه في القرن السادس قبل الميلاد، لكن المؤرخين يقولون إنه شخصية خيالية أو أن الشخصية نتيجة جمع عدة شخصيات مختلفة أو إنه عاش في القرن الرابع قبل الميلاد بالتزامن مع مدارس التفكير المائة وعصر الدول المتحاربة. ينسب إليه كتابة العمل الأهم في الطاوية الذي كان يعرف باسم لاوتزه. لاوتزه من الشخصيات الرئيسية في الحضارة الصينية، ويدعي نبلاء وعامة أنهم ينتسبون لنسله. وعبر التاريخ اعتنقت عدة حركات معادية للسلطات أفكار لاوتزه.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D9%84%D8%A7%D9%88%D8%AA%D8%B2%D9%87",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Zhang_Lu-Laozi_Riding_an_Ox_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Zhang_Lu-Laozi_Riding_an_Ox_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Zhang Lu",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Zhang_Lu-Laozi_Riding_an_Ox_(cropped).jpg"
+    },
+    "fetched_at": "2026-10-12T11:40:59.594Z"
+  },
+  {
+    "id": "ptahhotep",
+    "wikidata": "Q573606",
+    "wikipedia_ar": "بتاح حتب",
+    "name_ar": "بتاح حتب",
+    "name_en": "Ptahhotep",
+    "kind": "sage",
+    "legendary": false,
+    "civilization": "egypt",
+    "era": "ancient-egypt",
+    "tradition_ar": "أدب الحكمة المصري القديم (سيبايت)",
+    "birth": {
+      "year": -2500,
+      "approx": true
+    },
+    "death": {
+      "year": -2400,
+      "approx": true
+    },
+    "active": {
+      "from": -2450,
+      "to": -2400
+    },
+    "location": {
+      "lat": 29.8713,
+      "lng": 31.2164,
+      "place_ar": "منف (سقارة)",
+      "modern_country_ar": "مصر"
+    },
+    "tags": [
+      "ethics",
+      "wisdom-literature",
+      "sebayt"
+    ],
+    "notes": "وزير مصري قديم ومؤلف تعاليم بتاح حتب الشهيرة في أدب الحكمة",
+    "summary_ar": "بتاح حتب، والذي يُعرف أحيانًا باسم بتاح حوتب أو بتاح حُتب، هو مسؤول مصري قديم عاش في أواخر القرن الخامس والعشرين قبل الميلاد وأوائل القرن الرابع والعشرين قبل الميلاد. عمل بتاح حتب وزيرا في عهد جد كا رع مؤسس الأسرة الخامسة، وله كتاب شهير عن «الأخلاق والسلوك الحسن».",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%A8%D8%AA%D8%A7%D8%AD_%D8%AD%D8%AA%D8%A8",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Ptahhotep-Khamerernebty.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Ptahhotep-Khamerernebty.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "AnnekeBart",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ptahhotep-Khamerernebty.jpg"
+    },
+    "fetched_at": "2026-10-12T11:41:01.100Z"
+  },
+  {
     "id": "socrates",
     "wikidata": "Q913",
     "wikipedia_ar": "سقراط",
@@ -43,6 +184,195 @@
       "author": "Copy of Lysippos (?)",
       "source_url": "https://commons.wikimedia.org/wiki/File:Socrates_Louvre.jpg"
     },
-    "fetched_at": "2026-10-12T10:34:30.507Z"
+    "fetched_at": "2026-10-12T11:41:01.107Z"
+  },
+  {
+    "id": "plato",
+    "wikidata": "Q859",
+    "wikipedia_ar": "أفلاطون",
+    "name_ar": "أفلاطون",
+    "name_en": "Plato",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "classical-greek",
+    "tradition_ar": "الأفلاطونية",
+    "birth": {
+      "year": -428,
+      "approx": true
+    },
+    "death": {
+      "year": -348,
+      "approx": true
+    },
+    "active": {
+      "from": -399,
+      "to": -348
+    },
+    "location": {
+      "lat": 37.9715,
+      "lng": 23.7257,
+      "place_ar": "أثينا",
+      "modern_country_ar": "اليونان"
+    },
+    "tags": [
+      "metaphysics",
+      "epistemology",
+      "political-philosophy"
+    ],
+    "notes": "مؤسس أكاديمية أثينا ومؤلف المحاورات وتلميذ سقراط الأبرز",
+    "summary_ar": "أَفْلاطُون هُوَ أَرِسْطُقْلِس بن أَرِسْطُن، يوناني كلاسيكي، رياضياتي، كاتب لعدد من الحوارات الفلسفية، ويعتبر مؤسس لأكاديمية أثينا التي هي أول معهد للتعليم العالي في العالم الغربي، معلمه سقراط وتلميذه أرسطو. وضع أفلاطون الأسس الأولى للفلسفة الغربية والعلوم. كان تلميذاً لسقراط، وتأثر بأفكاره كما تأثر بإعدامه الظالم.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%A3%D9%81%D9%84%D8%A7%D8%B7%D9%88%D9%86",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Plato_Silanion_Musei_Capitolini_MC1377.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Plato_Silanion_Musei_Capitolini_MC1377.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY 2.5",
+      "author": "Marie-Lan Nguyen",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Plato_Silanion_Musei_Capitolini_MC1377.jpg"
+    },
+    "fetched_at": "2026-10-12T11:41:01.114Z"
+  },
+  {
+    "id": "buddha",
+    "wikidata": "Q9441",
+    "wikipedia_ar": "غوتاما بوذا",
+    "name_ar": "غوتاما بوذا",
+    "name_en": "Gautama Buddha",
+    "kind": "religious-thinker",
+    "legendary": false,
+    "civilization": "india",
+    "era": "ancient-india",
+    "tradition_ar": "الفلسفة البوذية المبكرة",
+    "birth": {
+      "year": -563,
+      "approx": true
+    },
+    "death": {
+      "year": -483,
+      "approx": true
+    },
+    "active": {
+      "from": -535,
+      "to": -483
+    },
+    "location": {
+      "lat": 24.6951,
+      "lng": 84.9913,
+      "place_ar": "بود جايا",
+      "modern_country_ar": "الهند"
+    },
+    "tags": [
+      "buddhism",
+      "ethics",
+      "epistemology",
+      "mind"
+    ],
+    "notes": "المعلم والمفكر الروحي الذي أسس البوذية وأرسى مبادئ الحقائق الأربع النبيلة وطريق الانعتاق",
+    "summary_ar": "سيدهارثا غوتاما (بالسنسكريتي सिद्धार्थ गौतम، ويُشار إليه في الغالب باسم بُوذَا أي المستنير، كان زاهدًا متجولًا ومعلمًا دينيًا عاش في جنوب آسيا خلال القرن السادس أو الخامس قبل الميلاد وأسس البوذية.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%BA%D9%88%D8%AA%D8%A7%D9%85%D8%A7_%D8%A8%D9%88%D8%B0%D8%A7",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "author": "พระมหาเทวประภาส วชิรญาณเมธี (ผู้ถ่าย-ปล่อยสัญญาอนุญาตภาพให้นำไปใช้ได้เพื่อการศึกษาโดยอยู่ภา่ยใต้ cc-by-sa-3.0)  ผู้สร้างสรรค์ผลงาน/ส่งข้อมูลเก็บในคลังข้อมูลเสรีวิกิมีเดียคอมมอนส์ - เทวประภาส มากคล้าย",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Buddha_in_Sarnath_Museum_(Dhammajak_Mutra).jpg"
+    },
+    "fetched_at": "2026-10-12T11:41:02.340Z"
+  },
+  {
+    "id": "hammurabi",
+    "wikidata": "Q36359",
+    "wikipedia_ar": "حمورابي",
+    "name_ar": "حمورابي",
+    "name_en": "Hammurabi",
+    "kind": "sage",
+    "legendary": false,
+    "civilization": "mesopotamia",
+    "era": "mesopotamia",
+    "tradition_ar": "شريعة بابل وفلسفة العدالة",
+    "birth": {
+      "year": -1810,
+      "approx": true
+    },
+    "death": {
+      "year": -1750,
+      "approx": false
+    },
+    "active": {
+      "from": -1792,
+      "to": -1750
+    },
+    "location": {
+      "lat": 32.5364,
+      "lng": 44.4208,
+      "place_ar": "بابل",
+      "modern_country_ar": "العراق"
+    },
+    "tags": [
+      "law",
+      "ethics",
+      "justice"
+    ],
+    "notes": "سادس ملوك بابل ومشرع شريعة حمورابي إحدى أقدم الشرائع المكتوبة في التاريخ",
+    "summary_ar": "حمورابي هو سادِس مُلوك السُلالة البابلية الأولى وأول مُلوك الإمبراطورية البابلية، دامَ سُلطانه قرابة 42 عاماً بين 1792 - 1750 قَبلَ الميلاد. من أصل أموري، ورثَ الحُكم منْ والده سين موباليط الذي تنازلَ عن العَرش بسبب تَدَهور صحته. عِندَما استَلمَ دَفة الحُكم كانت منطقة بلاد الرافدين عِبارة عَن دويلات منقسمة تتنازع السلطةَ فيما بينها، خلال فترة حكمه، غزا عيلام ولارسا وإشنونا وماري، وأطاح بإشمي داغان الأول، مَلك آشور، وأجبرَ ابنه موت أشكور على دَفع الجِزية، مكوناً بذلكَ إمبراطورية ضَمت كل منَ العِراق ومُدن بلاد الشام حتى سَواحل البَحر المُتوسط ومَملكة عيلام ومناطق أخرى.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%AD%D9%85%D9%88%D8%B1%D8%A7%D8%A8%D9%8A",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/F0182_Louvre_Code_Hammourabi_Bas-relief_Sb8_rwk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/F0182_Louvre_Code_Hammourabi_Bas-relief_Sb8_rwk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY 3.0",
+      "author": "Mbzt",
+      "source_url": "https://commons.wikimedia.org/wiki/File:F0182_Louvre_Code_Hammourabi_Bas-relief_Sb8_rwk.jpg"
+    },
+    "fetched_at": "2026-10-12T11:41:02.346Z"
+  },
+  {
+    "id": "zoroaster",
+    "wikidata": "Q35811",
+    "wikipedia_ar": "زرادشت",
+    "name_ar": "زرادشت",
+    "name_en": "Zoroaster",
+    "kind": "religious-thinker",
+    "legendary": true,
+    "civilization": "persia",
+    "era": "ancient-persia",
+    "tradition_ar": "الزرادشتية والفلسفة المزدكية القديمة",
+    "birth": {
+      "year": -1000,
+      "approx": true
+    },
+    "death": {
+      "year": -900,
+      "approx": true
+    },
+    "active": {
+      "from": -1000,
+      "to": -900
+    },
+    "location": {
+      "lat": 36.75,
+      "lng": 66.89,
+      "place_ar": "بلخ",
+      "modern_country_ar": "إيران الكبرى"
+    },
+    "tags": [
+      "dualism",
+      "ethics",
+      "theology"
+    ],
+    "notes": "مؤسس الفلسفة والديانة الزرادشتية واختلفت المراجع في تأريخه بدقة بين الألفية الأولى والقرن السادس ق.م",
+    "summary_ar": "زرادشت هو رجل دين فارسي، يعد مؤسس الديانة الزرادشتية، وقد عاش في مناطق أذربيجان وكردستان وإيران الحالية، وظلت تعاليمه وديانته هي المنتشرة في مناطق واسعة من وسط آسيا إلى موطنه الأصلي إيران حتى ظهور الإسلام.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%B2%D8%B1%D8%A7%D8%AF%D8%B4%D8%AA",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Zartosht_30salegee.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Zartosht_30salegee.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Photo is extracted from \"Persia by a Persian: being personal experiences, manners, customs, habits, religious and social life in Persia\". Author: Isaac Adams. Published by: E. Stock, 1906.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Zartosht_30salegee.jpg"
+    },
+    "fetched_at": "2026-10-12T11:41:02.349Z"
   }
 ]

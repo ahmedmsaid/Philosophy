@@ -76,13 +76,13 @@
 
 ## Phase 5: Figures on the map
 
-- [ ] **T5.1 Marker layer** (`src/map/markers.js`): shows figures whose `active` range contains the current year. Markers use the civilization color, a **shape/icon per `kind`** (CONTEXT §6.4), animate in/out, and cluster when crowded (`Leaflet.markercluster`, RTL-checked).
-- [ ] **T5.2 Hover tooltip**: Arabic name and dates.
-- [ ] **T5.3 Figure card / popup** (`src/ui/figure-card.js`): portrait, name_ar (+ name_en small), dates (with "حوالي" when approximate), place + modern country, civilization chip, **kind chip**, Wikipedia summary, "اقرأ المزيد على ويكيبيديا" link, image attribution, disputed-date badge, and legendary badge when `legendary: true`.
+- [x] **T5.1 Marker layer** (`src/map/markers.js`): shows figures whose `active` range contains the current year. Markers use the civilization color, a **shape/icon per `kind`** (CONTEXT §6.4), animate in/out, and cluster when crowded (`Leaflet.markercluster`, RTL-checked).
+- [x] **T5.2 Hover tooltip**: Arabic name and dates.
+- [x] **T5.3 Figure card / popup** (`src/ui/figure-card.js`): portrait, name_ar (+ name_en small), dates (with "حوالي" when approximate), place + modern country, civilization chip, **kind chip**, Wikipedia summary, "اقرأ المزيد على ويكيبيديا" link, image attribution, disputed-date badge, and legendary badge when `legendary: true`.
   - Desktop: side panel. Mobile: bottom sheet.
   - ✅ Esc / close button (`figure-card-close`) works, focus is trapped and restored, and the URL updates.
-- [ ] **T5.4 Filters & legend**: toggle civilizations on/off **and** figure kinds on/off (فيلسوف / حكيم / مفكّر ديني). The legend shows civilization colors and kind icons. Filters are saved in the URL state.
-- [ ] **T5.5 Search**: Arabic search box (normalize أ/إ/آ→ا, ة/ه, remove tashkeel) that jumps to the figure's year and location.
+- [x] **T5.4 Filters & legend**: toggle civilizations on/off **and** figure kinds on/off (فيلسوف / حكيم / مفكّر ديني). The legend shows civilization colors and kind icons. Filters are saved in the URL state.
+- [x] **T5.5 Search**: Arabic search box (normalize أ/إ/آ→ا, ة/ه, remove tashkeel) that jumps to the figure's year and location.
 
 ## Phase 6: Content (MVP). One task per civilization
 

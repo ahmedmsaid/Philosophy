@@ -21,5 +21,28 @@
     },
     "tags": ["ethics", "epistemology"],
     "notes": "Verified against Wikidata Q913 and Arabic Wikipedia"
+  },
+  {
+    "id": "plato",
+    "wikidata": "Q859",
+    "wikipedia_ar": "أفلاطون",
+    "name_ar": "أفلاطون",
+    "name_en": "Plato",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "classical-greek",
+    "tradition_ar": "الأفلاطونية",
+    "birth": { "year": -428, "approx": true },
+    "death": { "year": -348, "approx": true },
+    "active": { "from": -399, "to": -348 },
+    "location": {
+      "lat": 37.9715,
+      "lng": 23.7257,
+      "place_ar": "أثينا",
+      "modern_country_ar": "اليونان"
+    },
+    "tags": ["metaphysics", "epistemology", "political-philosophy"],
+    "notes": "مؤسس أكاديمية أثينا ومؤلف المحاورات وتلميذ سقراط الأبرز"
   }
 ]

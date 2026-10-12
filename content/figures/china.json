@@ -1,1 +1,48 @@
-[]
+[
+  {
+    "id": "confucius",
+    "wikidata": "Q4604",
+    "wikipedia_ar": "كونفوشيوس",
+    "name_ar": "كونفوشيوس",
+    "name_en": "Confucius",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "china",
+    "era": "ancient-china",
+    "tradition_ar": "الكونفوشية",
+    "birth": { "year": -551, "approx": false },
+    "death": { "year": -479, "approx": false },
+    "active": { "from": -520, "to": -479 },
+    "location": {
+      "lat": 35.5947,
+      "lng": 116.9859,
+      "place_ar": "تشوفو (ولاية لو)",
+      "modern_country_ar": "الصين"
+    },
+    "tags": ["ethics", "political-philosophy", "virtue"],
+    "notes": "فيلسوف صيني بارز ركز على الأخلاق والعدالة والواجب الاجتماعي والوئام الإنساني"
+  },
+  {
+    "id": "laozi",
+    "wikidata": "Q9333",
+    "wikipedia_ar": "لاوتزه",
+    "name_ar": "لاوتزه",
+    "name_en": "Laozi",
+    "kind": "philosopher",
+    "legendary": true,
+    "civilization": "china",
+    "era": "ancient-china",
+    "tradition_ar": "الطاوية",
+    "birth": { "year": -600, "approx": true },
+    "death": { "year": -500, "approx": true },
+    "active": { "from": -570, "to": -500 },
+    "location": {
+      "lat": 34.0,
+      "lng": 115.0,
+      "place_ar": "ولاية تشو القديمة",
+      "modern_country_ar": "الصين"
+    },
+    "tags": ["daoism", "metaphysics", "wu-wei"],
+    "notes": "شخصية فلسفية مؤسسة للطاوية ومؤلف كتاب داو دي جينغ مع وجود خلافات تاريخية حول تفاصيل حياته"
+  }
+]

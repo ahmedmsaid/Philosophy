@@ -1,0 +1,202 @@
+/**
+ * markers.css - Philosophy Timeline Atlas (أطلس تاريخ الفلسفة)
+ * Leaflet MarkerCluster & Custom Historical Figure Markers Styling.
+ * Ancient Atlas Dark Aesthetic with Civilization Colors and Kind Glyphs.
+ */
+
+/* ==========================================================================
+   1. MARKER CLUSTER STYLING (عناقيد العلامات المتقاربة)
+   ========================================================================== */
+.leaflet-cluster-anim .leaflet-marker-icon,
+.leaflet-cluster-anim .leaflet-marker-shadow {
+  transition: transform 0.3s ease-out, opacity 0.3s ease-in;
+}
+
+.atlas-cluster-icon {
+  background: transparent !important;
+  border: none !important;
+}
+
+.atlas-cluster-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  background: rgba(10, 16, 29, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 2px solid var(--color-gold-base);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6), 0 0 14px var(--color-gold-glow);
+  color: var(--color-gold-light);
+  font-family: var(--font-ui);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-black);
+  cursor: pointer;
+  user-select: none;
+  transition: transform var(--motion-fast) var(--ease-spring),
+              box-shadow var(--motion-fast) var(--ease-out),
+              border-color var(--motion-fast) var(--ease-out);
+  position: relative;
+}
+
+.atlas-cluster-badge::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: var(--radius-full);
+  border: 1px dashed rgba(212, 175, 55, 0.4);
+  pointer-events: none;
+  animation: clusterSpin 20s linear infinite;
+}
+
+@keyframes clusterSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.atlas-cluster-badge:hover {
+  transform: scale(1.14);
+  border-color: #ffe082;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.8), 0 0 22px rgba(212, 175, 55, 0.8);
+  color: #ffffff;
+}
+
+.atlas-cluster-badge--sm {
+  width: 36px;
+  height: 36px;
+  font-size: var(--font-size-xs);
+}
+
+.atlas-cluster-badge--lg {
+  width: 52px;
+  height: 52px;
+  font-size: var(--font-size-md);
+  border-width: 3px;
+}
+
+/* ==========================================================================
+   2. INDIVIDUAL FIGURE MARKERS (علامات الشخصيات التاريخية)
+   CONTEXT §6.4: Civilization color + shape/icon per kind
+   - philosopher: ● (circle disc)
+   - sage: 📜 (scroll)
+   - religious-thinker: 🪔 / flame
+   ========================================================================== */
+.atlas-figure-marker {
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer;
+}
+
+.figure-marker-pin {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  background: var(--marker-civ-bg, rgba(14, 21, 38, 0.95));
+  border: 2px solid var(--marker-civ-color, var(--color-gold-base));
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.65), 0 0 10px var(--marker-civ-color, var(--color-gold-glow));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-parchment-bright);
+  transition: transform var(--motion-fast) var(--ease-spring),
+              box-shadow var(--motion-fast) var(--ease-out),
+              border-color var(--motion-fast) var(--ease-out);
+}
+
+.figure-marker-pin:hover {
+  transform: scale(1.22) translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8), 0 0 18px var(--marker-civ-color, var(--color-gold-glow));
+  border-color: #ffffff;
+}
+
+.figure-marker-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* Kind-specific styling */
+.atlas-figure-marker--philosopher .figure-marker-pin {
+  border-radius: var(--radius-full);
+}
+
+.atlas-figure-marker--sage .figure-marker-pin {
+  border-radius: var(--radius-md);
+}
+
+.atlas-figure-marker--religious-thinker .figure-marker-pin {
+  border-radius: 50% 50% 50% 10%;
+  transform: rotate(-45deg);
+}
+.atlas-figure-marker--religious-thinker .figure-marker-icon {
+  transform: rotate(45deg);
+}
+
+/* Selected state with animated radiant ring */
+.atlas-figure-marker.is-selected .figure-marker-pin {
+  transform: scale(1.3) translateY(-4px);
+  border-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.4), 0 0 24px var(--color-gold-glow);
+  animation: pulseSelected 2s infinite ease-in-out;
+}
+
+@keyframes pulseSelected {
+  0%, 100% {
+    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.4), 0 0 20px var(--color-gold-glow);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(212, 175, 55, 0.7), 0 0 32px var(--color-gold-glow);
+  }
+}
+
+/* ==========================================================================
+   3. FIGURE HOVER TOOLTIP (تلميح مؤشر الفأرة على العلامة)
+   ========================================================================== */
+.figure-hover-tooltip {
+  background: var(--glass-bg-elevated) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid var(--color-gold-border) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: var(--shadow-xl), 0 0 14px var(--color-gold-glow) !important;
+  padding: var(--space-xs) var(--space-md) !important;
+  direction: rtl !important;
+  text-align: right !important;
+  pointer-events: none !important;
+  color: var(--color-parchment-bright) !important;
+}
+
+.figure-hover-tooltip::before {
+  display: none !important; /* Hide default arrow */
+}
+
+.tooltip-figure-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tooltip-figure-name {
+  font-family: var(--font-ui);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-black);
+  color: var(--color-parchment-bright);
+}
+
+.tooltip-figure-dates {
+  font-family: var(--font-ui);
+  font-size: var(--font-size-2xs);
+  color: var(--color-gold-light);
+  font-weight: var(--font-weight-semibold);
+}
+
+.tooltip-figure-sub {
+  font-size: 11px;
+  color: var(--color-parchment-muted);
+}

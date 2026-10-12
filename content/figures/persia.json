@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "id": "zoroaster",
+    "wikidata": "Q35811",
+    "wikipedia_ar": "زرادشت",
+    "name_ar": "زرادشت",
+    "name_en": "Zoroaster",
+    "kind": "religious-thinker",
+    "legendary": true,
+    "civilization": "persia",
+    "era": "ancient-persia",
+    "tradition_ar": "الزرادشتية والفلسفة المزدكية القديمة",
+    "birth": { "year": -1000, "approx": true },
+    "death": { "year": -900, "approx": true },
+    "active": { "from": -1000, "to": -900 },
+    "location": {
+      "lat": 36.75,
+      "lng": 66.89,
+      "place_ar": "بلخ",
+      "modern_country_ar": "إيران الكبرى"
+    },
+    "tags": ["dualism", "ethics", "theology"],
+    "notes": "مؤسس الفلسفة والديانة الزرادشتية واختلفت المراجع في تأريخه بدقة بين الألفية الأولى والقرن السادس ق.م"
+  }
+]

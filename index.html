@@ -12,15 +12,21 @@
     <link rel="stylesheet" href="./src/styles/base.css" />
     <link rel="stylesheet" href="./src/styles/components.css" />
     <link rel="stylesheet" href="./src/styles/map.css" />
+    <link rel="stylesheet" href="./src/styles/markers.css" />
+    <link rel="stylesheet" href="./src/styles/filters.css" />
     <link rel="stylesheet" href="./src/styles/timeline.css" />
     <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css" />
   </head>
   <body>
     <div id="app" class="app-container">
-      <header id="app-header" class="app-header">
+      <header id="app-header" class="app-header glass-panel">
         <div class="header-brand">
           <h1 id="app-title">أطلس تاريخ الفلسفة</h1>
           <span class="header-subtitle">رحلة بصرية في تطور الفكر الإنساني والحكمة القديمة</span>
+        </div>
+        <div class="header-actions">
+          <div id="search-container-mount"></div>
+          <div id="filters-container-mount"></div>
         </div>
       </header>
 
@@ -28,6 +34,7 @@
         <div id="map-container" class="map-container" aria-label="خريطة العالم التاريخية">
           <div id="map" class="map-view"></div>
         </div>
+        <div id="figure-card-mount" class="figure-card-mount"></div>
       </main>
 
       <footer id="timeline-container" class="timeline-container" aria-label="شريط التحكم الزمني">
