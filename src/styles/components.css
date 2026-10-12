@@ -1,23 +1,906 @@
-/* components.css - Core component styles */
+/**
+ * components.css - Philosophy Timeline Atlas (أطلس تاريخ الفلسفة)
+ * Comprehensive Component Library: Glass Panels, Buttons, Chips, Badges, 
+ * Figure Card, Timeline Controls, Inputs, Tooltips, and Modals.
+ */
+
+/* ==========================================================================
+   1. GLASS PANELS (الألواح الزجاجية المصقولة)
+   ========================================================================== */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow), var(--glass-inner-glow);
+  border-radius: var(--radius-lg);
+  color: var(--color-parchment);
+  transition: border-color var(--motion-normal) var(--ease-out),
+              box-shadow var(--motion-normal) var(--ease-out),
+              transform var(--motion-normal) var(--ease-out);
+}
+
+.glass-panel--elevated {
+  background: var(--glass-bg-elevated);
+  backdrop-filter: blur(var(--glass-blur-heavy));
+  -webkit-backdrop-filter: blur(var(--glass-blur-heavy));
+  box-shadow: var(--shadow-xl), var(--glass-inner-glow);
+}
+
+.glass-panel--interactive:hover {
+  border-color: var(--glass-border-hover);
+  box-shadow: var(--shadow-xl), var(--shadow-glow-gold);
+}
+
+/* Header overlay card */
 .app-header {
   position: absolute;
-  top: 1rem;
-  inset-inline-start: 1rem;
-  z-index: 1000;
-  background: var(--color-bg-glass);
-  backdrop-filter: blur(12px);
-  border: 1px solid var(--color-border-glass);
-  border-radius: 12px;
-  padding: 0.75rem 1.25rem;
+  top: var(--space-lg);
+  inset-inline-start: var(--space-lg);
+  z-index: var(--z-panel);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-xl);
+  pointer-events: auto;
 }
 
-.map-container {
+.header-brand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+.header-brand h1 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-black);
+  color: var(--color-parchment-bright);
+  background: linear-gradient(135deg, #ffffff 30%, var(--color-gold-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.header-brand .header-subtitle {
+  font-size: var(--font-size-xs);
+  color: var(--color-parchment-muted);
+  font-weight: var(--font-weight-regular);
+}
+
+/* ==========================================================================
+   2. BUTTONS (الأزرار التفاعلية)
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-lg);
+  font-family: var(--font-ui);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--radius-md);
+  transition: all var(--motion-fast) var(--ease-out);
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+  filter: grayscale(40%);
+}
+
+/* Primary Button - Antique Gold */
+.btn--primary {
+  background: linear-gradient(135deg, var(--color-gold-light) 0%, var(--color-gold-base) 100%);
+  color: var(--color-bg-space);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 14px rgba(212, 175, 55, 0.35);
+  font-weight: var(--font-weight-bold);
+}
+
+.btn--primary:hover {
+  background: linear-gradient(135deg, #ffe285 0%, var(--color-gold-light) 100%);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.55);
+  transform: translateY(-1px);
+}
+
+/* Secondary Button - Glass & Gold Outline */
+.btn--secondary {
+  background: rgba(14, 21, 38, 0.7);
+  color: var(--color-parchment);
+  border: 1px solid var(--color-gold-border);
+  backdrop-filter: blur(8px);
+}
+
+.btn--secondary:hover {
+  background: rgba(21, 32, 56, 0.9);
+  border-color: var(--color-gold-light);
+  color: var(--color-parchment-bright);
+  box-shadow: 0 0 12px var(--color-gold-glow);
+}
+
+/* Ghost Button */
+.btn--ghost {
+  background: transparent;
+  color: var(--color-parchment-muted);
+  border: 1px solid transparent;
+}
+
+.btn--ghost:hover {
+  background: rgba(244, 237, 226, 0.08);
+  color: var(--color-parchment-bright);
+}
+
+/* Icon Button */
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: var(--radius-md);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--color-parchment);
+  transition: all var(--motion-fast) var(--ease-out);
+}
+
+.btn-icon:hover {
+  background: var(--glass-bg-hover);
+  border-color: var(--color-gold-light);
+  color: var(--color-gold-light);
+  box-shadow: 0 0 14px var(--color-gold-glow);
+  transform: translateY(-1px);
+}
+
+.btn-icon--sm {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+}
+
+.btn-icon--lg {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-lg);
+}
+
+.btn-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* ==========================================================================
+   3. CHIPS & TAGS (الرقائق والوسوم التفاعلية)
+   ========================================================================== */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-2xs) var(--space-sm);
+  font-family: var(--font-ui);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-full);
+  background: rgba(244, 237, 226, 0.07);
+  border: 1px solid var(--color-border-subtle);
+  color: var(--color-parchment-muted);
+  transition: all var(--motion-fast) var(--ease-out);
+  user-select: none;
+}
+
+.chip-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* Filter Chip Toggle */
+.chip-filter {
+  cursor: pointer;
+  padding: var(--space-xs) var(--space-md);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border-subtle);
+  color: var(--color-parchment-muted);
+}
+
+.chip-filter:hover {
+  background: var(--glass-bg-hover);
+  border-color: var(--color-gold-border);
+  color: var(--color-parchment);
+}
+
+.chip-filter.is-active {
+  background: rgba(212, 175, 55, 0.16);
+  border-color: var(--color-gold-base);
+  color: var(--color-parchment-bright);
+  box-shadow: 0 0 10px var(--color-gold-glow);
+}
+
+/* Civilization Chips */
+.chip--egypt {
+  background: var(--civ-egypt-bg);
+  border-color: var(--civ-egypt-border);
+  color: #f7e399;
+}
+.chip--egypt .chip-dot { background: var(--civ-egypt); box-shadow: 0 0 6px var(--civ-egypt); }
+
+.chip--mesopotamia {
+  background: var(--civ-mesopotamia-bg);
+  border-color: var(--civ-mesopotamia-border);
+  color: #fca074;
+}
+.chip--mesopotamia .chip-dot { background: var(--civ-mesopotamia); box-shadow: 0 0 6px var(--civ-mesopotamia); }
+
+.chip--persia {
+  background: var(--civ-persia-bg);
+  border-color: var(--civ-persia-border);
+  color: #79cce8;
+}
+.chip--persia .chip-dot { background: var(--civ-persia); box-shadow: 0 0 6px var(--civ-persia); }
+
+.chip--india {
+  background: var(--civ-india-bg);
+  border-color: var(--civ-india-border);
+  color: #fbc265;
+}
+.chip--india .chip-dot { background: var(--civ-india); box-shadow: 0 0 6px var(--civ-india); }
+
+.chip--china {
+  background: var(--civ-china-bg);
+  border-color: var(--civ-china-border);
+  color: #f88b99;
+}
+.chip--china .chip-dot { background: var(--civ-china); box-shadow: 0 0 6px var(--civ-china); }
+
+.chip--greece {
+  background: var(--civ-greece-bg);
+  border-color: var(--civ-greece-border);
+  color: #93b5dd;
+}
+.chip--greece .chip-dot { background: var(--civ-greece); box-shadow: 0 0 6px var(--civ-greece); }
+
+/* ==========================================================================
+   4. FIGURE KIND CHIPS (تصنيف نوع الشخصية - CONTEXT §4.2, §6.4, §10)
+   ========================================================================== */
+.kind-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-2xs) var(--space-sm);
+  font-family: var(--font-ui);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--radius-sm);
+}
+
+.kind-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+}
+
+/* Philosopher (فيلسوف) */
+.kind-chip--philosopher {
+  background: var(--kind-philosopher-bg);
+  border: 1px solid var(--kind-philosopher-border);
+  color: var(--kind-philosopher-color);
+}
+.kind-chip--philosopher .kind-icon::before {
+  content: "●";
+  font-size: 0.85em;
+  color: var(--kind-philosopher-color);
+}
+
+/* Sage / Wisdom Literature (حكيم / أدب الحكمة) */
+.kind-chip--sage {
+  background: var(--kind-sage-bg);
+  border: 1px solid var(--kind-sage-border);
+  color: var(--kind-sage-color);
+}
+.kind-chip--sage .kind-icon::before {
+  content: "📜";
+  font-size: 0.95em;
+}
+
+/* Religious Thinker (مفكّر ديني) */
+.kind-chip--religious-thinker {
+  background: var(--kind-religious-bg);
+  border: 1px solid var(--kind-religious-border);
+  color: var(--kind-religious-color);
+}
+.kind-chip--religious-thinker .kind-icon::before {
+  content: "🪔";
+  font-size: 0.95em;
+}
+
+/* ==========================================================================
+   5. HISTORICAL STATUS BADGES (شارات التحقيق والأسطورية)
+   ========================================================================== */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 3px var(--space-sm);
+  font-family: var(--font-ui);
+  font-size: var(--font-size-2xs);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-xs);
+  line-height: 1.3;
+}
+
+/* Approximate / Disputed Date (تأريخ تقريبي / مختلف عليه) */
+.badge--approx {
+  background: var(--badge-approx-bg);
+  border: 1px solid var(--badge-approx-border);
+  color: var(--badge-approx-color);
+}
+.badge--approx::before {
+  content: "⏳";
+  font-size: 0.9em;
+}
+
+/* Legendary / Disputed Historicity (شخصية شبه أسطورية) */
+.badge--legendary {
+  background: var(--badge-legendary-bg);
+  border: 1px solid var(--badge-legendary-border);
+  color: var(--badge-legendary-color);
+}
+.badge--legendary::before {
+  content: "✨";
+  font-size: 0.9em;
+}
+
+/* ==========================================================================
+   6. FIGURE CARD / POPUP (بطاقة الفيلسوف / المفكر)
+   CONTEXT §4.2, §4.3, §6.4 - Desktop Side Panel & Mobile Bottom Sheet
+   ========================================================================== */
+.figure-card {
+  position: absolute;
+  top: var(--space-lg);
+  inset-inline-end: var(--space-lg);
+  width: 380px;
+  max-width: calc(100vw - 2 * var(--space-lg));
+  max-height: calc(100vh - 120px);
+  z-index: var(--z-popup);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: cardSlideIn var(--motion-normal) var(--ease-out);
+}
+
+@keyframes cardSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.figure-card__header {
+  position: relative;
+  display: flex;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  border-block-end: 1px solid var(--glass-border-subtle);
+  background: linear-gradient(180deg, rgba(21, 32, 56, 0.7) 0%, transparent 100%);
+}
+
+.figure-card__close {
+  position: absolute;
+  top: var(--space-md);
+  inset-inline-end: var(--space-md);
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(14, 21, 38, 0.6);
+  border: 1px solid var(--glass-border-subtle);
+  color: var(--color-parchment-muted);
+  cursor: pointer;
+  transition: all var(--motion-fast) var(--ease-out);
+}
+
+.figure-card__close:hover {
+  background: rgba(212, 175, 55, 0.2);
+  border-color: var(--color-gold-base);
+  color: var(--color-parchment-bright);
+}
+
+/* Portrait Image */
+.figure-card__portrait {
+  width: 80px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-bg-space);
+  border: 2px solid var(--color-gold-border);
+  box-shadow: var(--shadow-md);
+  position: relative;
+}
+
+.figure-card__portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.figure-card__portrait-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, var(--color-bg-card) 0%, var(--color-bg-space) 100%);
+  color: var(--color-gold-base);
+  font-size: 2rem;
+}
+
+/* Titles */
+.figure-card__title-group {
   flex: 1;
-  width: 100%;
-  height: 100%;
+  padding-inline-end: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.map-view {
+.figure-card__name-ar {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-black);
+  color: var(--color-parchment-bright);
+  line-height: var(--line-height-tight);
+}
+
+.figure-card__name-en {
+  font-size: var(--font-size-xs);
+  color: var(--color-parchment-muted);
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-ui);
+  margin-block-start: var(--space-2xs);
+}
+
+.figure-card__badges-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-block-start: var(--space-sm);
+}
+
+/* Body Content */
+.figure-card__body {
+  padding: var(--space-lg);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.figure-card__meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+  background: rgba(10, 16, 29, 0.55);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+}
+
+.figure-card__meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.figure-card__meta-label {
+  font-size: var(--font-size-2xs);
+  color: var(--color-parchment-subtle);
+  font-weight: var(--font-weight-medium);
+}
+
+.figure-card__meta-value {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-parchment);
+}
+
+.figure-card__summary {
+  color: var(--color-parchment);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-body);
+  text-align: justify;
+  background: rgba(244, 237, 226, 0.03);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  border-inline-start: 3px solid var(--color-gold-base);
+}
+
+/* Footer Actions */
+.figure-card__footer {
+  padding: var(--space-md) var(--space-lg);
+  border-block-start: 1px solid var(--glass-border-subtle);
+  background: rgba(10, 16, 29, 0.7);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.figure-card__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid var(--color-gold-border);
+  border-radius: var(--radius-md);
+  color: var(--color-gold-light);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  transition: all var(--motion-fast) var(--ease-out);
+}
+
+.figure-card__link:hover {
+  background: rgba(212, 175, 55, 0.25);
+  border-color: var(--color-gold-light);
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 0 12px var(--color-gold-glow);
+}
+
+.figure-card__link svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.figure-card__attribution {
+  font-size: var(--font-size-2xs);
+  color: var(--color-parchment-subtle);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+}
+
+/* Responsive: Bottom sheet on small screens */
+@media (max-width: 640px) {
+  .figure-card {
+    top: auto;
+    bottom: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    width: 100vw;
+    max-width: 100vw;
+    max-height: 75vh;
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    border-block-end: none;
+    border-inline: none;
+    animation: cardSlideUp var(--motion-normal) var(--ease-out);
+  }
+
+  @keyframes cardSlideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+}
+
+/* ==========================================================================
+   7. TIMELINE BAR PREVIEW (شريط الخط الزمني)
+   ========================================================================== */
+.timeline-bar {
+  position: absolute;
+  bottom: var(--space-lg);
+  inset-inline-start: 50%;
+  transform: translateX(50%); /* in RTL, translateX(50%) centers an inset-inline-start: 50% element */
+  width: calc(100% - 2 * var(--space-lg));
+  max-width: 960px;
+  z-index: var(--z-timeline);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-xl);
+}
+
+.timeline-bar__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+/* Big Arabic Year Display */
+.year-display {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-xs);
+  font-family: var(--font-ui);
+}
+
+.year-display__number {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-black);
+  background: linear-gradient(135deg, #ffffff 40%, var(--color-gold-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.year-display__era {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gold-base);
+}
+
+.year-display__label {
+  font-size: var(--font-size-xs);
+  color: var(--color-parchment-muted);
+  margin-inline-start: var(--space-sm);
+}
+
+/* Controls cluster */
+.timeline-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.timeline-slider-wrapper {
+  position: relative;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.timeline-era-bands {
+  display: flex;
+  height: 6px;
+  width: 100%;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.timeline-era-band {
   height: 100%;
+  opacity: 0.75;
+  transition: opacity var(--motion-fast) var(--ease-out);
+  cursor: pointer;
+}
+
+.timeline-era-band:hover {
+  opacity: 1;
+  filter: brightness(1.2);
+}
+
+/* Slider Track & Range Input */
+.timeline-slider {
+  width: 100%;
+  height: 8px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: rgba(244, 237, 226, 0.15);
+  border-radius: var(--radius-full);
+  outline: none;
+  cursor: pointer;
+}
+
+.timeline-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, #ffffff 0%, var(--color-gold-light) 100%);
+  border: 2px solid var(--color-bg-space);
+  box-shadow: 0 0 14px var(--color-gold-glow), var(--shadow-sm);
+  cursor: grab;
+  transition: transform var(--motion-fast) var(--ease-spring);
+}
+
+.timeline-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.25);
+}
+
+.timeline-slider::-webkit-slider-thumb:active {
+  cursor: grabbing;
+  transform: scale(1.15);
+}
+
+.timeline-slider::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, #ffffff 0%, var(--color-gold-light) 100%);
+  border: 2px solid var(--color-bg-space);
+  box-shadow: 0 0 14px var(--color-gold-glow), var(--shadow-sm);
+  cursor: grab;
+}
+
+/* ==========================================================================
+   8. INPUTS & SEARCH BAR (حقول البحث والإدخال)
+   ========================================================================== */
+.input-search-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input-search {
+  width: 100%;
+  height: 42px;
+  padding-inline-start: 42px;
+  padding-inline-end: var(--space-lg);
+  font-family: var(--font-ui);
+  font-size: var(--font-size-sm);
+  color: var(--color-parchment-bright);
+  background: rgba(14, 21, 38, 0.7);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  transition: all var(--motion-fast) var(--ease-out);
+}
+
+.input-search:hover {
+  border-color: var(--color-gold-border);
+}
+
+.input-search:focus {
+  background: rgba(14, 21, 38, 0.95);
+  border-color: var(--color-gold-light);
+  box-shadow: 0 0 14px var(--color-gold-glow);
+}
+
+.input-search-icon {
+  position: absolute;
+  inset-inline-start: 12px;
+  width: 18px;
+  height: 18px;
+  fill: var(--color-parchment-muted);
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   9. TOOLTIPS (التلميحات التوضيحية)
+   ========================================================================== */
+.tooltip {
+  position: relative;
+  display: inline-flex;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  inset-inline-start: 50%;
+  transform: translateX(50%);
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-gold-border);
+  color: var(--color-parchment);
+  font-family: var(--font-ui);
+  font-size: var(--font-size-xs);
+  white-space: nowrap;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--motion-fast) var(--ease-out),
+              transform var(--motion-fast) var(--ease-out);
+  z-index: var(--z-tooltip);
+}
+
+.tooltip:hover::after,
+.tooltip:focus-visible::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(50%) translateY(-2px);
+}
+
+/* ==========================================================================
+   10. MODAL DIALOG (النوافذ الحوارية)
+   ========================================================================== */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: var(--color-bg-overlay);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: var(--z-modal-backdrop);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--motion-normal) var(--ease-out),
+              visibility var(--motion-normal) var(--ease-out);
+}
+
+.modal-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-dialog {
+  width: 100%;
+  max-width: 580px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--glass-bg-elevated);
+  border: 1px solid var(--color-gold-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl), var(--shadow-glow-gold);
+  transform: scale(0.95);
+  transition: transform var(--motion-normal) var(--ease-spring);
+}
+
+.modal-backdrop.is-open .modal-dialog {
+  transform: scale(1);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-lg) var(--space-xl);
+  border-block-end: 1px solid var(--glass-border-subtle);
+}
+
+.modal-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-black);
+  color: var(--color-parchment-bright);
+}
+
+.modal-body {
+  padding: var(--space-xl);
+  overflow-y: auto;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-body);
+  color: var(--color-parchment);
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-xl);
+  border-block-start: 1px solid var(--glass-border-subtle);
+  background: rgba(10, 16, 29, 0.5);
 }

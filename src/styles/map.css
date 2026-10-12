@@ -1,0 +1,283 @@
+/**
+ * map.css - Philosophy Timeline Atlas (أطلس تاريخ الفلسفة)
+ * Leaflet map integration, RTL adjustments, historical border polygons, 
+ * Arabic polity tooltips, and controls styling.
+ */
+
+/* ==========================================================================
+   1. MAP CONTAINER & VIEWPORT
+   ========================================================================== */
+.map-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: var(--z-base);
+  background-color: var(--color-bg-space);
+}
+
+.map-view {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-bg-space);
+}
+
+/* Base tiles toning: dark ink ancient atlas physical terrain */
+.leaflet-tile-pane {
+  filter: invert(96%) hue-rotate(190deg) brightness(62%) contrast(125%) saturate(85%);
+}
+
+/* ==========================================================================
+   2. LEAFLET RTL FIXES & COORDINATE ISOLATION
+   CRITICAL: Leaflet's internal panes MUST remain LTR for transform math,
+   while UI overlays, controls, tooltips, and popups must be RTL.
+   ========================================================================== */
+.leaflet-container {
+  font-family: var(--font-ui) !important;
+  background-color: var(--color-bg-space) !important;
+}
+
+/* Coordinate transform panes must NOT be flipped by RTL text direction */
+.leaflet-pane,
+.leaflet-tile-pane,
+.leaflet-marker-pane,
+.leaflet-shadow-pane,
+.leaflet-overlay-pane {
+  direction: ltr !important;
+}
+
+/* UI Controls container must be RTL */
+.leaflet-control-container {
+  direction: rtl !important;
+  font-family: var(--font-ui) !important;
+}
+
+/* ==========================================================================
+   3. ZOOM CONTROLS (أزرار تكبير وتصغير الخريطة)
+   ========================================================================== */
+.leaflet-top.leaflet-left {
+  top: calc(var(--space-2xl) + 60px);
+  inset-inline-start: var(--space-lg);
+  margin: 0;
+}
+
+.leaflet-control-zoom {
+  border: 1px solid var(--glass-border) !important;
+  border-radius: var(--radius-md) !important;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg), var(--shadow-glow-gold) !important;
+  background: transparent !important;
+  margin: 0 !important;
+}
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 38px !important;
+  height: 38px !important;
+  line-height: 38px !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  color: var(--color-parchment-bright) !important;
+  background: var(--glass-bg-elevated) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: none !important;
+  border-block-end: 1px solid var(--glass-border-subtle) !important;
+  transition: all var(--motion-fast) var(--ease-out) !important;
+  cursor: pointer !important;
+  user-select: none !important;
+}
+
+.leaflet-control-zoom-out {
+  border-block-end: none !important;
+}
+
+.leaflet-control-zoom-in:hover,
+.leaflet-control-zoom-out:hover {
+  background: var(--glass-bg-hover) !important;
+  color: var(--color-gold-light) !important;
+  box-shadow: inset 0 0 10px var(--color-gold-glow) !important;
+}
+
+.leaflet-control-zoom-in:active,
+.leaflet-control-zoom-out:active {
+  transform: scale(0.96) !important;
+}
+
+.leaflet-control-zoom-in.leaflet-disabled,
+.leaflet-control-zoom-out.leaflet-disabled {
+  opacity: 0.4 !important;
+  background: var(--glass-bg) !important;
+  color: var(--color-parchment-subtle) !important;
+  cursor: not-allowed !important;
+}
+
+/* ==========================================================================
+   4. ATTRIBUTION CONTROL (شريط الحقوق والإسناد - في اليسار)
+   PLAN.md: attribution control on the left (RTL)
+   ========================================================================== */
+.leaflet-bottom.leaflet-left {
+  bottom: calc(var(--space-2xl) + 60px);
+  inset-inline-start: var(--space-lg);
+  margin: 0;
+  z-index: var(--z-panel);
+}
+
+.leaflet-control-attribution {
+  background: rgba(7, 11, 20, 0.82) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid var(--glass-border-subtle) !important;
+  border-radius: var(--radius-sm) !important;
+  color: var(--color-parchment-subtle) !important;
+  font-size: 11px !important;
+  font-family: var(--font-ui) !important;
+  line-height: 1.5 !important;
+  padding: 4px 10px !important;
+  direction: rtl !important;
+  text-align: right !important;
+  box-shadow: var(--shadow-sm) !important;
+  margin: 0 !important;
+}
+
+.leaflet-control-attribution a {
+  color: var(--color-gold-light) !important;
+  text-decoration: none !important;
+  transition: color var(--motion-fast) var(--ease-out) !important;
+}
+
+.leaflet-control-attribution a:hover {
+  color: var(--color-parchment-bright) !important;
+  text-decoration: underline !important;
+}
+
+/* ==========================================================================
+   5. HISTORICAL BORDERS LAYER (طبقة الحدود التاريخية)
+   ========================================================================== */
+.historical-border-group {
+  transition: opacity 300ms ease-in-out;
+}
+
+.historical-polygon {
+  cursor: pointer;
+  outline: none;
+  transition: fill-opacity var(--motion-fast) var(--ease-out),
+              stroke-width var(--motion-fast) var(--ease-out),
+              stroke var(--motion-fast) var(--ease-out);
+}
+
+.historical-polygon:hover {
+  filter: drop-shadow(0 0 6px var(--color-gold-glow));
+}
+
+/* Polygons crossfade container */
+.borders-layer--fading-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.borders-layer--active {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   6. POLITY LABELS & TOOLTIPS (أسماء الدول والكيانات السياسية بالعربية)
+   ========================================================================== */
+/* Interactive Tooltip on hover */
+.polity-tooltip {
+  background: var(--glass-bg-elevated) !important;
+  border: 1px solid var(--color-gold-border) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: var(--shadow-md), 0 0 12px var(--color-gold-glow) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  color: var(--color-parchment-bright) !important;
+  font-family: var(--font-ui) !important;
+  font-size: var(--font-size-xs) !important;
+  font-weight: var(--font-weight-semibold) !important;
+  padding: 4px 10px !important;
+  direction: rtl !important;
+  text-align: center !important;
+  pointer-events: none !important;
+  white-space: nowrap !important;
+}
+
+.polity-tooltip::before {
+  display: none !important; /* Hide default leaflet tooltip arrow */
+}
+
+/* Centroid permanent labels for major polities */
+.polity-label-marker {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.polity-centroid-label {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  color: rgba(244, 237, 226, 0.78);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.95), 0 0 8px rgba(0, 0, 0, 0.9);
+  letter-spacing: 0.02em;
+  pointer-events: none;
+  white-space: nowrap;
+  direction: rtl;
+  text-align: center;
+  user-select: none;
+  transform: translate(-50%, -50%);
+  transition: opacity var(--motion-normal) var(--ease-out);
+}
+
+/* ==========================================================================
+   7. POPUPS (النوافذ المنبثقة للخرائط - RTL)
+   ========================================================================== */
+.leaflet-popup-content-wrapper {
+  background: var(--glass-bg-elevated) !important;
+  border: 1px solid var(--color-gold-border) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-xl), var(--shadow-glow-gold) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  color: var(--color-parchment) !important;
+  padding: 0 !important;
+  direction: rtl !important;
+}
+
+.leaflet-popup-content {
+  margin: var(--space-md) var(--space-lg) !important;
+  line-height: var(--line-height-body) !important;
+  font-family: var(--font-ui) !important;
+  direction: rtl !important;
+  text-align: start !important;
+}
+
+.leaflet-popup-tip-container {
+  width: 20px !important;
+  height: 10px !important;
+}
+
+.leaflet-popup-tip {
+  background: var(--color-bg-elevated) !important;
+  border: 1px solid var(--color-gold-border) !important;
+  box-shadow: none !important;
+}
+
+.leaflet-popup-close-button {
+  color: var(--color-parchment-muted) !important;
+  font-size: 20px !important;
+  padding: 4px 8px !important;
+  inset-inline-end: 8px !important;
+  inset-inline-start: auto !important;
+  top: 8px !important;
+  transition: color var(--motion-fast) var(--ease-out) !important;
+}
+
+.leaflet-popup-close-button:hover {
+  color: var(--color-gold-light) !important;
+}

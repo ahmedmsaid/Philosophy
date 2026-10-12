@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="دليل نظام التصميم ومكونات أطلس تاريخ الفلسفة - Styleguide" />
+    <title>دليل نظام التصميم | أطلس تاريخ الفلسفة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/styles/tokens.css" />
+    <link rel="stylesheet" href="./src/styles/base.css" />
+    <link rel="stylesheet" href="./src/styles/components.css" />
+    <style>
+      /* Styleguide specific styling */
+      body {
+        overflow-y: auto !important;
+        background: radial-gradient(circle at 50% 10%, #0e172e 0%, var(--color-bg-space) 80%);
+        padding: var(--space-xl) var(--space-lg);
+      }
+
+      .guide-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-3xl);
+      }
+
+      .guide-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: var(--space-md) var(--space-xl);
+      }
+
+      .guide-section {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-lg);
+      }
+
+      .section-header {
+        border-block-end: 1px solid var(--color-gold-border);
+        padding-block-end: var(--space-sm);
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+      }
+
+      .section-title {
+        font-size: var(--font-size-xl);
+        color: var(--color-gold-light);
+        display: flex;
+        align-items: center;
+        gap: var(--space-sm);
+      }
+
+      .swatches-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+        gap: var(--space-md);
+      }
+
+      .swatch-card {
+        padding: var(--space-md);
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-sm);
+      }
+
+      .swatch-color-box {
+        height: 60px;
+        border-radius: var(--radius-sm);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+      }
+
+      .swatch-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .swatch-name {
+        font-size: var(--font-size-xs);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-parchment-bright);
+      }
+
+      .swatch-code {
+        font-size: var(--font-size-2xs);
+        color: var(--color-parchment-muted);
+        font-family: var(--font-mono);
+        direction: ltr;
+        text-align: end;
+      }
+
+      .component-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--space-md);
+        padding: var(--space-lg);
+      }
+
+      .cards-showcase-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: var(--space-xl);
+        position: relative;
+      }
+
+      /* In showcase, card should not be absolute */
+      .cards-showcase-grid .figure-card {
+        position: relative;
+        top: auto;
+        inset-inline-end: auto;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .showcase-timeline-container {
+        padding: var(--space-xl);
+        width: 100%;
+      }
+
+      .showcase-timeline-container .timeline-bar {
+        position: relative;
+        bottom: auto;
+        inset-inline-start: auto;
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="guide-container">
+      <!-- Header Navigation -->
+      <header class="glass-panel guide-nav">
+        <div class="header-brand">
+          <h1>
+            <span>🏛️</span>
+            <span>أطلس تاريخ الفلسفة</span>
+          </h1>
+          <span class="header-subtitle">دليل نظام التصميم المرئي والمكونات (Phase 2 Design System)</span>
+        </div>
+        <div style="display: flex; gap: var(--space-md); align-items: center;">
+          <a href="./index.html" class="btn btn--secondary" id="btn-goto-app">
+            <span>العودة للأطلس التفاعلي</span>
+            <span>←</span>
+          </a>
+        </div>
+      </header>
+
+      <!-- 1. COLOR TOKENS -->
+      <section class="guide-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span>🎨</span>
+            <span>لوحة الألوان وسمت الأطلس التاريخي (Color Palette)</span>
+          </h2>
+          <span style="font-size: var(--font-size-xs); color: var(--color-parchment-subtle);">Dark Antique Atlas / Parchment & Gold</span>
+        </div>
+
+        <h3 style="font-size: var(--font-size-md); color: var(--color-parchment);">حضارات العالم القديم الست (Civilizations)</h3>
+        <div class="swatches-grid">
+          <div class="glass-panel swatch-card">
+            <div class="swatch-color-box" style="background: var(--civ-egypt); box-shadow: 0 0 16px var(--civ-egypt-glow);"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">مصر القديمة</span>
+              <span class="swatch-code">#C9A227</span>
+            </div>
+          </div>
+          <div class="glass-panel swatch-card">
+            <div class="swatch-color-box" style="background: var(--civ-mesopotamia); box-shadow: 0 0 16px var(--civ-mesopotamia-glow);"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">بلاد الرافدين</span>
+              <span class="swatch-code">#C86432</span>
+            </div>
+          </div>
+          <div class="glass-panel swatch-card">
+            <div class="swatch-color-box" style="background: var(--civ-persia); box-shadow: 0 0 16px var(--civ-persia-glow);"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">فارس القديمة</span>
+              <span class="swatch-code">#2A7B9B</span>
+            </div>
+          </div>
+          <div class="glass-panel swatch-card">
+            <div class="swatch-color-box" style="background: var(--civ-india); box-shadow: 0 0 16px var(--civ-india-glow);"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">الهند القديمة</span>
+              <span class="swatch-code">#D97706</span>
+            </div>
+          </div>
+          <div class="glass-panel swatch-card">
+            <div class="swatch-color-box" style="background: var(--civ-china); box-shadow: 0 0 16px var(--civ-china-glow);"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">الصين القديمة</span>
+              <span class="swatch-code">#B83A4B</span>
+            </div>
+          </div>
+          <div class="glass-panel swatch-card">
+            <div class="swatch-color-box" style="background: var(--civ-greece); box-shadow: 0 0 16px var(--civ-greece-glow);"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">اليونان القديمة</span>
+              <span class="swatch-code">#3D5A80</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 style="font-size: var(--font-size-md); color: var(--color-parchment); margin-block-start: var(--space-md);">الذهب، الرق، وتدرجات السطح</h3>
+        <div class="swatches-grid">
+          <div class="glass-panel swatch-card">
+            <div class="swatch-color-box" style="background: var(--color-gold-base); box-shadow: 0 0 16px var(--color-gold-glow);"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">الذهب التاريخي</span>
+              <span class="swatch-code">#D4AF37</span>
+            </div>
+          </div>
+          <div class="glass-panel swatch-card">
+            <div class="swatch-color-box" style="background: var(--color-gold-light);"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">الذهب المشع (Hover)</span>
+              <span class="swatch-code">#F3CF55</span>
+            </div>
+          </div>
+          <div class="glass-panel swatch-card">
+            <div class="swatch-color-box" style="background: var(--color-parchment); color: #000; display: flex; align-items: center; justify-content: center; font-weight: bold;">أ ب ت</div>
+            <div class="swatch-info">
+              <span class="swatch-name">لون الرّق (Parchment)</span>
+              <span class="swatch-code">#F4EDE2</span>
+            </div>
+          </div>
+          <div class="glass-panel swatch-card">
+            <div class="swatch-color-box" style="background: var(--color-bg-space);"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">عمق الفضاء والليل</span>
+              <span class="swatch-code">#03060C</span>
+            </div>
+          </div>
+          <div class="glass-panel swatch-card">
+            <div class="swatch-color-box" style="background: var(--color-bg-surface);"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">سطح الألواح (Surface)</span>
+              <span class="swatch-code">#0E1526</span>
+            </div>
+          </div>
+          <div class="glass-panel swatch-card">
+            <div class="swatch-color-box" style="background: var(--color-bg-card);"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">خلفية البطاقات</span>
+              <span class="swatch-code">#192744</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. TYPOGRAPHY & NUMERALS -->
+      <section class="guide-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span>🖋️</span>
+            <span>الطباعة والأرقام المشرقية (Typography & Eastern Arabic Numerals)</span>
+          </h2>
+          <span style="font-size: var(--font-size-xs); color: var(--color-parchment-subtle);">Cairo (UI) + Amiri (Literary)</span>
+        </div>
+
+        <div class="glass-panel" style="padding: var(--space-xl); display: flex; flex-direction: column; gap: var(--space-xl);">
+          <div>
+            <span style="font-size: var(--font-size-xs); color: var(--color-gold-base);">خط واجهة المستخدم - Cairo</span>
+            <h1 style="margin-block-start: var(--space-2xs);">عنوان رئيسي أطلس تاريخ الفلسفة (Display 1 - 36px)</h1>
+            <h2>عنوان فرعي لأقسام الحقب التاريخية والمدارس الفكرية (Display 2 - 24px)</h2>
+            <h3>عنوان بطاقة الفيلسوف والتفاصيل الحيوية (Display 3 - 20px)</h3>
+            <p style="color: var(--color-parchment-muted); font-size: var(--font-size-sm); margin-block-start: var(--space-xs);">
+              نص واجهة المستخدم: يتسم بالوضوح الشديد وسرعة القراءة تحت مختلف درجات الإضاءة والأحجام.
+            </p>
+          </div>
+
+          <div style="border-block-start: 1px solid var(--glass-border-subtle); padding-block-start: var(--space-lg);">
+            <span style="font-size: var(--font-size-xs); color: var(--color-gold-base);">خط النصوص والمقتطفات الأدبية - Amiri</span>
+            <p class="text-literary" style="margin-block-start: var(--space-xs);">
+              «الحكمة ليست معرفة الكثير، بل معرفة ما ينفع. إنّ البحث عن الحقيقة والفضيلة هو الغاية الأسمى للوجود البشري، والفضيلة علمٌ والرذيلة جهل.»
+            </p>
+          </div>
+
+          <div style="border-block-start: 1px solid var(--glass-border-subtle); padding-block-start: var(--space-lg);">
+            <span style="font-size: var(--font-size-xs); color: var(--color-gold-base);">الأرقام المشرقية والتأريخ الزمني (Eastern Arabic Numerals)</span>
+            <div style="display: flex; flex-wrap: wrap; gap: var(--space-xl); margin-block-start: var(--space-sm); align-items: baseline;">
+              <div class="year-display">
+                <span class="year-display__number">٤٧٠</span>
+                <span class="year-display__era">ق.م</span>
+                <span class="year-display__label">(عصر سقراط الكلاسيكي)</span>
+              </div>
+              <div class="year-display">
+                <span class="year-display__number">٣٠٠٠</span>
+                <span class="year-display__era">ق.م</span>
+                <span class="year-display__label">(فجر الحكمة المصرية)</span>
+              </div>
+              <div class="year-display">
+                <span class="year-display__number">٣٢٣</span>
+                <span class="year-display__era">ق.م</span>
+                <span class="year-display__label">(العصر الهلنستي)</span>
+              </div>
+            </div>
+            <p style="font-size: var(--font-size-xs); color: var(--color-parchment-subtle); margin-block-start: var(--space-xs);">
+              قاعدة CONTEXT §6.3: تُكتب الأعوام دون فاصلة الآلاف وبدون عام 0 (٤٧٠ ق.م وليس ٤٬٧٠).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. BUTTONS & CONTROLS -->
+      <section class="guide-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span>🔘</span>
+            <span>الأزرار والتفاعلات (Interactive Buttons)</span>
+          </h2>
+        </div>
+
+        <div class="glass-panel component-row">
+          <button class="btn btn--primary" id="demo-btn-primary">
+            <span>ابدأ الرحلة التاريخية</span>
+            <span>✨</span>
+          </button>
+
+          <button class="btn btn--secondary" id="demo-btn-secondary">
+            <span>عن المشروع والمصادر</span>
+            <span>📖</span>
+          </button>
+
+          <button class="btn btn--ghost" id="demo-btn-ghost">
+            <span>إعادة الضبط</span>
+          </button>
+
+          <button class="btn btn--primary" disabled>
+            <span>زر معطّل (Disabled)</span>
+          </button>
+
+          <!-- Icon buttons -->
+          <button class="btn-icon tooltip" data-tooltip="تشغيل الخط الزمني" aria-label="تشغيل">
+            <svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+          </button>
+
+          <button class="btn-icon tooltip" data-tooltip="إيقاف مؤقت" aria-label="إيقاف">
+            <svg viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+          </button>
+
+          <button class="btn-icon tooltip" data-tooltip="الخطوة التالية (نحو الأحدث - يساراً)" aria-label="التالي">
+            <svg viewBox="0 0 24 24"><polygon points="11 19 2 12 11 5 11 19"></polygon><polygon points="22 19 13 12 22 5 22 19"></polygon></svg>
+          </button>
+
+          <button class="btn-icon tooltip" data-tooltip="الخطوة السابقة (نحو الأقدم - يميناً)" aria-label="السابق">
+            <svg viewBox="0 0 24 24"><polygon points="13 19 22 12 13 5 13 19"></polygon><polygon points="2 19 11 12 2 5 2 19"></polygon></svg>
+          </button>
+
+          <button class="btn-icon tooltip" data-tooltip="تكبير الخريطة" aria-label="تكبير">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19" stroke="currentColor" stroke-width="2"></line><line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2"></line></svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- 4. CHIPS, FIGURE KINDS & BADGES -->
+      <section class="guide-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span>🏷️</span>
+            <span>الرقائق، تصنيفات الشخصيات والشارات (Chips & Badges)</span>
+          </h2>
+          <span style="font-size: var(--font-size-xs); color: var(--color-parchment-subtle);">CONTEXT §4.2, §6.4 & §10</span>
+        </div>
+
+        <div class="glass-panel" style="padding: var(--space-lg); display: flex; flex-direction: column; gap: var(--space-lg);">
+          <!-- Figure Kinds -->
+          <div>
+            <h4 style="font-size: var(--font-size-sm); color: var(--color-gold-base); margin-block-end: var(--space-sm);">تصنيف الشخصيات (Figure Kind Chips)</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: var(--space-md); align-items: center;">
+              <span class="kind-chip kind-chip--philosopher">
+                <span class="kind-icon"></span>
+                <span>فيلسوف</span>
+              </span>
+
+              <span class="kind-chip kind-chip--sage">
+                <span class="kind-icon"></span>
+                <span>حكيم / أدب الحكمة</span>
+              </span>
+
+              <span class="kind-chip kind-chip--religious-thinker">
+                <span class="kind-icon"></span>
+                <span>مفكّر ديني</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Badges -->
+          <div style="border-block-start: 1px solid var(--glass-border-subtle); padding-block-start: var(--space-md);">
+            <h4 style="font-size: var(--font-size-sm); color: var(--color-gold-base); margin-block-end: var(--space-sm);">شارات التدقيق التاريخي (Historical Scrutiny Badges)</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: var(--space-md); align-items: center;">
+              <span class="badge badge--approx">تأريخ تقريبي / مختلف عليه</span>
+              <span class="badge badge--legendary">شخصية شبه أسطورية</span>
+            </div>
+          </div>
+
+          <!-- Civilization Filter Chips -->
+          <div style="border-block-start: 1px solid var(--glass-border-subtle); padding-block-start: var(--space-md);">
+            <h4 style="font-size: var(--font-size-sm); color: var(--color-gold-base); margin-block-end: var(--space-sm);">رقائق الحضارات والتصفية (Interactive Civilization Filters)</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: var(--space-sm); align-items: center;" id="filter-chips-container">
+              <button class="chip chip-filter chip--egypt is-active" data-civ="egypt">
+                <span class="chip-dot"></span>
+                <span>مصر القديمة</span>
+              </button>
+
+              <button class="chip chip-filter chip--mesopotamia is-active" data-civ="mesopotamia">
+                <span class="chip-dot"></span>
+                <span>بلاد الرافدين</span>
+              </button>
+
+              <button class="chip chip-filter chip--persia is-active" data-civ="persia">
+                <span class="chip-dot"></span>
+                <span>فارس القديمة</span>
+              </button>
+
+              <button class="chip chip-filter chip--india is-active" data-civ="india">
+                <span class="chip-dot"></span>
+                <span>الهند القديمة</span>
+              </button>
+
+              <button class="chip chip-filter chip--china is-active" data-civ="china">
+                <span class="chip-dot"></span>
+                <span>الصين القديمة</span>
+              </button>
+
+              <button class="chip chip-filter chip--greece is-active" data-civ="greece">
+                <span class="chip-dot"></span>
+                <span>اليونان القديمة</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. SEARCH & INPUTS -->
+      <section class="guide-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span>🔍</span>
+            <span>حقول الإدخال والبحث (Search & Text Inputs)</span>
+          </h2>
+        </div>
+
+        <div class="glass-panel" style="padding: var(--space-lg); max-width: 600px;">
+          <div class="input-search-group">
+            <svg class="input-search-icon" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"></circle>
+              <line x1="16.5" y1="16.5" x2="22" y2="22" stroke="currentColor" stroke-width="2"></line>
+            </svg>
+            <input 
+              type="text" 
+              class="input-search" 
+              id="guide-search-input" 
+              placeholder="ابحث عن فيلسوف، حكيم، أو مدرسة فكرية (مثال: سقراط، بتاح حتب)..." 
+              aria-label="البحث عن فيلسوف"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. FIGURE CARD SHOWCASE -->
+      <section class="guide-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span>🎴</span>
+            <span>بطاقة الفيلسوف / المفكّر (Figure Card Component)</span>
+          </h2>
+          <span style="font-size: var(--font-size-xs); color: var(--color-parchment-subtle);">Desktop Side Panel & Mobile Sheet</span>
+        </div>
+
+        <div class="cards-showcase-grid">
+          <!-- Sample 1: Philosopher (Socrates) -->
+          <article class="glass-panel glass-panel--elevated figure-card" id="card-sample-socrates">
+            <header class="figure-card__header">
+              <div class="figure-card__portrait">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Socrates_Louvre.jpg/240px-Socrates_Louvre.jpg" alt="سقراط" loading="lazy" />
+              </div>
+              <div class="figure-card__title-group">
+                <h2 class="figure-card__name-ar">سقراط</h2>
+                <span class="figure-card__name-en">Socrates</span>
+                <div class="figure-card__badges-strip">
+                  <span class="kind-chip kind-chip--philosopher">
+                    <span class="kind-icon"></span>
+                    <span>فيلسوف</span>
+                  </span>
+                  <span class="chip chip--greece">
+                    <span class="chip-dot"></span>
+                    <span>اليونان القديمة</span>
+                  </span>
+                </div>
+              </div>
+              <button class="figure-card__close" aria-label="إغلاق البطاقة">✕</button>
+            </header>
+
+            <div class="figure-card__body">
+              <div class="figure-card__meta-grid">
+                <div class="figure-card__meta-item">
+                  <span class="figure-card__meta-label">الفترة التاريخية</span>
+                  <span class="figure-card__meta-value">حوالي ٤٧٠ ق.م – ٣٩٩ ق.م</span>
+                </div>
+                <div class="figure-card__meta-item">
+                  <span class="figure-card__meta-label">المكان التاريخي</span>
+                  <span class="figure-card__meta-value">أثينا (اليونان)</span>
+                </div>
+                <div class="figure-card__meta-item">
+                  <span class="figure-card__meta-label">الحقبة / التيار</span>
+                  <span class="figure-card__meta-value">الفلسفة الكلاسيكية</span>
+                </div>
+                <div class="figure-card__meta-item">
+                  <span class="figure-card__meta-label">سنوات النشاط</span>
+                  <span class="figure-card__meta-value">٤٥٠ ق.م – ٣٩٩ ق.م</span>
+                </div>
+              </div>
+
+              <p class="figure-card__summary">
+                فيلسوف يوناني كلاسيكي يُعتبر أحد مؤسسي الفلسفة الغربية، وأول فيلسوف أخلاقي في التقاليد الفكرية الغربية. اشتهر بالمنهج السقراطي في التوليد والحوار.
+              </p>
+            </div>
+
+            <footer class="figure-card__footer">
+              <a href="https://ar.wikipedia.org/wiki/%D8%B3%D9%82%D8%B1%D8%A7%D8%B7" target="_blank" rel="noopener noreferrer" class="figure-card__link">
+                <span>اقرأ المزيد على ويكيبيديا</span>
+                <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+              </a>
+              <div class="figure-card__attribution">
+                <span>المصدر: ويكيبيديا العربية | رخصة المشاع الإبداعي CC BY-SA 4.0</span>
+              </div>
+            </footer>
+          </article>
+
+          <!-- Sample 2: Sage (Ptahhotep) -->
+          <article class="glass-panel glass-panel--elevated figure-card" id="card-sample-ptahhotep">
+            <header class="figure-card__header">
+              <div class="figure-card__portrait">
+                <div class="figure-card__portrait-placeholder">📜</div>
+              </div>
+              <div class="figure-card__title-group">
+                <h2 class="figure-card__name-ar">بتاح حتب</h2>
+                <span class="figure-card__name-en">Ptahhotep</span>
+                <div class="figure-card__badges-strip">
+                  <span class="kind-chip kind-chip--sage">
+                    <span class="kind-icon"></span>
+                    <span>حكيم / أدب الحكمة</span>
+                  </span>
+                  <span class="chip chip--egypt">
+                    <span class="chip-dot"></span>
+                    <span>مصر القديمة</span>
+                  </span>
+                  <span class="badge badge--approx">تأريخ تقريبي</span>
+                </div>
+              </div>
+              <button class="figure-card__close" aria-label="إغلاق البطاقة">✕</button>
+            </header>
+
+            <div class="figure-card__body">
+              <div class="figure-card__meta-grid">
+                <div class="figure-card__meta-item">
+                  <span class="figure-card__meta-label">الفترة التاريخية</span>
+                  <span class="figure-card__meta-value">حوالي ٢٤٠٠ ق.م</span>
+                </div>
+                <div class="figure-card__meta-item">
+                  <span class="figure-card__meta-label">المكان التاريخي</span>
+                  <span class="figure-card__meta-value">منف / سقارة (مصر)</span>
+                </div>
+                <div class="figure-card__meta-item">
+                  <span class="figure-card__meta-label">التصنيف الأدبي</span>
+                  <span class="figure-card__meta-value">تعاليم الحكمة (سيبايت)</span>
+                </div>
+                <div class="figure-card__meta-item">
+                  <span class="figure-card__meta-label">الدولة</span>
+                  <span class="figure-card__meta-value">المملكة القديمة (الأسرة الخامسة)</span>
+                </div>
+              </div>
+
+              <p class="figure-card__summary">
+                وزير وحكيم مصري قديم عاش خلال عهد الأسرة الخامسة. اشتهر بكتابة «تعاليم بتاح حتب»، التي تُعد أقدم وثيقة مكتملة في فلسفة الأخلاق والآداب الإنسانية في التاريخ المدون.
+              </p>
+            </div>
+
+            <footer class="figure-card__footer">
+              <a href="https://ar.wikipedia.org/wiki/%D8%A8%D8%AA%D8%A7%D8%AD_%D8%AD%D8%AA%D8%A8" target="_blank" rel="noopener noreferrer" class="figure-card__link">
+                <span>اقرأ المزيد على ويكيبيديا</span>
+                <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+              </a>
+              <div class="figure-card__attribution">
+                <span>المصدر: ويكيبيديا العربية | رخصة المشاع الإبداعي CC BY-SA 4.0</span>
+              </div>
+            </footer>
+          </article>
+
+          <!-- Sample 3: Legendary / Religious Thinker (Zoroaster) -->
+          <article class="glass-panel glass-panel--elevated figure-card" id="card-sample-zoroaster">
+            <header class="figure-card__header">
+              <div class="figure-card__portrait">
+                <div class="figure-card__portrait-placeholder">🪔</div>
+              </div>
+              <div class="figure-card__title-group">
+                <h2 class="figure-card__name-ar">زرادشت</h2>
+                <span class="figure-card__name-en">Zoroaster</span>
+                <div class="figure-card__badges-strip">
+                  <span class="kind-chip kind-chip--religious-thinker">
+                    <span class="kind-icon"></span>
+                    <span>مفكّر ديني</span>
+                  </span>
+                  <span class="chip chip--persia">
+                    <span class="chip-dot"></span>
+                    <span>فارس القديمة</span>
+                  </span>
+                  <span class="badge badge--legendary">شخصية شبه أسطورية</span>
+                  <span class="badge badge--approx">تأريخ مختلف عليه</span>
+                </div>
+              </div>
+              <button class="figure-card__close" aria-label="إغلاق البطاقة">✕</button>
+            </header>
+
+            <div class="figure-card__body">
+              <div class="figure-card__meta-grid">
+                <div class="figure-card__meta-item">
+                  <span class="figure-card__meta-label">الفترة التاريخية</span>
+                  <span class="figure-card__meta-value">حوالي ١٠٠٠ – ٦٠٠ ق.م</span>
+                </div>
+                <div class="figure-card__meta-item">
+                  <span class="figure-card__meta-label">المكان التاريخي</span>
+                  <span class="figure-card__meta-value">بلخ / الهضبة الإيرانية</span>
+                </div>
+                <div class="figure-card__meta-item">
+                  <span class="figure-card__meta-label">التيار الفلسفي</span>
+                  <span class="figure-card__meta-value">ثنائية النور والظلام / الأخلاق</span>
+                </div>
+                <div class="figure-card__meta-item">
+                  <span class="figure-card__meta-label">النصوص</span>
+                  <span class="figure-card__meta-value">أناشيد الغاثا (الأفستا)</span>
+                </div>
+              </div>
+
+              <p class="figure-card__summary">
+                مفكّر وفيلسوف ديني قديم في بلاد فارس، تنسب إليه ترانيم الغاثا وفلسفة الصراع الأخلاقي بين الخير والشر (آشا ودروج)، وكان لتعاليمه أثر عميق في الفكر الشرقي القديم.
+              </p>
+            </div>
+
+            <footer class="figure-card__footer">
+              <a href="https://ar.wikipedia.org/wiki/%D8%B2%D8%B1%D8%A7%D8%AF%D8%B4%D8%AA" target="_blank" rel="noopener noreferrer" class="figure-card__link">
+                <span>اقرأ المزيد على ويكيبيديا</span>
+                <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+              </a>
+              <div class="figure-card__attribution">
+                <span>المصدر: ويكيبيديا العربية | رخصة المشاع الإبداعي CC BY-SA 4.0</span>
+              </div>
+            </footer>
+          </article>
+        </div>
+      </section>
+
+      <!-- 7. TIMELINE BAR PREVIEW -->
+      <section class="guide-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span>⏳</span>
+            <span>شريط التحكم الزمني (Timeline Bar Component)</span>
+          </h2>
+          <span style="font-size: var(--font-size-xs); color: var(--color-parchment-subtle);">Right (Old) → Left (New)</span>
+        </div>
+
+        <div class="glass-panel showcase-timeline-container">
+          <div class="glass-panel glass-panel--elevated timeline-bar" id="timeline-component-preview">
+            <div class="timeline-bar__header">
+              <!-- Big Arabic Year Display -->
+              <div class="year-display">
+                <span class="year-display__number" id="preview-year-number">٤٧٠</span>
+                <span class="year-display__era" id="preview-year-era">ق.م</span>
+                <span class="year-display__label" id="preview-era-name">العصر الكلاسيكي اليوناني</span>
+              </div>
+
+              <!-- Controls -->
+              <div class="timeline-controls">
+                <!-- Backward (Older / Rightward) -->
+                <button class="btn-icon btn-icon--sm tooltip" data-tooltip="الخطوة السابقة (نحو الأقدم)" id="btn-step-older">
+                  <svg viewBox="0 0 24 24"><polygon points="13 19 22 12 13 5 13 19"></polygon><polygon points="2 19 11 12 2 5 2 19"></polygon></svg>
+                </button>
+
+                <!-- Play/Pause -->
+                <button class="btn-icon tooltip" data-tooltip="تشغيل / إيقاف مؤقت" id="timeline-play-btn">
+                  <svg id="play-icon" viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                </button>
+
+                <!-- Forward (Newer / Leftward) -->
+                <button class="btn-icon btn-icon--sm tooltip" data-tooltip="الخطوة التالية (نحو الأحدث)" id="btn-step-newer">
+                  <svg viewBox="0 0 24 24"><polygon points="11 19 2 12 11 5 11 19"></polygon><polygon points="22 19 13 12 22 5 22 19"></polygon></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Slider & Era Bands -->
+            <div class="timeline-slider-wrapper">
+              <div class="timeline-era-bands">
+                <div class="timeline-era-band tooltip" data-tooltip="مصر القديمة (-3000 إلى -332)" style="width: 40%; background: var(--civ-egypt);"></div>
+                <div class="timeline-era-band tooltip" data-tooltip="بلاد الرافدين (-3000 إلى -539)" style="width: 20%; background: var(--civ-mesopotamia);"></div>
+                <div class="timeline-era-band tooltip" data-tooltip="الهند والصين القديمة (-1500 إلى -200)" style="width: 15%; background: var(--civ-india);"></div>
+                <div class="timeline-era-band tooltip" data-tooltip="فارس القديمة (-1500 إلى -330)" style="width: 10%; background: var(--civ-persia);"></div>
+                <div class="timeline-era-band tooltip" data-tooltip="اليونان الكلاسيكية والهلنستية (-600 إلى -31)" style="width: 15%; background: var(--civ-greece);"></div>
+              </div>
+
+              <input 
+                type="range" 
+                class="timeline-slider" 
+                id="timeline-slider" 
+                min="-3000" 
+                max="-1" 
+                value="-470" 
+                aria-label="الخط الزمني التاريخي"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Info -->
+      <footer style="text-align: center; padding: var(--space-xl); color: var(--color-parchment-subtle); font-size: var(--font-size-xs);">
+        أطلس تاريخ الفلسفة (Philosophy Timeline Atlas) © 2026 · رخصة GNU GPL-3.0 · مصمم خصيصاً باللغة العربية (RTL First)
+      </footer>
+    </div>
+
+    <!-- Interactive script for styleguide -->
+    <script>
+      // Eastern Arabic Numeral formatter helper
+      function toEasternArabic(num) {
+        return Math.abs(num).toLocaleString('ar-EG', { useGrouping: false });
+      }
+
+      // Filter chips toggle demo
+      const filterChips = document.querySelectorAll('.chip-filter');
+      filterChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          chip.classList.toggle('is-active');
+        });
+      });
+
+      // Close buttons for cards
+      const closeButtons = document.querySelectorAll('.figure-card__close');
+      closeButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const card = e.target.closest('.figure-card');
+          if (card) {
+            card.style.opacity = '0.4';
+            setTimeout(() => { card.style.opacity = '1'; }, 600);
+          }
+        });
+      });
+
+      // Interactive timeline slider demo
+      const slider = document.getElementById('timeline-slider');
+      const yearNumber = document.getElementById('preview-year-number');
+      const yearEra = document.getElementById('preview-year-era');
+      const playBtn = document.getElementById('timeline-play-btn');
+      const playIcon = document.getElementById('play-icon');
+      let isPlaying = false;
+      let playInterval = null;
+
+      function updateYearDisplay(val) {
+        const yearInt = parseInt(val, 10);
+        yearNumber.textContent = toEasternArabic(yearInt);
+        yearEra.textContent = yearInt < 0 ? 'ق.م' : 'م';
+      }
+
+      if (slider) {
+        slider.addEventListener('input', (e) => {
+          updateYearDisplay(e.target.value);
+        });
+
+        const stepNewer = document.getElementById('btn-step-newer');
+        const stepOlder = document.getElementById('btn-step-older');
+
+        // Note: in RTL, newer dates are to the left (closer to 0 / -1), older dates to the right (-3000)
+        stepNewer?.addEventListener('click', () => {
+          let curr = parseInt(slider.value, 10);
+          curr = Math.min(curr + 50, -1);
+          slider.value = curr;
+          updateYearDisplay(curr);
+        });
+
+        stepOlder?.addEventListener('click', () => {
+          let curr = parseInt(slider.value, 10);
+          curr = Math.max(curr - 50, -3000);
+          slider.value = curr;
+          updateYearDisplay(curr);
+        });
+
+        playBtn?.addEventListener('click', () => {
+          isPlaying = !isPlaying;
+          if (isPlaying) {
+            playIcon.innerHTML = '<rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect>';
+            playInterval = setInterval(() => {
+              let curr = parseInt(slider.value, 10);
+              if (curr >= -1) {
+                curr = -3000;
+              } else {
+                curr += 10;
+              }
+              slider.value = curr;
+              updateYearDisplay(curr);
+            }, 100);
+          } else {
+            playIcon.innerHTML = '<polygon points="6 4 20 12 6 20 6 4"></polygon>';
+            clearInterval(playInterval);
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

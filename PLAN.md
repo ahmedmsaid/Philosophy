@@ -52,18 +52,18 @@
 
 ## Phase 2: Design system
 
-- [ ] **T2.1 `tokens.css`**: color palette (ink/navy background, parchment, gold, one color per civilization), spacing scale, radii, shadows, glass panel tokens, font stacks, motion durations.
-- [ ] **T2.2 `base.css`**: modern reset, `dir="rtl"` defaults, logical properties, Arabic typography (line-height, sizes), focus styles.
-- [ ] **T2.3 Component styles**: glass panel, button, icon button, chip/tag, badge ("تأريخ تقريبي" and "شخصية شبه أسطورية"), kind chips (فيلسوف / حكيم / مفكّر ديني), card, tooltip.
+- [x] **T2.1 `tokens.css`**: color palette (ink/navy background, parchment, gold, one color per civilization), spacing scale, radii, shadows, glass panel tokens, font stacks, motion durations.
+- [x] **T2.2 `base.css`**: modern reset, `dir="rtl"` defaults, logical properties, Arabic typography (line-height, sizes), focus styles.
+- [x] **T2.3 Component styles**: glass panel, button, icon button, chip/tag, badge ("تأريخ تقريبي" and "شخصية شبه أسطورية"), kind chips (فيلسوف / حكيم / مفكّر ديني), card, tooltip.
   - ✅ A temporary `/styleguide.html` page shows every component in RTL.
-- [ ] **T2.4 (optional) Mockup**: generate a UI mockup image and get owner approval before Phase 3.
+- [x] **T2.4 (optional) Mockup**: generate a UI mockup image and get owner approval before Phase 3.
 
 ## Phase 3: Map
 
-- [ ] **T3.1 Leaflet setup** (`src/map/map.js`): full-viewport map with an unlabeled base layer, sensible zoom limits, and attribution control on the **left** (RTL).
-- [ ] **T3.2 Border layer** (`src/map/borders.js`): loads the GeoJSON for the closest available year **≤** the current timeline year, styles polygons, shows Arabic polity labels, cross-fades between years, and caches loaded files.
+- [x] **T3.1 Leaflet setup** (`src/map/map.js`): full-viewport map with an unlabeled base layer, sensible zoom limits, and attribution control on the **left** (RTL).
+- [x] **T3.2 Border layer** (`src/map/borders.js`): loads the GeoJSON for the closest available year **≤** the current timeline year, styles polygons, shows Arabic polity labels, cross-fades between years, and caches loaded files.
   - ✅ Moving the timeline swaps the borders without a visible flash or memory growth.
-- [ ] **T3.3 RTL fixes for Leaflet**: zoom controls, popups, attribution, and tooltips display correctly with `dir="rtl"`.
+- [x] **T3.3 RTL fixes for Leaflet**: zoom controls, popups, attribution, and tooltips display correctly with `dir="rtl"`.
 
 ## Phase 4: Timeline
 
