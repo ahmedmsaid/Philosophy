@@ -11,7 +11,7 @@
 An **interactive, Arabic-language (RTL) website** that shows the history of philosophy on a **world map** controlled by a **timeline slider**.
 
 - The user drags or plays the timeline. The map shows the **historical borders** of that period and **markers for philosophers/thinkers** who were active then, each placed where they lived and worked.
-- Clicking a marker opens a **popup/card** with the figure's Arabic name, dates, place, a portrait (if available), and a **short summary from Arabic Wikipedia**, with a link to the full article.
+- Clicking a marker opens a **compact popup anchored to the marker on the map** (name, dates, place, portrait, chips). Its "المزيد" button opens the **full figure card** (side panel / bottom sheet) with a **short summary from Arabic Wikipedia** and a link to the full article (see §6.6).
 - **Inspiration:** [OldMapsOnline](https://www.oldmapsonline.org/en#position=6/30.009/31.209), mainly the map-first layout and the "time slider changes what the map shows" interaction. We do **not** copy its code, data, or branding.
 
 ### Scope of the first release (MVP)
@@ -73,6 +73,7 @@ Changing any row above needs an entry in the **Decision Log (§9)**.
 │       └── greece.json
 ├── scripts/
 │   ├── fetch-wikipedia.mjs ← pulls summaries/images from ar.wikipedia + Wikidata
+│   ├── audit-locations.mjs ← compares figure coords with the place's Wikidata coords (P625)
 │   └── validate-data.mjs   ← schema + sanity checks; must pass before commit
 └── src/
     ├── main.js
@@ -82,7 +83,7 @@ Changing any row above needs an entry in the **Decision Log (§9)**.
     │   └── components.css
     ├── map/                ← Leaflet setup, border layer, marker layer
     ├── timeline/           ← slider, play/pause, era bands
-    ├── ui/                 ← popup card, filters, legend, about modal
+    ├── ui/                 ← on-map figure popup, full figure card, filters, legend, about modal
     └── utils/              ← date formatting, Arabic numerals, etc.
 ```
 
@@ -115,10 +116,11 @@ Changing any row above needs an entry in the **Decision Log (§9)**.
   "birth": { "year": -470, "approx": true },
   "death": { "year": -399, "approx": false },
   "active": { "from": -450, "to": -399 },   // drives timeline visibility
-  "location": {
-    "lat": 37.9715,
+  "location": {                        // REQUIRED. One location per figure: where they were MAINLY active (§7 rule 4)
+    "lat": 37.9715,                    // from the place's Wikidata coordinates (P625); null only with a NEEDS VERIFICATION note
     "lng": 23.7257,
     "place_ar": "أثينا",
+    "place_wikidata": "Q_____",        // QID of the place (city/site), verified by hand
     "modern_country_ar": "اليونان"     // shown as context only
   },
   "tags": ["ethics", "epistemology"],
@@ -184,12 +186,19 @@ The timeline default range for the MVP is **-3000 → 0**. It extends as later e
 - Premium, dark, "ancient atlas" look: deep navy/ink background, parchment/gold accents, glassmorphism panels, smooth micro-animations.
 - Each civilization has its own color (from `civilizations.json`) for markers and the legend.
 - Marker **shape/icon reflects `kind`**: philosopher (●), sage / wisdom literature (scroll icon), religious thinker (flame/star icon). The card shows a kind chip (see glossary).
-- Must be responsive. On mobile the timeline sits at the bottom and the popup becomes a bottom sheet.
+- Must be responsive. On mobile the timeline sits at the bottom, the on-map popup stays compact, and the full card becomes a bottom sheet.
 
 ### 6.5 Accessibility & SEO
 - One `<h1>`, semantic landmarks (`<header>`, `<main>`, `<nav>`), descriptive `<title>` and meta description in Arabic.
 - Every interactive element has a **unique, descriptive `id`** (e.g. `timeline-slider`, `timeline-play-btn`, `figure-card-close`).
-- Keyboard: arrow keys move the timeline, Esc closes the card, markers can be reached by focus.
+- Keyboard: arrow keys move the timeline, Esc closes the popup or card, markers can be reached by focus.
+
+### 6.6 Markers, on-map popup & full card
+- A figure has **one marker**, placed at exactly `location.lat/lng`. It is visible only while the current year is inside its `active` range. A figure with no verified location gets **no marker**: never fall back to `(0, 0)` or a guessed place.
+- Figures sharing one place (e.g. Athens, Alexandria) must all stay clickable (cluster + spiderfy).
+- **Click / Enter on a marker → on-map popup** (Leaflet popup anchored to the marker, `src/ui/figure-popup.js`): thumbnail, `name_ar`, dates, `place_ar` + `modern_country_ar`, civilization chip, kind chip, badges, a close button (`figure-popup-close`) and **"المزيد"** (`figure-popup-more`).
+- **"المزيد" → full figure card** (side panel on desktop, bottom sheet on mobile) with the Wikipedia summary, link, and image attribution.
+- Only one popup is open at a time. Opening it sets `figure=` in the URL, and a URL with `figure=` reopens the same popup. If the timeline leaves the figure's active range, the popup closes.
 
 ---
 
@@ -198,7 +207,7 @@ The timeline default range for the MVP is **-3000 → 0**. It extends as later e
 1. **Never invent facts.** That includes dates, birthplaces, quotes, Wikidata QIDs, Wikipedia titles, and image URLs. If you are not certain, leave the field `null` and add `"notes": "NEEDS VERIFICATION: …"`.
 2. **Every figure needs a verified Wikidata QID.** Verify it by opening `https://www.wikidata.org/wiki/<QID>` and checking that the label matches. Do not produce QIDs from memory.
 3. **Summaries come only from Arabic Wikipedia** through the fetch script. Do not write or "improve" summaries by hand. If there is no Arabic article, set `summary_source: "manual"`, write a short neutral summary, and mark it for human review.
-4. **Coordinates** describe the city or site where the figure was mainly active (not the birthplace, unless that is the same). Note the place name in `place_ar`. Use Wikidata coordinates for the place when they exist.
+4. **Coordinates** describe the city or site where the figure was mainly active (not the birthplace, unless that is the same). Note the place name in `place_ar` and its verified QID in `place_wikidata`. Take `lat/lng` from the place's Wikidata coordinates (P625). Never estimate coordinates. If the place is unknown, use `null` + a `NEEDS VERIFICATION` note. `scripts/audit-locations.mjs` must report no flags.
 5. **Disputed or legendary figures** (e.g. Zoroaster, Laozi, Imhotep as a sage) must have `legendary: true`, `approx: true`, and a note in `notes`. The UI shows a "تأريخ تقريبي/مختلف عليه" badge for them.
 6. **Classify `kind` carefully.** Use `sage` for wisdom-literature authors (Ptahhotep, Amenemope), `religious-thinker` for founders/reformers of religious thought (Zoroaster, Akhenaten), and `philosopher` otherwise. When unsure, ask and do not guess. Religious figures are described neutrally and historically, with no endorsement or judgment.
 7. **Do not change locked decisions (§2, §4.1, §5 ids, §6.2, §6.3)** without adding a Decision Log entry.
@@ -233,6 +242,8 @@ The timeline default range for the MVP is **-3000 → 0**. It extends as later e
 | 2026-10-12 | Display both ancient place and modern country in popup cards | Owner decision (Q3) |
 | 2026-10-12 | Arabic typography: Cairo (UI) + Amiri (text) | Owner decision (Q4) |
 | 2026-10-12 | Hosting target: GitHub Pages | Owner decision (Q5) |
+| 2026-10-12 | Marker click opens an on-map popup anchored to the marker. The full card opens via "المزيد" | Owner decision (Phase 8): keeps the user's eye on the map |
+| 2026-10-12 | One verified location per figure (`place_wikidata` + Wikidata P625 coords). No marker without a location | Owner decision (Phase 8): accurate placement, no guessed coordinates |
 
 ---
 
@@ -247,6 +258,7 @@ The timeline default range for the MVP is **-3000 → 0**. It extends as later e
 | BCE / CE | ق.م / م |
 | circa | حوالي |
 | Read more on Wikipedia | اقرأ المزيد على ويكيبيديا |
+| More (open full card) | المزيد |
 | Play / Pause | تشغيل / إيقاف مؤقت |
 | Filter | تصفية |
 | About | عن المشروع |
