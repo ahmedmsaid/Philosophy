@@ -1,39 +1,21 @@
 /**
  * main.js - Philosophy Timeline Atlas (أطلس تاريخ الفلسفة)
- * Main application entry point.
+ * Main application entry point: coordinates Leaflet map, historical borders,
+ * interactive timeline, and central reactive store with two-way URL sync.
  */
 
-import { createMap } from './map/map.js';
-import { BorderLayerManager, findClosestBorderYear } from './map/borders.js';
+import { createMap, setMapView } from './map/map.js';
+import { BorderLayerManager } from './map/borders.js';
+import { TimelineComponent } from './timeline/timeline.js';
+import { store } from './utils/state.js';
 import { formatHistoricalYear } from './utils/format.js';
 
 let appState = {
-  year: -3000,
-  borderYear: -3000,
   map: null,
   borderManager: null,
+  timeline: null,
+  store,
 };
-
-/**
- * Parses initial parameters from window location hash.
- * Example: #year=-500
- */
-function parseUrlState() {
-  const hash = window.location.hash.replace(/^#/, '');
-  if (!hash) return {};
-
-  const params = new URLSearchParams(hash);
-  const result = {};
-
-  if (params.has('year')) {
-    const parsedYear = parseInt(params.get('year'), 10);
-    if (!Number.isNaN(parsedYear) && parsedYear !== 0) {
-      result.year = parsedYear;
-    }
-  }
-
-  return result;
-}
 
 /**
  * Initializes the Atlas application.
@@ -41,20 +23,29 @@ function parseUrlState() {
 export async function initApp() {
   console.log('أطلس تاريخ الفلسفة - جاري التهيئة...');
 
-  const initialUrlState = parseUrlState();
-  const initialYear = initialUrlState.year !== undefined ? initialUrlState.year : -3000;
-  appState.year = initialYear;
+  const initial = store.getState();
 
-  // 1. Initialize Map
-  const { map } = createMap('map');
+  // 1. Initialize Map with state coordinates
+  const { map } = createMap('map', {
+    center: initial.center,
+    zoom: initial.zoom,
+  });
   appState.map = map;
 
-  // 2. Initialize Border Layer Manager
+  // 2. Synchronize Leaflet map movements back to store (debounced URL update)
+  map.on('moveend', () => {
+    const center = map.getCenter();
+    const zoom = map.getZoom();
+    store.setState({
+      center: [center.lat, center.lng],
+      zoom,
+    });
+  });
+
+  // 3. Initialize Border Layer Manager
   const borderManager = new BorderLayerManager(map, {
     onPolityHover: (arabicName) => {
-      if (arabicName) {
-        // Can be used by UI components to show current polity in status bar
-      }
+      // Future hook for status bar or polity spotlight
     },
     onPolityClick: (arabicName, feature, latlng) => {
       console.log('Polity clicked:', arabicName || feature.properties?.NAME, latlng);
@@ -62,53 +53,49 @@ export async function initApp() {
   });
   appState.borderManager = borderManager;
 
-  // 3. Load initial historical borders
+  // 4. Load initial historical borders
   try {
-    const activeBorderYear = await borderManager.setYear(initialYear);
-    appState.borderYear = activeBorderYear;
-    console.log(`تم تحميل الحدود التاريخية لعام: ${formatHistoricalYear(activeBorderYear)} (المطابق لـ ${formatHistoricalYear(initialYear)})`);
+    const activeBorderYear = await borderManager.setYear(initial.year);
+    console.log(`تم تحميل الحدود التاريخية لعام: ${formatHistoricalYear(activeBorderYear)} (المطابق لـ ${formatHistoricalYear(initial.year)})`);
   } catch (error) {
     console.error('فشل في تحميل الحدود التاريخية الأولية:', error);
   }
 
-  // Expose app state for debugging and inspection
-  window.__atlas = appState;
+  // 5. Initialize Timeline Component
+  const timelineContainer = document.getElementById('timeline-container');
+  if (timelineContainer) {
+    appState.timeline = new TimelineComponent(timelineContainer);
+  }
 
-  // 4. Listen for URL hash changes (e.g. #year=-323)
-  window.addEventListener('hashchange', async () => {
-    const newState = parseUrlState();
-    if (newState.year !== undefined && newState.year !== appState.year) {
-      await setAppYear(newState.year);
+  // 6. Subscribe BorderManager to store year changes
+  store.subscribe((state, changedKeys) => {
+    if (changedKeys.includes('year')) {
+      borderManager.setYear(state.year).catch((err) => {
+        console.error('فشل في تحديث الحدود التاريخية:', err);
+      });
+    }
+
+    // Handle programmatic map center/zoom updates (e.g. from hash navigation)
+    if (changedKeys.includes('center') || changedKeys.includes('zoom')) {
+      const currentCenter = map.getCenter();
+      const currentZoom = map.getZoom();
+      const targetCenter = state.center;
+      const targetZoom = state.zoom;
+
+      const dist = Math.hypot(currentCenter.lat - targetCenter[0], currentCenter.lng - targetCenter[1]);
+      const zoomDiff = Math.abs(currentZoom - targetZoom);
+
+      if (dist > 0.05 || zoomDiff > 0.2) {
+        setMapView(targetCenter, targetZoom);
+      }
     }
   });
 
+  // Expose app state for debugging and inspection
+  window.__atlas = appState;
+
   console.log('أطلس تاريخ الفلسفة - جاهز للاستكشاف.');
   return appState;
-}
-
-/**
- * Updates application timeline year and synchronizes borders and URL.
- * @param {number} newYear
- */
-export async function setAppYear(newYear) {
-  if (typeof newYear !== 'number' || Number.isNaN(newYear) || newYear === 0) return;
-  appState.year = newYear;
-
-  if (appState.borderManager) {
-    try {
-      const activeBorderYear = await appState.borderManager.setYear(newYear);
-      appState.borderYear = activeBorderYear;
-      console.log(`تم تحديث الحدود التاريخية لعام: ${formatHistoricalYear(activeBorderYear)}`);
-    } catch (err) {
-      console.error('فشل في تحديث الحدود التاريخية:', err);
-    }
-  }
-
-  // Update hash without triggering redundant hashchange reload
-  const currentParams = parseUrlState();
-  if (currentParams.year !== newYear) {
-    window.location.hash = `#year=${newYear}`;
-  }
 }
 
 // Auto-boot on DOM ready

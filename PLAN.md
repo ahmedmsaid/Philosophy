@@ -67,12 +67,12 @@
 
 ## Phase 4: Timeline
 
-- [ ] **T4.1 Timeline component** (`src/timeline/`): range -3000 → 0 with no year 0, **old on the right → new on the left** (CONTEXT §6.2), a tick per century, labels in **Eastern Arabic numerals** with ق.م/م (CONTEXT §6.3).
-- [ ] **T4.2 Era bands**: colored bands behind the slider from CONTEXT.md §5. Clicking a band jumps to its start and flies the map to that civilization.
-- [ ] **T4.3 Controls**: play/pause (`timeline-play-btn`), speed selector, step back/forward (forward = toward newer dates = leftward), keyboard arrows mapped to match the RTL direction (← = newer, → = older). The current year is shown large ("٤٧٠ ق.م").
-- [ ] **T4.4 State & URL sync**: one central state store (`year`, `selectedFigure`, `filters`, map view) kept in sync with the URL hash (`#year=-470&figure=socrates&z=6&ll=37.9,23.7`), like OldMapsOnline.
+- [x] **T4.1 Timeline component** (`src/timeline/`): range -3000 → 0 with no year 0, **old on the right → new on the left** (CONTEXT §6.2), a tick per century, labels in **Eastern Arabic numerals** with ق.م/م (CONTEXT §6.3).
+- [x] **T4.2 Era bands**: colored bands behind the slider from CONTEXT.md §5. Clicking a band jumps to its start and flies the map to that civilization.
+- [x] **T4.3 Controls**: play/pause (`timeline-play-btn`), speed selector, step back/forward (forward = toward newer dates = leftward), keyboard arrows mapped to match the RTL direction (← = newer, → = older). The current year is shown large ("٤٧٠ ق.م").
+- [x] **T4.4 State & URL sync**: one central state store (`year`, `selectedFigure`, `filters`, map view) kept in sync with the URL hash (`#year=-470&figure=socrates&z=6&ll=37.9,23.7`), like OldMapsOnline.
   - ✅ Reloading or sharing the URL restores the exact view.
-- [ ] **T4.5 Figure density strip**: small marks on the timeline showing where figures exist (helps users find "busy" periods).
+- [x] **T4.5 Figure density strip**: small marks on the timeline showing where figures exist (helps users find "busy" periods).
 
 ## Phase 5: Figures on the map
 
