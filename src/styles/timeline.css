@@ -129,6 +129,20 @@
   text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
   line-height: 1.1;
   font-variant-numeric: tabular-nums;
+  transition: transform var(--motion-fast) var(--ease-out),
+              filter var(--motion-fast) var(--ease-out);
+}
+
+.timeline-year-display.is-tweening {
+  transform: scale(1.06);
+  filter: drop-shadow(0 0 10px var(--color-gold-glow));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline-year-display.is-tweening {
+    transform: none !important;
+    filter: none !important;
+  }
 }
 
 .timeline-era-badge {

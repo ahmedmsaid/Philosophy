@@ -1,5 +1,120 @@
 [
   {
+    "id": "yajnavalkya",
+    "wikidata": "Q1423663",
+    "wikipedia_ar": null,
+    "name_ar": "ياجنافالكيا",
+    "name_en": "Yajnavalkya",
+    "kind": "sage",
+    "legendary": true,
+    "civilization": "india",
+    "era": "ancient-india",
+    "tradition_ar": "فلسفة الأوبانيشاد والفيدانتا المبكرة",
+    "birth": { "year": -800, "approx": true },
+    "death": { "year": -700, "approx": true },
+    "active": { "from": -750, "to": -700 },
+    "location": {
+      "lat": 26.12,
+      "lng": 85.90,
+      "place_ar": "ميثيلا (فيهيدها)",
+      "modern_country_ar": "الهند"
+    },
+    "tags": ["upanishads", "vedanta", "metaphysics", "brahman"],
+    "notes": "حكيم وفيلسوف فيدي أسطوري، ارتبط بحوارات الأوبانيشاد الفلسفية الكبرى ومفهوم البراهمن والآتمان"
+  },
+  {
+    "id": "kapila",
+    "wikidata": "Q574355",
+    "wikipedia_ar": "كابيلا",
+    "name_ar": "كابيلا",
+    "name_en": "Kapila",
+    "kind": "philosopher",
+    "legendary": true,
+    "civilization": "india",
+    "era": "ancient-india",
+    "tradition_ar": "فلسفة السامخيا",
+    "birth": { "year": -600, "approx": true },
+    "death": { "year": -500, "approx": true },
+    "active": { "from": -550, "to": -500 },
+    "location": {
+      "lat": 27.57,
+      "lng": 83.05,
+      "place_ar": "كابيلافاستو",
+      "modern_country_ar": "الهند"
+    },
+    "tags": ["samkhya", "dualism", "metaphysics"],
+    "notes": "حكيم هندي شبه أسطوري يُنسب إليه تأسيس مدرسة السامخيا الفلسفية القائمة على الثنائية بين الوعي والمادة"
+  },
+  {
+    "id": "charvaka",
+    "wikidata": "Q477243",
+    "wikipedia_ar": "شارفاكا",
+    "name_ar": "شارفاكا",
+    "name_en": "Charvaka",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "india",
+    "era": "ancient-india",
+    "tradition_ar": "المادية الهندية (اللوكاياطا)",
+    "birth": { "year": -600, "approx": true },
+    "death": { "year": -500, "approx": true },
+    "active": { "from": -550, "to": -500 },
+    "location": {
+      "lat": 25.3176,
+      "lng": 82.9739,
+      "place_ar": "فاراناسي (بنارس)",
+      "modern_country_ar": "الهند"
+    },
+    "tags": ["materialism", "empiricism", "atheism", "epistemology"],
+    "notes": "المدرسة الفلسفية المادية والتجريبية في الهند القديمة، رفضت ما وراء الطبيعة واعتبرت الإدراك الحسي المصدر الوحيد للمعرفة"
+  },
+  {
+    "id": "kanada",
+    "wikidata": "Q29049",
+    "wikipedia_ar": "كنادة",
+    "name_ar": "كنادة",
+    "name_en": "Kanada",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "india",
+    "era": "ancient-india",
+    "tradition_ar": "فلسفة الفايشيشيكا الذرية",
+    "birth": { "year": -600, "approx": true },
+    "death": { "year": -500, "approx": true },
+    "active": { "from": -550, "to": -500 },
+    "location": {
+      "lat": 26.79,
+      "lng": 82.20,
+      "place_ar": "أيوديا",
+      "modern_country_ar": "الهند"
+    },
+    "tags": ["atomism", "physics", "ontology", "naturalism"],
+    "notes": "فيلسوف وعالم طبيعي هندي قديم أسس مدرسة الفايشيشيكا وابتكر نظرية ذرية مبكرة لتفسير تكوين العالم المادي"
+  },
+  {
+    "id": "mahavira",
+    "wikidata": "Q9422",
+    "wikipedia_ar": "ماهافيرا",
+    "name_ar": "ماهافيرا",
+    "name_en": "Mahavira",
+    "kind": "religious-thinker",
+    "legendary": false,
+    "civilization": "india",
+    "era": "ancient-india",
+    "tradition_ar": "الفلسفة الجاينية",
+    "birth": { "year": -599, "approx": true },
+    "death": { "year": -527, "approx": true },
+    "active": { "from": -557, "to": -527 },
+    "location": {
+      "lat": 25.61,
+      "lng": 85.14,
+      "place_ar": "فايشالي",
+      "modern_country_ar": "الهند"
+    },
+    "tags": ["jainism", "ahimsa", "epistemology", "ethics"],
+    "notes": "المعلم الروحي الرابع والعشرون في الجاينية ومطور فلسفة اللاعنف والنسبية المعرفية"
+  },
+  {
     "id": "buddha",
     "wikidata": "Q9441",
     "wikipedia_ar": "غوتاما بوذا",
@@ -21,5 +136,28 @@
     },
     "tags": ["buddhism", "ethics", "epistemology", "mind"],
     "notes": "المعلم والمفكر الروحي الذي أسس البوذية وأرسى مبادئ الحقائق الأربع النبيلة وطريق الانعتاق"
+  },
+  {
+    "id": "chanakya",
+    "wikidata": "Q9045",
+    "wikipedia_ar": "تشانكيا",
+    "name_ar": "تشانكيا",
+    "name_en": "Chanakya",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "india",
+    "era": "ancient-india",
+    "tradition_ar": "الفلسفة السياسية والاقتصادية (أرثاشاسترا)",
+    "birth": { "year": -375, "approx": true },
+    "death": { "year": -283, "approx": true },
+    "active": { "from": -325, "to": -283 },
+    "location": {
+      "lat": 25.61,
+      "lng": 85.14,
+      "place_ar": "باتاليبوترا (باتنا)",
+      "modern_country_ar": "الهند"
+    },
+    "tags": ["political-philosophy", "realism", "economics", "statecraft"],
+    "notes": "فيلسوف سياسي ورجل دولة هندي بارز، مستشار شاندراغوبتا ومؤلف كتاب أرثاشاسترا في فن الحكم والسياسة الواقعية"
   }
 ]

@@ -1,28 +1,5 @@
 [
   {
-    "id": "confucius",
-    "wikidata": "Q4604",
-    "wikipedia_ar": "كونفوشيوس",
-    "name_ar": "كونفوشيوس",
-    "name_en": "Confucius",
-    "kind": "philosopher",
-    "legendary": false,
-    "civilization": "china",
-    "era": "ancient-china",
-    "tradition_ar": "الكونفوشية",
-    "birth": { "year": -551, "approx": false },
-    "death": { "year": -479, "approx": false },
-    "active": { "from": -520, "to": -479 },
-    "location": {
-      "lat": 35.5947,
-      "lng": 116.9859,
-      "place_ar": "تشوفو (ولاية لو)",
-      "modern_country_ar": "الصين"
-    },
-    "tags": ["ethics", "political-philosophy", "virtue"],
-    "notes": "فيلسوف صيني بارز ركز على الأخلاق والعدالة والواجب الاجتماعي والوئام الإنساني"
-  },
-  {
     "id": "laozi",
     "wikidata": "Q9333",
     "wikipedia_ar": "لاوتزه",
@@ -43,6 +20,167 @@
       "modern_country_ar": "الصين"
     },
     "tags": ["daoism", "metaphysics", "wu-wei"],
-    "notes": "شخصية فلسفية مؤسسة للطاوية ومؤلف كتاب داو دي جينغ مع وجود خلافات تاريخية حول تفاصيل حياته"
+    "notes": "مؤسس الفلسفة الطاوية ومؤلف كتاب داو دي جينغ، مع وجود خلافات تاريخية حول تفاصيل حياته وهويته"
+  },
+  {
+    "id": "confucius",
+    "wikidata": "Q4604",
+    "wikipedia_ar": "كونفوشيوس",
+    "name_ar": "كونفوشيوس",
+    "name_en": "Confucius",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "china",
+    "era": "ancient-china",
+    "tradition_ar": "الكونفوشية",
+    "birth": { "year": -551, "approx": false },
+    "death": { "year": -479, "approx": false },
+    "active": { "from": -520, "to": -479 },
+    "location": {
+      "lat": 35.5947,
+      "lng": 116.9859,
+      "place_ar": "تشوفو (ولاية لو)",
+      "modern_country_ar": "الصين"
+    },
+    "tags": ["ethics", "political-philosophy", "virtue"],
+    "notes": "مؤسس الفلسفة الكونفوشية وأحد أعظم المعلمين في تاريخ الصين، ركز على الأخلاق والبر الأسري والعدالة"
+  },
+  {
+    "id": "sunzi",
+    "wikidata": "Q37151",
+    "wikipedia_ar": "سون تزو",
+    "name_ar": "سون تزو",
+    "name_en": "Sun Tzu",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "china",
+    "era": "ancient-china",
+    "tradition_ar": "الفلسفة الاستراتيجية والعسكرية",
+    "birth": { "year": -544, "approx": true },
+    "death": { "year": -496, "approx": true },
+    "active": { "from": -512, "to": -496 },
+    "location": {
+      "lat": 31.30,
+      "lng": 120.60,
+      "place_ar": "سوتشو (ولاية وو)",
+      "modern_country_ar": "الصين"
+    },
+    "tags": ["strategy", "philosophy-of-war", "daoism", "epistemology"],
+    "notes": "فيلسوف استراتيجي صيني ومؤلف كتاب فن الحرب الشهير الذي جمع بين الفلسفة العميقة والاستراتيجية النفسية وإدارة الصراع"
+  },
+  {
+    "id": "mozi",
+    "wikidata": "Q272411",
+    "wikipedia_ar": "موزي",
+    "name_ar": "موزي",
+    "name_en": "Mozi",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "china",
+    "era": "ancient-china",
+    "tradition_ar": "الموزية (الموهية)",
+    "birth": { "year": -470, "approx": true },
+    "death": { "year": -391, "approx": true },
+    "active": { "from": -430, "to": -391 },
+    "location": {
+      "lat": 35.0,
+      "lng": 117.0,
+      "place_ar": "تنغتشو (ولاية لو)",
+      "modern_country_ar": "الصين"
+    },
+    "tags": ["mohism", "ethics", "universal-love", "utilitarianism", "logic"],
+    "notes": "فيلسوف صيني ومؤسس الموزية، دعا إلى الحب الشامل ونبذ الحرب والنفعية الأخلاقية والمنطق الصارم"
+  },
+  {
+    "id": "mencius",
+    "wikidata": "Q188903",
+    "wikipedia_ar": "منسيوس",
+    "name_ar": "منسيوس",
+    "name_en": "Mencius",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "china",
+    "era": "ancient-china",
+    "tradition_ar": "الكونفوشية",
+    "birth": { "year": -372, "approx": true },
+    "death": { "year": -289, "approx": true },
+    "active": { "from": -330, "to": -289 },
+    "location": {
+      "lat": 35.39,
+      "lng": 116.97,
+      "place_ar": "زوكسيان (ولاية زو)",
+      "modern_country_ar": "الصين"
+    },
+    "tags": ["confucianism", "human-nature", "ethics", "political-philosophy"],
+    "notes": "الحكيم الكونفوشي الثاني، اشتهر بأطروحته القائلة بأن الطبيعة البشرية خيرة في أصلها ودافع عن حق الشعب في الرعاية والعدل"
+  },
+  {
+    "id": "zhuangzi",
+    "wikidata": "Q47739",
+    "wikipedia_ar": "جوانغ زي",
+    "name_ar": "تشوانغ تسي",
+    "name_en": "Zhuangzi",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "china",
+    "era": "ancient-china",
+    "tradition_ar": "الطاوية",
+    "birth": { "year": -369, "approx": true },
+    "death": { "year": -286, "approx": true },
+    "active": { "from": -340, "to": -286 },
+    "location": {
+      "lat": 34.45,
+      "lng": 115.65,
+      "place_ar": "منغ (ولاية سونغ)",
+      "modern_country_ar": "الصين"
+    },
+    "tags": ["daoism", "epistemology", "relativism", "freedom", "spontaneity"],
+    "notes": "أحد ألمع فلاسفة الطاوية، مؤلف كتاب تشوانغ تسي المليء بالقصص الرمزية حول حرية الفكر والنسبية والانسجام مع الطبيعة"
+  },
+  {
+    "id": "xunzi",
+    "wikidata": "Q216072",
+    "wikipedia_ar": "زونزي",
+    "name_ar": "شيون تسي",
+    "name_en": "Xunzi",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "china",
+    "era": "ancient-china",
+    "tradition_ar": "الكونفوشية الواقعية",
+    "birth": { "year": -310, "approx": true },
+    "death": { "year": -235, "approx": true },
+    "active": { "from": -280, "to": -235 },
+    "location": {
+      "lat": 35.30,
+      "lng": 112.85,
+      "place_ar": "ولاية تشاو",
+      "modern_country_ar": "الصين"
+    },
+    "tags": ["confucianism", "human-nature", "ritual", "realism", "education"],
+    "notes": "فيلسوف كونفوشي واقعي اعتبر أن الطبيعة البشرية تميل للشر وتحتاج إلى التقويم عبر التعليم والطقوس والقوانين"
+  },
+  {
+    "id": "hanfeizi",
+    "wikidata": "Q28959",
+    "wikipedia_ar": "هان فاي",
+    "name_ar": "هان فاي",
+    "name_en": "Han Feizi",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "china",
+    "era": "ancient-china",
+    "tradition_ar": "الشرعوية الصينية (الفاجيا)",
+    "birth": { "year": -280, "approx": true },
+    "death": { "year": -233, "approx": true },
+    "active": { "from": -250, "to": -233 },
+    "location": {
+      "lat": 34.20,
+      "lng": 113.80,
+      "place_ar": "ولاية هان (شينتشنغ)",
+      "modern_country_ar": "الصين"
+    },
+    "tags": ["legalism", "political-philosophy", "statecraft", "power"],
+    "notes": "المطور الأكبر للفلسفة الشرعوية في الصين القديمة، ركز على سلطة الدولة والقانون الصارم والرقابة الإدارية"
   }
 ]

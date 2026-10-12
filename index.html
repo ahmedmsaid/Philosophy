@@ -3,11 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="أطلس تاريخ الفلسفة - خريطة تفاعلية لتاريخ الفلسفة وأعلام الفكر الإنساني عبر العصور مع خط زمني ذكي." />
+    <meta name="description" content="أطلس تاريخ الفلسفة - خريطة تفاعلية لتاريخ الفلسفة وأعلام الفكر الإنساني والحكمة القديمة عبر العصور مع خط زمني ذكي وحدود تاريخية دقيقة." />
+    <meta name="keywords" content="أطلس الفلسفة, تاريخ الفلسفة, الفلسفة القديمة, فلاسفة اليونان, حكمة الشرق, سقراط, أفلاطون, خط زمني, خرائط تاريخية" />
+    <meta name="author" content="أطلس تاريخ الفلسفة" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://philosophy-atlas.org/" />
+    <meta property="og:title" content="أطلس تاريخ الفلسفة | Philosophy Timeline Atlas" />
+    <meta property="og:description" content="رحلة بصرية تفاعلية عبر خرائط العالم القديم والخط الزمني لاستكشاف فجر الفلسفة وأعلام الحكمة والفكر الإنساني منذ عام ٣٠٠٠ قبل الميلاد." />
+    <meta property="og:image" content="./images/og-atlas.jpg" />
+    <meta property="og:locale" content="ar_AR" />
+    <meta property="og:site_name" content="أطلس تاريخ الفلسفة" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="أطلس تاريخ الفلسفة | Philosophy Timeline Atlas" />
+    <meta name="twitter:description" content="خريطة تفاعلية لتاريخ الفلسفة وأعلام الفكر الإنساني عبر العصور مع خط زمني ذكي وحدود تاريخية دقيقة." />
+    <meta name="twitter:image" content="./images/og-atlas.jpg" />
+
     <title>أطلس تاريخ الفلسفة | Philosophy Timeline Atlas</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+
+    <!-- Google Fonts: Cairo (UI) & Amiri (Body/Literary) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Core Design System & Styles -->
     <link rel="stylesheet" href="./src/styles/tokens.css" />
     <link rel="stylesheet" href="./src/styles/base.css" />
     <link rel="stylesheet" href="./src/styles/components.css" />
@@ -19,28 +42,72 @@
   </head>
   <body>
     <div id="app" class="app-container">
-      <header id="app-header" class="app-header glass-panel">
+      
+      <!-- Top Application Header -->
+      <header id="app-header" class="app-header glass-panel" role="banner">
         <div class="header-brand">
           <h1 id="app-title">أطلس تاريخ الفلسفة</h1>
           <span class="header-subtitle">رحلة بصرية في تطور الفكر الإنساني والحكمة القديمة</span>
         </div>
-        <div class="header-actions">
+
+        <nav class="header-actions" aria-label="أدوات البحث والتصفية والمعلومات">
           <div id="search-container-mount"></div>
           <div id="filters-container-mount"></div>
-        </div>
+          
+          <!-- Quick Action Buttons: Intro & About -->
+          <div class="header-nav-buttons" role="group" aria-label="أزرار مساعدة ومعلومات">
+            <button
+              type="button"
+              id="intro-btn"
+              class="btn-icon btn-icon--secondary"
+              aria-label="عرض دليل البداية ورحلة الاستكشاف"
+              title="دليل البداية"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+              </svg>
+            </button>
+
+            <button
+              type="button"
+              id="about-btn"
+              class="btn-icon btn-icon--secondary"
+              aria-label="عن المشروع والمصادر والحقوق"
+              title="عن المشروع"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+            </button>
+          </div>
+        </nav>
       </header>
 
-      <main id="main-content" class="main-content">
+      <!-- Main Map View Area -->
+      <main id="main-content" class="main-content" role="main">
         <div id="map-container" class="map-container" aria-label="خريطة العالم التاريخية">
           <div id="map" class="map-view"></div>
         </div>
-        <div id="figure-card-mount" class="figure-card-mount"></div>
+        
+        <!-- Figure Details Card mount point -->
+        <aside id="figure-card-mount" class="figure-card-mount" aria-label="تفاصيل الشخصية المختارة"></aside>
       </main>
 
-      <footer id="timeline-container" class="timeline-container" aria-label="شريط التحكم الزمني">
+      <!-- Bottom Interactive Timeline -->
+      <footer id="timeline-container" class="timeline-container" role="contentinfo" aria-label="شريط التحكم في الخط الزمني">
         <!-- Timeline component mount point -->
       </footer>
+
+      <!-- Modals and Overlays Mount Points -->
+      <div id="intro-overlay-mount" aria-live="polite"></div>
+      <div id="about-modal-mount" aria-live="polite"></div>
+
     </div>
+
+    <!-- Application Entry Point -->
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

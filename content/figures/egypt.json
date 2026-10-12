@@ -1,5 +1,28 @@
 [
   {
+    "id": "imhotep",
+    "wikidata": "Q131171",
+    "wikipedia_ar": "إمحوتب",
+    "name_ar": "إمحوتب",
+    "name_en": "Imhotep",
+    "kind": "sage",
+    "legendary": true,
+    "civilization": "egypt",
+    "era": "ancient-egypt",
+    "tradition_ar": "حكمة مصر القديمة والطب المبكر",
+    "birth": { "year": -2670, "approx": true },
+    "death": { "year": -2600, "approx": true },
+    "active": { "from": -2650, "to": -2600 },
+    "location": {
+      "lat": 29.8713,
+      "lng": 31.2164,
+      "place_ar": "منف (سقارة)",
+      "modern_country_ar": "مصر"
+    },
+    "tags": ["wisdom-literature", "architecture", "medicine", "polymath"],
+    "notes": "مهندس هرم زوسر وحكيم وطبيب مصري قديم، اكتسبت شخصيته صفة شبه أسطورية ورُفع إلى مرتبة الآلهة في العصور المتأخرة"
+  },
+  {
     "id": "ptahhotep",
     "wikidata": "Q573606",
     "wikipedia_ar": "بتاح حتب",
@@ -21,5 +44,120 @@
     },
     "tags": ["ethics", "wisdom-literature", "sebayt"],
     "notes": "وزير مصري قديم ومؤلف تعاليم بتاح حتب الشهيرة في أدب الحكمة"
+  },
+  {
+    "id": "kagemni",
+    "wikidata": "Q2703023",
+    "wikipedia_ar": "كاجمني",
+    "name_ar": "كاجمني",
+    "name_en": "Kagemni",
+    "kind": "sage",
+    "legendary": false,
+    "civilization": "egypt",
+    "era": "ancient-egypt",
+    "tradition_ar": "أدب الحكمة المصري القديم (سيبايت)",
+    "birth": { "year": -2380, "approx": true },
+    "death": { "year": -2320, "approx": true },
+    "active": { "from": -2345, "to": -2320 },
+    "location": {
+      "lat": 29.8713,
+      "lng": 31.2164,
+      "place_ar": "منف (سقارة)",
+      "modern_country_ar": "مصر"
+    },
+    "tags": ["ethics", "wisdom-literature", "sebayt"],
+    "notes": "وزير مصري قديم في عهد الملك تتي ومؤلف تعاليم كاجمني في أدب الحكمة والسلوك القويم"
+  },
+  {
+    "id": "merikare",
+    "wikidata": "Q7691303",
+    "wikipedia_ar": "تعاليم مريكارع",
+    "name_ar": "تعاليم مريكارع",
+    "name_en": "Teaching of Merikare",
+    "kind": "sage",
+    "legendary": false,
+    "civilization": "egypt",
+    "era": "ancient-egypt",
+    "tradition_ar": "أدب الحكمة والفلسفة السياسية المصرية",
+    "birth": { "year": -2070, "approx": true },
+    "death": { "year": -2020, "approx": true },
+    "active": { "from": -2050, "to": -2020 },
+    "location": {
+      "lat": 29.074,
+      "lng": 30.935,
+      "place_ar": "إهناسيا (هيراكليوبوليس)",
+      "modern_country_ar": "مصر"
+    },
+    "tags": ["political-philosophy", "ethics", "wisdom-literature", "justice"],
+    "notes": "نص أدبي وفلسفي مصري قديم من عصر الانتقال الأول يتضمن وصايا سياسية وأخلاقية من ملك لابنه مريكارع حول الحكم والعدالة"
+  },
+  {
+    "id": "akhenaten",
+    "wikidata": "Q81794",
+    "wikipedia_ar": "أخناتون",
+    "name_ar": "أخناتون",
+    "name_en": "Akhenaten",
+    "kind": "religious-thinker",
+    "legendary": false,
+    "civilization": "egypt",
+    "era": "ancient-egypt",
+    "tradition_ar": "الآتونية والتوحيد الشمسي",
+    "birth": { "year": -1372, "approx": true },
+    "death": { "year": -1336, "approx": true },
+    "active": { "from": -1353, "to": -1336 },
+    "location": {
+      "lat": 27.646,
+      "lng": 30.900,
+      "place_ar": "أخت آتون (تل العمارنة)",
+      "modern_country_ar": "مصر"
+    },
+    "tags": ["monotheism", "theology", "sun-hymns", "religious-reform"],
+    "notes": "فرعون مصري من الأسرة الثامنة عشرة قاد دعوة دينية وفلسفية رائدة أسس فيها عبادة الإله الواحد آتون"
+  },
+  {
+    "id": "amenemope",
+    "wikidata": "Q2844817",
+    "wikipedia_ar": "أمنموبي",
+    "name_ar": "أمنموبي",
+    "name_en": "Amenemope",
+    "kind": "sage",
+    "legendary": false,
+    "civilization": "egypt",
+    "era": "ancient-egypt",
+    "tradition_ar": "أدب الحكمة المصري (الدولة الحديثة)",
+    "birth": { "year": -1150, "approx": true },
+    "death": { "year": -1075, "approx": true },
+    "active": { "from": -1100, "to": -1075 },
+    "location": {
+      "lat": 26.56,
+      "lng": 31.75,
+      "place_ar": "أخميم (صعيد مصر)",
+      "modern_country_ar": "مصر"
+    },
+    "tags": ["ethics", "wisdom-literature", "piety", "justice"],
+    "notes": "حكيم وكاتب مصري قديم في عهد الأسرة العشرين، مؤلف تعاليم أمنموبي في الفضيلة والأخلاق"
+  },
+  {
+    "id": "ankhsheshonq",
+    "wikidata": "Q770200",
+    "wikipedia_ar": null,
+    "name_ar": "عنخششونق",
+    "name_en": "Ankhsheshonq",
+    "kind": "sage",
+    "legendary": true,
+    "civilization": "egypt",
+    "era": "ancient-egypt",
+    "tradition_ar": "حكمة مصر المتأخرة والعهد البطلمي",
+    "birth": { "year": -350, "approx": true },
+    "death": { "year": -250, "approx": true },
+    "active": { "from": -300, "to": -250 },
+    "location": {
+      "lat": 29.8713,
+      "lng": 31.2164,
+      "place_ar": "منف (سقارة)",
+      "modern_country_ar": "مصر"
+    },
+    "tags": ["wisdom-literature", "proverbs", "ethics"],
+    "notes": "حكيم وكاهن مصري شبه أسطوري منسوبة إليه تعاليم عنخششونق المدونة بالديموطيقية متضمنة أمثالاً وحكماً عملية"
   }
 ]

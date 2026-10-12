@@ -904,3 +904,295 @@
   border-block-start: 1px solid var(--glass-border-subtle);
   background: rgba(10, 16, 29, 0.5);
 }
+
+/* Header Action Buttons & Groups */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.header-nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+/* ==========================================================================
+   11. INTRO OVERLAY (شاشة المقدمة والترحيب) - T7.1
+   ========================================================================== */
+.intro-dialog {
+  max-width: 680px;
+  max-height: 90vh;
+  padding: 0;
+  border: 1px solid var(--color-gold-border);
+  box-shadow: var(--shadow-xl), var(--shadow-glow-gold-lg);
+  position: relative;
+}
+
+.intro-close-btn {
+  position: absolute;
+  top: var(--space-lg);
+  inset-inline-end: var(--space-lg);
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(14, 21, 38, 0.7);
+  border: 1px solid var(--glass-border);
+  color: var(--color-parchment-muted);
+  cursor: pointer;
+  transition: all var(--motion-fast) var(--ease-out);
+  z-index: 10;
+}
+
+.intro-close-btn:hover {
+  background: rgba(212, 175, 55, 0.2);
+  border-color: var(--color-gold-light);
+  color: var(--color-parchment-bright);
+}
+
+.intro-hero {
+  padding: var(--space-2xl) var(--space-2xl) var(--space-lg);
+  text-align: center;
+  background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.15) 0%, transparent 75%);
+  border-block-end: 1px solid var(--glass-border-subtle);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-symbol-badge {
+  font-size: 2.5rem;
+  margin-block-end: var(--space-sm);
+  filter: drop-shadow(0 0 16px var(--color-gold-glow));
+}
+
+.intro-title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-black);
+  color: var(--color-parchment-bright);
+  background: linear-gradient(135deg, #ffffff 25%, var(--color-gold-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-block-end: var(--space-xs);
+}
+
+.intro-desc {
+  font-size: var(--font-size-md);
+  color: var(--color-parchment);
+  line-height: var(--line-height-body);
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.intro-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  padding: var(--space-xl) var(--space-2xl);
+  overflow-y: auto;
+}
+
+.intro-feature-card {
+  background: rgba(10, 16, 29, 0.55);
+  border: 1px solid var(--glass-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-xs);
+  transition: all var(--motion-fast) var(--ease-out);
+}
+
+.intro-feature-card:hover {
+  background: rgba(21, 32, 56, 0.7);
+  border-color: var(--color-gold-border);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.intro-feature-icon {
+  font-size: 1.75rem;
+}
+
+.intro-feature-heading {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-parchment-bright);
+}
+
+.intro-feature-text {
+  font-size: var(--font-size-xs);
+  color: var(--color-parchment-muted);
+  line-height: var(--line-height-ui);
+}
+
+.intro-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  padding: var(--space-lg) var(--space-2xl) var(--space-2xl);
+  border-block-start: 1px solid var(--glass-border-subtle);
+  background: rgba(10, 16, 29, 0.6);
+}
+
+.btn-start-journey {
+  padding: var(--space-md) var(--space-xl);
+  font-size: var(--font-size-md);
+  box-shadow: 0 4px 18px rgba(212, 175, 55, 0.45);
+}
+
+/* ==========================================================================
+   12. ABOUT MODAL (عن المشروع والمصادر) - T7.2
+   ========================================================================== */
+.about-dialog {
+  max-width: 640px;
+  max-height: 85vh;
+}
+
+.about-header-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.about-subtitle {
+  font-size: var(--font-size-xs);
+  color: var(--color-gold-base);
+  font-family: var(--font-ui);
+}
+
+.about-close-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(14, 21, 38, 0.6);
+  border: 1px solid var(--glass-border-subtle);
+  color: var(--color-parchment-muted);
+  cursor: pointer;
+  transition: all var(--motion-fast) var(--ease-out);
+}
+
+.about-close-btn:hover {
+  background: rgba(212, 175, 55, 0.2);
+  border-color: var(--color-gold-base);
+  color: var(--color-parchment-bright);
+}
+
+.about-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-body);
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.about-section-heading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-parchment-bright);
+}
+
+.about-icon {
+  font-size: 1.2rem;
+}
+
+.about-sources-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: 0;
+  margin: var(--space-xs) 0 0;
+}
+
+.about-sources-list li {
+  background: rgba(10, 16, 29, 0.45);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-body);
+}
+
+.about-sources-list strong {
+  color: var(--color-gold-light);
+}
+
+.about-section--license {
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid var(--color-gold-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+}
+
+/* ==========================================================================
+   13. RESPONSIVE BREAKPOINTS (التوافق مع الشاشات المختلفة) - T7.7
+   ========================================================================== */
+@media (max-width: 900px) {
+  .app-header {
+    top: var(--space-sm);
+    inset-inline-start: var(--space-sm);
+    inset-inline-end: var(--space-sm);
+    max-width: none;
+    padding: var(--space-sm) var(--space-md);
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-brand h1 {
+    font-size: var(--font-size-lg);
+  }
+  .header-brand .header-subtitle {
+    display: none;
+  }
+
+  .intro-features-grid {
+    grid-template-columns: 1fr;
+    padding: var(--space-md) var(--space-lg);
+  }
+
+  .intro-hero {
+    padding: var(--space-lg) var(--space-lg) var(--space-md);
+  }
+
+  .intro-actions {
+    flex-direction: column;
+    padding: var(--space-md) var(--space-lg);
+  }
+
+  .btn-start-journey {
+    width: 100%;
+  }
+
+  .intro-title {
+    font-size: var(--font-size-2xl);
+  }
+}
+

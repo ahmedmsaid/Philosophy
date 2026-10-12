@@ -161,6 +161,7 @@ export class MarkerLayerManager {
         class="figure-marker-pin"
         style="--marker-civ-color: ${civColor};"
         role="button"
+        tabindex="0"
         aria-label="${figure.name_ar} (${KIND_LABELS_AR[kind] || ''})"
       >
         <span class="figure-marker-icon">${glyph}</span>
@@ -190,6 +191,7 @@ export class MarkerLayerManager {
       icon,
       riseOnHover: true,
       title: figure.name_ar,
+      keyboard: true,
     });
 
     // Hover tooltip (T5.2)
@@ -215,11 +217,18 @@ export class MarkerLayerManager {
       opacity: 1,
     });
 
-    // Click handler -> Select figure
-    marker.on('click', () => {
+    // Select figure on click or keyboard activation
+    const triggerSelection = () => {
       this.selectFigure(figure.id);
       if (this.options.onFigureSelect) {
         this.options.onFigureSelect(figure.id);
+      }
+    };
+
+    marker.on('click', triggerSelection);
+    marker.on('keypress', (e) => {
+      if (e.originalEvent?.key === 'Enter' || e.originalEvent?.key === ' ') {
+        triggerSelection();
       }
     });
 

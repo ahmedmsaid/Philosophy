@@ -415,7 +415,17 @@ export class TimelineComponent {
     const { yearDisplay, eraName, eraBadge, progressFill, slider } = this.elements;
     if (!yearDisplay) return;
 
-    // 1. Large formatted year
+    // 1. Large formatted year with micro-animation tween
+    if (this.lastDisplayedYear !== undefined && this.lastDisplayedYear !== year) {
+      yearDisplay.classList.remove('is-tweening');
+      void yearDisplay.offsetWidth; // trigger reflow
+      yearDisplay.classList.add('is-tweening');
+      if (this.yearTweenTimeout) clearTimeout(this.yearTweenTimeout);
+      this.yearTweenTimeout = setTimeout(() => {
+        yearDisplay.classList.remove('is-tweening');
+      }, 120);
+    }
+    this.lastDisplayedYear = year;
     yearDisplay.textContent = formatHistoricalYear(year);
 
     // 2. Active Eras badge

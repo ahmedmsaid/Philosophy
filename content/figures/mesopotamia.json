@@ -1,5 +1,51 @@
 [
   {
+    "id": "shuruppak",
+    "wikidata": "Q3823132",
+    "wikipedia_ar": "تعاليم شوروباك",
+    "name_ar": "تعاليم شوروباك",
+    "name_en": "Instructions of Shuruppak",
+    "kind": "sage",
+    "legendary": true,
+    "civilization": "mesopotamia",
+    "era": "mesopotamia",
+    "tradition_ar": "أدب الحكمة السومري",
+    "birth": { "year": -2600, "approx": true },
+    "death": { "year": -2500, "approx": true },
+    "active": { "from": -2600, "to": -2500 },
+    "location": {
+      "lat": 31.77,
+      "lng": 45.83,
+      "place_ar": "شوروباك (تل فارة)",
+      "modern_country_ar": "العراق"
+    },
+    "tags": ["wisdom-literature", "sumerian", "ethics"],
+    "notes": "نص سومري قديم في أدب الحكمة منسوب للملك شبه الأسطوري شوروباك يقدم وصايا عملية وأخلاقية لابنه زيوسودرا"
+  },
+  {
+    "id": "enheduanna",
+    "wikidata": "Q232505",
+    "wikipedia_ar": "إنخيدوانا",
+    "name_ar": "إنخيدوانا",
+    "name_en": "Enheduanna",
+    "kind": "religious-thinker",
+    "legendary": false,
+    "civilization": "mesopotamia",
+    "era": "mesopotamia",
+    "tradition_ar": "اللاهوت والفكر الأكادي-السومري",
+    "birth": { "year": -2300, "approx": true },
+    "death": { "year": -2225, "approx": true },
+    "active": { "from": -2285, "to": -2250 },
+    "location": {
+      "lat": 30.962,
+      "lng": 46.103,
+      "place_ar": "أور",
+      "modern_country_ar": "العراق"
+    },
+    "tags": ["theology", "hymns", "poetry"],
+    "notes": "كاهنة كبرى للإله نانا في أور وابنة سرجون الأكادي، وتعد أول مؤلفة ومفكرة مسجلة بالاسم في تاريخ العالم"
+  },
+  {
     "id": "hammurabi",
     "wikidata": "Q36359",
     "wikipedia_ar": "حمورابي",

@@ -11,6 +11,8 @@ import { TimelineComponent } from './timeline/timeline.js';
 import { FigureCardComponent } from './ui/figure-card.js';
 import { FiltersComponent } from './ui/filters.js';
 import { SearchComponent } from './ui/search.js';
+import { IntroOverlayComponent } from './ui/intro-overlay.js';
+import { AboutModalComponent } from './ui/about-modal.js';
 import { store } from './utils/state.js';
 import { formatHistoricalYear } from './utils/format.js';
 
@@ -22,6 +24,8 @@ let appState = {
   figureCard: null,
   filters: null,
   search: null,
+  introOverlay: null,
+  aboutModal: null,
   store,
 };
 
@@ -120,7 +124,35 @@ export async function initApp() {
     appState.timeline = new TimelineComponent(timelineContainer);
   }
 
-  // 10. Subscribe managers to central store changes
+  // 10. Initialize Intro Overlay & About Modal (PLAN T7.1, T7.2)
+  const introMount = document.getElementById('intro-overlay-mount');
+  if (introMount) {
+    const introOverlay = new IntroOverlayComponent(introMount);
+    appState.introOverlay = introOverlay;
+
+    const introBtn = document.getElementById('intro-btn');
+    if (introBtn) {
+      introBtn.addEventListener('click', () => introOverlay.show());
+    }
+
+    // Auto-display intro overlay on first visit if no deep hash
+    if (introOverlay.shouldAutoShow()) {
+      introOverlay.show();
+    }
+  }
+
+  const aboutMount = document.getElementById('about-modal-mount');
+  if (aboutMount) {
+    const aboutModal = new AboutModalComponent(aboutMount);
+    appState.aboutModal = aboutModal;
+
+    const aboutBtn = document.getElementById('about-btn');
+    if (aboutBtn) {
+      aboutBtn.addEventListener('click', () => aboutModal.show());
+    }
+  }
+
+  // 11. Subscribe managers to central store changes
   store.subscribe((state, changedKeys) => {
     // Year changes: update borders & markers
     if (changedKeys.includes('year')) {
@@ -159,7 +191,7 @@ export async function initApp() {
   // Expose app state for debugging and inspection
   window.__atlas = appState;
 
-  console.log('أطلس تاريخ الفلسفة - المرحلة 5 جاهزة للاستكشاف.');
+  console.log('أطلس تاريخ الفلسفة - المرحلة 7 (الصقل والتحسين) جاهزة للاستكشاف.');
   return appState;
 }
 

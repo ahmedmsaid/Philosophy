@@ -126,6 +126,11 @@ async function main() {
   const figuresDir = path.join(ROOT_DIR, 'content', 'figures');
   const figureFiles = fs.readdirSync(figuresDir).filter((f) => f.endsWith('.json'));
 
+  const manualSummariesPath = path.join(ROOT_DIR, 'content', 'manual-summaries.json');
+  const manualSummaries = fs.existsSync(manualSummariesPath)
+    ? JSON.parse(fs.readFileSync(manualSummariesPath, 'utf-8'))
+    : {};
+
   const allFigures = [];
   const missingArticles = [];
   const qidMismatches = [];
@@ -226,7 +231,7 @@ async function main() {
     // 5. Build enriched figure
     const enriched = {
       ...fig,
-      summary_ar: summaryData?.extract || null,
+      summary_ar: summaryData?.extract || manualSummaries[fig.id] || null,
       summary_source: summaryData?.extract ? 'wikipedia_ar' : 'manual',
       wikipedia_url: summaryData?.content_urls?.desktop?.page || (fig.wikipedia_ar ? `https://ar.wikipedia.org/wiki/${encodeURIComponent(fig.wikipedia_ar)}` : null),
       image: imageData || null,

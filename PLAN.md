@@ -90,27 +90,27 @@ For each task: research → add entries to `content/figures/<civ>.json` with the
 
 Proposed kind in brackets: **[P]** philosopher · **[S]** sage / wisdom literature · **[R]** religious thinker · **(L)** legendary. These are proposals and must be confirmed during research.
 
-- [ ] **T6.1 Ancient Egypt**: Ptahhotep [S], Kagemni [S], Imhotep [S](L), Merikare instruction [S], Amenemope [S], Akhenaten [R], Ankhsheshonq [S]. Hellenistic Alexandria figures go under Greece/Hellenistic.
-- [ ] **T6.2 Mesopotamia**: Shuruppak (Instructions) [S](L), Enheduanna [R], Hammurabi [S] (law code, tag `law`).
-- [ ] **T6.3 Persia**: Zoroaster [R](L). Mani is later (defer).
-- [ ] **T6.4 India**: Yajnavalkya [S], Gautama Buddha [R], Mahavira [R], Kapila [P](L), Charvaka tradition [P], Kanada [P], Chanakya [P].
-- [ ] **T6.5 China**: Laozi [P](L), Confucius [P], Mozi [P], Mencius [P], Zhuangzi [P], Xunzi [P], Han Feizi [P], Sunzi [P].
-- [ ] **T6.6 Greece: Presocratics** [P]: Thales, Anaximander, Anaximenes, Pythagoras, Xenophanes, Heraclitus, Parmenides, Zeno of Elea, Empedocles, Anaxagoras, Leucippus, Democritus, Protagoras, Gorgias.
-- [ ] **T6.7 Greece: Classical** [P]: Socrates, Plato, Aristotle, Antisthenes, Diogenes of Sinope.
-- [ ] **T6.8 Greece: Hellenistic** [P]: Epicurus, Zeno of Citium, Pyrrho, Cleanthes, Chrysippus, Euclid (Alexandria), Archimedes (Syracuse), Eratosthenes (Alexandria).
+- [x] **T6.1 Ancient Egypt**: Ptahhotep [S], Kagemni [S], Imhotep [S](L), Merikare instruction [S], Amenemope [S], Akhenaten [R], Ankhsheshonq [S]. Hellenistic Alexandria figures go under Greece/Hellenistic.
+- [x] **T6.2 Mesopotamia**: Shuruppak (Instructions) [S](L), Enheduanna [R], Hammurabi [S] (law code, tag `law`).
+- [x] **T6.3 Persia**: Zoroaster [R](L). Mani is later (defer).
+- [x] **T6.4 India**: Yajnavalkya [S], Gautama Buddha [R], Mahavira [R], Kapila [P](L), Charvaka tradition [P], Kanada [P], Chanakya [P].
+- [x] **T6.5 China**: Laozi [P](L), Confucius [P], Mozi [P], Mencius [P], Zhuangzi [P], Xunzi [P], Han Feizi [P], Sunzi [P].
+- [x] **T6.6 Greece: Presocratics** [P]: Thales, Anaximander, Anaximenes, Pythagoras, Xenophanes, Heraclitus, Parmenides, Zeno of Elea, Empedocles, Anaxagoras, Leucippus, Democritus, Protagoras, Gorgias.
+- [x] **T6.7 Greece: Classical** [P]: Socrates, Plato, Aristotle, Antisthenes, Diogenes of Sinope.
+- [x] **T6.8 Greece: Hellenistic** [P]: Epicurus, Zeno of Citium, Pyrrho, Cleanthes, Chrysippus, Euclid (Alexandria), Archimedes (Syracuse), Eratosthenes (Alexandria).
   - ✅ For every content task: all entries pass validate, every QID is verified by hand, and no `NEEDS VERIFICATION` notes remain.
 
 > Candidate lists are **starting points, not facts**. Each name must be checked against Wikidata/Wikipedia before inclusion.
 
 ## Phase 7: Polish
 
-- [ ] **T7.1 Landing / intro overlay**: title (`<h1>`), one-line description, "ابدأ الرحلة" button that starts at -3000 over Egypt.
-- [ ] **T7.2 About modal**: project purpose, sources, all attributions (Wikipedia, Commons, historical-basemaps, base tiles).
-- [ ] **T7.3 Micro-animations**: marker pulse on appear, card slide-in, year counter tween, smooth `flyTo`. Respect `prefers-reduced-motion`.
-- [ ] **T7.4 SEO**: Arabic `<title>`, meta description, Open Graph tags + share image, `lang`/`dir`, semantic landmarks.
-- [ ] **T7.5 Accessibility pass**: keyboard-only walkthrough, contrast check, ARIA labels in Arabic, screen-reader labels for markers.
-- [ ] **T7.6 Performance**: lazy-load border files, preload neighboring years, compress images, target Lighthouse ≥ 90 (Perf/A11y/SEO).
-- [ ] **T7.7 Responsive QA**: 360px, 768px, 1280px, 1920px widths, plus touch interactions on the timeline.
+- [x] **T7.1 Landing / intro overlay**: title (`<h1>`), one-line description, "ابدأ الرحلة" button that starts at -3000 over Egypt.
+- [x] **T7.2 About modal**: project purpose, sources, all attributions (Wikipedia, Commons, historical-basemaps, base tiles).
+- [x] **T7.3 Micro-animations**: marker pulse on appear, card slide-in, year counter tween, smooth `flyTo`. Respect `prefers-reduced-motion`.
+- [x] **T7.4 SEO**: Arabic `<title>`, meta description, Open Graph tags + share image, `lang`/`dir`, semantic landmarks.
+- [x] **T7.5 Accessibility pass**: keyboard-only walkthrough, contrast check, ARIA labels in Arabic, screen-reader labels for markers.
+- [x] **T7.6 Performance**: lazy-load border files, preload neighboring years, compress images, target Lighthouse ≥ 90 (Perf/A11y/SEO).
+- [x] **T7.7 Responsive QA**: 360px, 768px, 1280px, 1920px widths, plus touch interactions on the timeline.
 
 ## Phase 8: Testing & release
 

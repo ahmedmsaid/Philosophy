@@ -1,52 +1,5 @@
 [
   {
-    "id": "confucius",
-    "wikidata": "Q4604",
-    "wikipedia_ar": "كونفوشيوس",
-    "name_ar": "كونفوشيوس",
-    "name_en": "Confucius",
-    "kind": "philosopher",
-    "legendary": false,
-    "civilization": "china",
-    "era": "ancient-china",
-    "tradition_ar": "الكونفوشية",
-    "birth": {
-      "year": -551,
-      "approx": false
-    },
-    "death": {
-      "year": -479,
-      "approx": false
-    },
-    "active": {
-      "from": -520,
-      "to": -479
-    },
-    "location": {
-      "lat": 35.5947,
-      "lng": 116.9859,
-      "place_ar": "تشوفو (ولاية لو)",
-      "modern_country_ar": "الصين"
-    },
-    "tags": [
-      "ethics",
-      "political-philosophy",
-      "virtue"
-    ],
-    "notes": "فيلسوف صيني بارز ركز على الأخلاق والعدالة والواجب الاجتماعي والوئام الإنساني",
-    "summary_ar": "كونفوشيوس أو كُنفُشيُس هو أول فيلسوف صيني يفلح في إقامة مذهب يتضمن كل التقاليد الصينية عن السلوك الاجتماعي والأخلاقي. ففلسفته قائمة على القيم الأخلاقية الشخصية وعلى أن تكون هناك حكومة تخدم الشعب تطبيقاً لمثل أخلاقي أعلى. ولقد كانت تعاليمه وفلسفته ذات تأثير عميق في الفكر والحياة الصينية والكورية واليابانية والتايوانية والفيتنامية. ويلقب بنبي الصين.",
-    "summary_source": "wikipedia_ar",
-    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D9%83%D9%88%D9%86%D9%81%D9%88%D8%B4%D9%8A%D9%88%D8%B3",
-    "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Confucius%2C_fresco_from_a_Western_Han_tomb_of_Dongping_County%2C_Shandong_province%2C_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Confucius%2C_fresco_from_a_Western_Han_tomb_of_Dongping_County%2C_Shandong_province%2C_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "license": "Public domain",
-      "author": "Anonymous Chinese painter of the Western Han period",
-      "source_url": "https://commons.wikimedia.org/wiki/File:Confucius,_fresco_from_a_Western_Han_tomb_of_Dongping_County,_Shandong_province,_China.jpg"
-    },
-    "fetched_at": "2026-10-12T11:40:59.588Z"
-  },
-  {
     "id": "laozi",
     "wikidata": "Q9333",
     "wikipedia_ar": "لاوتزه",
@@ -80,7 +33,7 @@
       "metaphysics",
       "wu-wei"
     ],
-    "notes": "شخصية فلسفية مؤسسة للطاوية ومؤلف كتاب داو دي جينغ مع وجود خلافات تاريخية حول تفاصيل حياته",
+    "notes": "مؤسس الفلسفة الطاوية ومؤلف كتاب داو دي جينغ، مع وجود خلافات تاريخية حول تفاصيل حياته وهويته",
     "summary_ar": "لاو تزه أو لاو تسي أو لاوتزو فيلسوف صيني قديم وشخصية مهمة في الطاوية ولد 604 ق.م. تعني الكلمة السيد القديم وتعتبر لقب تفخيم. ومن ألقابه تايشانغ لاوجون وهو أحد الأنقياء الثلاثة في الطاوية. حسب التقليد الصيني عاش لاوتزه في القرن السادس قبل الميلاد، لكن المؤرخين يقولون إنه شخصية خيالية أو أن الشخصية نتيجة جمع عدة شخصيات مختلفة أو إنه عاش في القرن الرابع قبل الميلاد بالتزامن مع مدارس التفكير المائة وعصر الدول المتحاربة. ينسب إليه كتابة العمل الأهم في الطاوية الذي كان يعرف باسم لاوتزه. لاوتزه من الشخصيات الرئيسية في الحضارة الصينية، ويدعي نبلاء وعامة أنهم ينتسبون لنسله. وعبر التاريخ اعتنقت عدة حركات معادية للسلطات أفكار لاوتزه.",
     "summary_source": "wikipedia_ar",
     "wikipedia_url": "https://ar.wikipedia.org/wiki/%D9%84%D8%A7%D9%88%D8%AA%D8%B2%D9%87",
@@ -91,7 +44,393 @@
       "author": "Zhang Lu",
       "source_url": "https://commons.wikimedia.org/wiki/File:Zhang_Lu-Laozi_Riding_an_Ox_(cropped).jpg"
     },
-    "fetched_at": "2026-10-12T11:40:59.594Z"
+    "fetched_at": "2026-10-12T12:04:11.657Z"
+  },
+  {
+    "id": "confucius",
+    "wikidata": "Q4604",
+    "wikipedia_ar": "كونفوشيوس",
+    "name_ar": "كونفوشيوس",
+    "name_en": "Confucius",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "china",
+    "era": "ancient-china",
+    "tradition_ar": "الكونفوشية",
+    "birth": {
+      "year": -551,
+      "approx": false
+    },
+    "death": {
+      "year": -479,
+      "approx": false
+    },
+    "active": {
+      "from": -520,
+      "to": -479
+    },
+    "location": {
+      "lat": 35.5947,
+      "lng": 116.9859,
+      "place_ar": "تشوفو (ولاية لو)",
+      "modern_country_ar": "الصين"
+    },
+    "tags": [
+      "ethics",
+      "political-philosophy",
+      "virtue"
+    ],
+    "notes": "مؤسس الفلسفة الكونفوشية وأحد أعظم المعلمين في تاريخ الصين، ركز على الأخلاق والبر الأسري والعدالة",
+    "summary_ar": "كونفوشيوس أو كُنفُشيُس هو أول فيلسوف صيني يفلح في إقامة مذهب يتضمن كل التقاليد الصينية عن السلوك الاجتماعي والأخلاقي. ففلسفته قائمة على القيم الأخلاقية الشخصية وعلى أن تكون هناك حكومة تخدم الشعب تطبيقاً لمثل أخلاقي أعلى. ولقد كانت تعاليمه وفلسفته ذات تأثير عميق في الفكر والحياة الصينية والكورية واليابانية والتايوانية والفيتنامية. ويلقب بنبي الصين.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D9%83%D9%88%D9%86%D9%81%D9%88%D8%B4%D9%8A%D9%88%D8%B3",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Confucius%2C_fresco_from_a_Western_Han_tomb_of_Dongping_County%2C_Shandong_province%2C_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Confucius%2C_fresco_from_a_Western_Han_tomb_of_Dongping_County%2C_Shandong_province%2C_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Anonymous Chinese painter of the Western Han period",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Confucius,_fresco_from_a_Western_Han_tomb_of_Dongping_County,_Shandong_province,_China.jpg"
+    },
+    "fetched_at": "2026-10-12T12:04:11.663Z"
+  },
+  {
+    "id": "sunzi",
+    "wikidata": "Q37151",
+    "wikipedia_ar": "سون تزو",
+    "name_ar": "سون تزو",
+    "name_en": "Sun Tzu",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "china",
+    "era": "ancient-china",
+    "tradition_ar": "الفلسفة الاستراتيجية والعسكرية",
+    "birth": {
+      "year": -544,
+      "approx": true
+    },
+    "death": {
+      "year": -496,
+      "approx": true
+    },
+    "active": {
+      "from": -512,
+      "to": -496
+    },
+    "location": {
+      "lat": 31.3,
+      "lng": 120.6,
+      "place_ar": "سوتشو (ولاية وو)",
+      "modern_country_ar": "الصين"
+    },
+    "tags": [
+      "strategy",
+      "philosophy-of-war",
+      "daoism",
+      "epistemology"
+    ],
+    "notes": "فيلسوف استراتيجي صيني ومؤلف كتاب فن الحرب الشهير الذي جمع بين الفلسفة العميقة والاستراتيجية النفسية وإدارة الصراع",
+    "summary_ar": "سون تزو كان جنرالًا عسكريًا واستراتيجيًا وفيلسوفًا وكاتبًا صينيًا عاش خلال عهد أسرة تشو الشرقية. يُنسب إليه تقليديًا تأليف كتاب \"فن الحرب\"، وهو نص صيني كلاسيكي في الاستراتيجية العسكرية من فترة الممالك المتحاربة، على الرغم من أن أقدم أجزاء العمل تعود على الأرجح إلى ما بعد وفاته بقرن على الأقل.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%B3%D9%88%D9%86_%D8%AA%D8%B2%D9%88",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/%E5%90%B4%E5%8F%B8%E9%A9%AC%E5%AD%99%E6%AD%A6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/%E5%90%B4%E5%8F%B8%E9%A9%AC%E5%AD%99%E6%AD%A6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Unknown authorUnknown author",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E5%90%B4%E5%8F%B8%E9%A9%AC%E5%AD%99%E6%AD%A6.jpg"
+    },
+    "fetched_at": "2026-10-12T12:04:16.651Z"
+  },
+  {
+    "id": "mozi",
+    "wikidata": "Q272411",
+    "wikipedia_ar": "موزي",
+    "name_ar": "موزي",
+    "name_en": "Mozi",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "china",
+    "era": "ancient-china",
+    "tradition_ar": "الموزية (الموهية)",
+    "birth": {
+      "year": -470,
+      "approx": true
+    },
+    "death": {
+      "year": -391,
+      "approx": true
+    },
+    "active": {
+      "from": -430,
+      "to": -391
+    },
+    "location": {
+      "lat": 35,
+      "lng": 117,
+      "place_ar": "تنغتشو (ولاية لو)",
+      "modern_country_ar": "الصين"
+    },
+    "tags": [
+      "mohism",
+      "ethics",
+      "universal-love",
+      "utilitarianism",
+      "logic"
+    ],
+    "notes": "فيلسوف صيني ومؤسس الموزية، دعا إلى الحب الشامل ونبذ الحرب والنفعية الأخلاقية والمنطق الصارم",
+    "summary_ar": "موزي بالصينية (墨子) ‏ فيلسوف صيني عاش في زمن مدارس الفكر المائة. وأسس مدرسة الموزية وجادل بشدة ضد الكونفوشية والطاوية. أثناء فترة الممالك المتحاربة، تطورت الموزية ومورست في العديد من الدول، إلا أنها سقطت من الاهتمام عندما جاءت أسرة تشين القانونية إلى السلطة. وأثناء تلك الفترة، اندثرت العديد من الكلاسيكيات الموزية عندما نفذ تشين شى هوانغ سياسة حرق الكتب ودفن العلماء، ثم قل الاهتمام بالموزية أكثر بعد أن أصبحت الكونفوشيوسية المدرسة الفكرية المهيمنة خلال عصر سلالة هان، واختفي في منتصف عصر سلالة هان الغربية.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D9%85%D9%88%D8%B2%D9%8A",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/%D0%A4%D0%B8%D0%BB%D0%BE%D1%81%D0%BE%D1%84_%D0%9C%D0%BE-%D0%A6%D0%B7%D1%8B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/%D0%A4%D0%B8%D0%BB%D0%BE%D1%81%D0%BE%D1%84_%D0%9C%D0%BE-%D0%A6%D0%B7%D1%8B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC0",
+      "author": "Vjacheslav Rublevskiy",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%A4%D0%B8%D0%BB%D0%BE%D1%81%D0%BE%D1%84_%D0%9C%D0%BE-%D0%A6%D0%B7%D1%8B.jpg"
+    },
+    "fetched_at": "2026-10-12T12:04:21.125Z"
+  },
+  {
+    "id": "mencius",
+    "wikidata": "Q188903",
+    "wikipedia_ar": "منسيوس",
+    "name_ar": "منسيوس",
+    "name_en": "Mencius",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "china",
+    "era": "ancient-china",
+    "tradition_ar": "الكونفوشية",
+    "birth": {
+      "year": -372,
+      "approx": true
+    },
+    "death": {
+      "year": -289,
+      "approx": true
+    },
+    "active": {
+      "from": -330,
+      "to": -289
+    },
+    "location": {
+      "lat": 35.39,
+      "lng": 116.97,
+      "place_ar": "زوكسيان (ولاية زو)",
+      "modern_country_ar": "الصين"
+    },
+    "tags": [
+      "confucianism",
+      "human-nature",
+      "ethics",
+      "political-philosophy"
+    ],
+    "notes": "الحكيم الكونفوشي الثاني، اشتهر بأطروحته القائلة بأن الطبيعة البشرية خيرة في أصلها ودافع عن حق الشعب في الرعاية والعدل",
+    "summary_ar": "منسيوس أو منشيوس أو منغ كو هو فيلسوف صيني كونفوشيوسي غالبًا ما وصِف بأنه «الحكيم الثاني» بعد المعلم الأول كونفوشيوس نفسه. عاش على الأرجح في حقبة الممالك المتحاربة، ويُقال إنه أمضى معظم حياته مسافراً في أرجاء الصين لتقديم المشورة لغير ما حاكم. تشكّل حواراته مع الحكّام أساس الكتاب المنسوب إليه، منسيوس، والذي خُلِّد فيما بعد كأهمّ الأدبيّات الكلاسيكيّة للكونفوشيّة.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D9%85%D9%86%D8%B3%D9%8A%D9%88%D8%B3",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Half_Portraits_of_the_Great_Sage_and_Virtuous_Men_of_Old_-_Meng_Ke_%28%E5%AD%9F%E8%BB%BB%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Half_Portraits_of_the_Great_Sage_and_Virtuous_Men_of_Old_-_Meng_Ke_%28%E5%AD%9F%E8%BB%BB%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "anonymous",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Half_Portraits_of_the_Great_Sage_and_Virtuous_Men_of_Old_-_Meng_Ke_(%E5%AD%9F%E8%BB%BB).jpg"
+    },
+    "fetched_at": "2026-10-12T12:04:25.594Z"
+  },
+  {
+    "id": "zhuangzi",
+    "wikidata": "Q47739",
+    "wikipedia_ar": "جوانغ زي",
+    "name_ar": "تشوانغ تسي",
+    "name_en": "Zhuangzi",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "china",
+    "era": "ancient-china",
+    "tradition_ar": "الطاوية",
+    "birth": {
+      "year": -369,
+      "approx": true
+    },
+    "death": {
+      "year": -286,
+      "approx": true
+    },
+    "active": {
+      "from": -340,
+      "to": -286
+    },
+    "location": {
+      "lat": 34.45,
+      "lng": 115.65,
+      "place_ar": "منغ (ولاية سونغ)",
+      "modern_country_ar": "الصين"
+    },
+    "tags": [
+      "daoism",
+      "epistemology",
+      "relativism",
+      "freedom",
+      "spontaneity"
+    ],
+    "notes": "أحد ألمع فلاسفة الطاوية، مؤلف كتاب تشوانغ تسي المليء بالقصص الرمزية حول حرية الفكر والنسبية والانسجام مع الطبيعة",
+    "summary_ar": "جوانگ زي Zhuangzi كان فيلسوفاً صينياً واسع التأثير وقد عاش حول القرن الرابع قبل الميلاد أثناء فترة الممالك المتحاربة، أي في زمن المدارس المائة للفكر وهو العصر الذهبي للفكر الصيني. اسمه يـُكتب أحياناً Chuang Tsu أو Chuang Tzu أو Zhuang Tze أو Chouang-Dsi أو Chuang Tse.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%AC%D9%88%D8%A7%D9%86%D8%BA_%D8%B2%D9%8A",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Zhuangzi.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Zhuangzi.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Unknown authorUnknown author",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Zhuangzi.png"
+    },
+    "fetched_at": "2026-10-12T12:04:30.565Z"
+  },
+  {
+    "id": "xunzi",
+    "wikidata": "Q216072",
+    "wikipedia_ar": "زونزي",
+    "name_ar": "شيون تسي",
+    "name_en": "Xunzi",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "china",
+    "era": "ancient-china",
+    "tradition_ar": "الكونفوشية الواقعية",
+    "birth": {
+      "year": -310,
+      "approx": true
+    },
+    "death": {
+      "year": -235,
+      "approx": true
+    },
+    "active": {
+      "from": -280,
+      "to": -235
+    },
+    "location": {
+      "lat": 35.3,
+      "lng": 112.85,
+      "place_ar": "ولاية تشاو",
+      "modern_country_ar": "الصين"
+    },
+    "tags": [
+      "confucianism",
+      "human-nature",
+      "ritual",
+      "realism",
+      "education"
+    ],
+    "notes": "فيلسوف كونفوشي واقعي اعتبر أن الطبيعة البشرية تميل للشر وتحتاج إلى التقويم عبر التعليم والطقوس والقوانين",
+    "summary_ar": "زونزي Xunzi ((340 - 245 ق. م. حكيم صيني معروف باعتقاداته أن طبيعة الإنسان شريرة أساسًا. وقد عد نفسه تابعًا لحكمة كونفوشيوس، لكن نظرته لطبيعة الإنسان تختلف مع نظرة الكونفوشيين.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%B2%D9%88%D9%86%D8%B2%D9%8A",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Portrait_of_Xun_Zi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Portrait_of_Xun_Zi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Unknown authorUnknown author",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Portrait_of_Xun_Zi.jpg"
+    },
+    "fetched_at": "2026-10-12T12:04:35.147Z"
+  },
+  {
+    "id": "hanfeizi",
+    "wikidata": "Q28959",
+    "wikipedia_ar": "هان فاي",
+    "name_ar": "هان فاي",
+    "name_en": "Han Feizi",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "china",
+    "era": "ancient-china",
+    "tradition_ar": "الشرعوية الصينية (الفاجيا)",
+    "birth": {
+      "year": -280,
+      "approx": true
+    },
+    "death": {
+      "year": -233,
+      "approx": true
+    },
+    "active": {
+      "from": -250,
+      "to": -233
+    },
+    "location": {
+      "lat": 34.2,
+      "lng": 113.8,
+      "place_ar": "ولاية هان (شينتشنغ)",
+      "modern_country_ar": "الصين"
+    },
+    "tags": [
+      "legalism",
+      "political-philosophy",
+      "statecraft",
+      "power"
+    ],
+    "notes": "المطور الأكبر للفلسفة الشرعوية في الصين القديمة، ركز على سلطة الدولة والقانون الصارم والرقابة الإدارية",
+    "summary_ar": "هان فاي ‏ ، المعروف أيضًا باسم هان فاي زي، كان فيلسوفًا صينياً ، عمل إلى جانب لي سي وغونجسان يانغ وشن داو وشن بيوهاي ، على تطوير مذهب الشرعوية. ويختلف هان فاي تمامًا عن غيره من الفلاسفة المشهورين المعاصرين له، حيث كان أحد أعضاء الطبقة الأرستقراطية الحاكمة، وولد في الأسرة الحاكمة آن ذاك دولة هان أثناء نهاية حقبة الممالك المتحاربة. وفي هذا السياق، فسر بعض المثقفين أعماله على أنها موجهة لابن عمه، ملك هان.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D9%87%D8%A7%D9%86_%D9%81%D8%A7%D9%8A",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Statue_Of_Han_Fei.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Statue_Of_Han_Fei.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "author": "Sabinowitz",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Statue_Of_Han_Fei.png"
+    },
+    "fetched_at": "2026-10-12T12:04:39.781Z"
+  },
+  {
+    "id": "imhotep",
+    "wikidata": "Q131171",
+    "wikipedia_ar": "إمحوتب",
+    "name_ar": "إمحوتب",
+    "name_en": "Imhotep",
+    "kind": "sage",
+    "legendary": true,
+    "civilization": "egypt",
+    "era": "ancient-egypt",
+    "tradition_ar": "حكمة مصر القديمة والطب المبكر",
+    "birth": {
+      "year": -2670,
+      "approx": true
+    },
+    "death": {
+      "year": -2600,
+      "approx": true
+    },
+    "active": {
+      "from": -2650,
+      "to": -2600
+    },
+    "location": {
+      "lat": 29.8713,
+      "lng": 31.2164,
+      "place_ar": "منف (سقارة)",
+      "modern_country_ar": "مصر"
+    },
+    "tags": [
+      "wisdom-literature",
+      "architecture",
+      "medicine",
+      "polymath"
+    ],
+    "notes": "مهندس هرم زوسر وحكيم وطبيب مصري قديم، اكتسبت شخصيته صفة شبه أسطورية ورُفع إلى مرتبة الآلهة في العصور المتأخرة",
+    "summary_ar": "إمحوتب هو مهندس معماري وطبيب مصري قديم عاش في عهد الأسرة الثالثة خلال عصر الدولة القديمة. يُعد أول مهندس وأول طبيب معروف في التاريخ، وأحد أبرز الشخصيات في مصر القديمة. اشتهر ببنائه هرم زوسر المدرج في سقارة، والذي يُعد أول بناء حجري ضخم في التاريخ. حظي بمكانة رفعية في حياته، رُفِع على إثرها إلى درجة معبود بعد وفاته، ليصبح إلهاً للطب.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%A5%D9%85%D8%AD%D9%88%D8%AA%D8%A8",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Imhotep-E_3639-IMG_4607-gradient.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Imhotep-E_3639-IMG_4607-gradient.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0 fr",
+      "author": "Rama",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Imhotep-E_3639-IMG_4607-gradient.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    "fetched_at": "2026-10-12T12:04:43.474Z"
   },
   {
     "id": "ptahhotep",
@@ -138,7 +477,899 @@
       "author": "AnnekeBart",
       "source_url": "https://commons.wikimedia.org/wiki/File:Ptahhotep-Khamerernebty.jpg"
     },
-    "fetched_at": "2026-10-12T11:41:01.100Z"
+    "fetched_at": "2026-10-12T12:04:43.484Z"
+  },
+  {
+    "id": "kagemni",
+    "wikidata": "Q2703023",
+    "wikipedia_ar": "كاجمني",
+    "name_ar": "كاجمني",
+    "name_en": "Kagemni",
+    "kind": "sage",
+    "legendary": false,
+    "civilization": "egypt",
+    "era": "ancient-egypt",
+    "tradition_ar": "أدب الحكمة المصري القديم (سيبايت)",
+    "birth": {
+      "year": -2380,
+      "approx": true
+    },
+    "death": {
+      "year": -2320,
+      "approx": true
+    },
+    "active": {
+      "from": -2345,
+      "to": -2320
+    },
+    "location": {
+      "lat": 29.8713,
+      "lng": 31.2164,
+      "place_ar": "منف (سقارة)",
+      "modern_country_ar": "مصر"
+    },
+    "tags": [
+      "ethics",
+      "wisdom-literature",
+      "sebayt"
+    ],
+    "notes": "وزير مصري قديم في عهد الملك تتي ومؤلف تعاليم كاجمني في أدب الحكمة والسلوك القويم",
+    "summary_ar": "كاجمني هو وزير مصري قديم شغل منصبه في مطلع عهد الملك تتي خلال الأسرة المصرية السادسة بعصر الدولة القديمة. وكانت زوجته الأميرة سيشيشيت نبت خنبتي ابنة الملك تتي.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D9%83%D8%A7%D8%AC%D9%85%D9%86%D9%8A",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/01_kagemni_door_figure.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/01_kagemni_door_figure.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Copyrighted free use",
+      "author": "Jon Bodsworth",
+      "source_url": "https://commons.wikimedia.org/wiki/File:01_kagemni_door_figure.jpg"
+    },
+    "fetched_at": "2026-10-12T12:04:44.819Z"
+  },
+  {
+    "id": "merikare",
+    "wikidata": "Q7691303",
+    "wikipedia_ar": "تعاليم مريكارع",
+    "name_ar": "تعاليم مريكارع",
+    "name_en": "Teaching of Merikare",
+    "kind": "sage",
+    "legendary": false,
+    "civilization": "egypt",
+    "era": "ancient-egypt",
+    "tradition_ar": "أدب الحكمة والفلسفة السياسية المصرية",
+    "birth": {
+      "year": -2070,
+      "approx": true
+    },
+    "death": {
+      "year": -2020,
+      "approx": true
+    },
+    "active": {
+      "from": -2050,
+      "to": -2020
+    },
+    "location": {
+      "lat": 29.074,
+      "lng": 30.935,
+      "place_ar": "إهناسيا (هيراكليوبوليس)",
+      "modern_country_ar": "مصر"
+    },
+    "tags": [
+      "political-philosophy",
+      "ethics",
+      "wisdom-literature",
+      "justice"
+    ],
+    "notes": "نص أدبي وفلسفي مصري قديم من عصر الانتقال الأول يتضمن وصايا سياسية وأخلاقية من ملك لابنه مريكارع حول الحكم والعدالة",
+    "summary_ar": "تعاليم الملك مريكارع، أو التعاليم الموجهة إلى الملك مريكارع، هي قطعة أدبية مكتوبة باللغة المصرية الوسيطة، وهي المرحلة الكلاسيكية من اللغة المصرية، ويرجح أنها تعود إلى الدولة الوسطى.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%AA%D8%B9%D8%A7%D9%84%D9%8A%D9%85_%D9%85%D8%B1%D9%8A%D9%83%D8%A7%D8%B1%D8%B9",
+    "image": null,
+    "fetched_at": "2026-10-12T12:04:45.933Z"
+  },
+  {
+    "id": "akhenaten",
+    "wikidata": "Q81794",
+    "wikipedia_ar": "أخناتون",
+    "name_ar": "أخناتون",
+    "name_en": "Akhenaten",
+    "kind": "religious-thinker",
+    "legendary": false,
+    "civilization": "egypt",
+    "era": "ancient-egypt",
+    "tradition_ar": "الآتونية والتوحيد الشمسي",
+    "birth": {
+      "year": -1372,
+      "approx": true
+    },
+    "death": {
+      "year": -1336,
+      "approx": true
+    },
+    "active": {
+      "from": -1353,
+      "to": -1336
+    },
+    "location": {
+      "lat": 27.646,
+      "lng": 30.9,
+      "place_ar": "أخت آتون (تل العمارنة)",
+      "modern_country_ar": "مصر"
+    },
+    "tags": [
+      "monotheism",
+      "theology",
+      "sun-hymns",
+      "religious-reform"
+    ],
+    "notes": "فرعون مصري من الأسرة الثامنة عشرة قاد دعوة دينية وفلسفية رائدة أسس فيها عبادة الإله الواحد آتون",
+    "summary_ar": "أخناتون عرف أيضًا قبل العام الخامس من ملكه بـ امنحوتب الرابع. كان فرعون من الأسرة الثامنة عشرة حكم مصر لمدة 17 عاماً وتوفي ربمَّا في 1336 ق.م أو 1334 ق.م. يُشتهر بتخليه عن تعدد الآلهة المصرية التقليدية وإدخال عبادة جديدة تركزت على آتون، التي توصف أحيانًا بأنها ديانة توحيدية أو هينوثية. تمثل نقوش مبكرة آتون بالشمس، بِالمُقارَنَةِ مَع النجوم، ولاحقًا جنبت اللغة الرسمية تسمية آتون بالإله، مُعطية إياه الإِلَوهِيَّة الشمسية مكانة أعلى من مجرد كونه إله.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%A3%D8%AE%D9%86%D8%A7%D8%AA%D9%88%D9%86",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/GD-EG-Caire-Mus%C3%A9e061.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/GD-EG-Caire-Mus%C3%A9e061.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 2.5",
+      "author": "Unknown",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/GD-EG-Caire-Mus%C3%A9e061.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    "fetched_at": "2026-10-12T12:04:47.547Z"
+  },
+  {
+    "id": "amenemope",
+    "wikidata": "Q2844817",
+    "wikipedia_ar": "أمنموبي",
+    "name_ar": "أمنموبي",
+    "name_en": "Amenemope",
+    "kind": "sage",
+    "legendary": false,
+    "civilization": "egypt",
+    "era": "ancient-egypt",
+    "tradition_ar": "أدب الحكمة المصري (الدولة الحديثة)",
+    "birth": {
+      "year": -1150,
+      "approx": true
+    },
+    "death": {
+      "year": -1075,
+      "approx": true
+    },
+    "active": {
+      "from": -1100,
+      "to": -1075
+    },
+    "location": {
+      "lat": 26.56,
+      "lng": 31.75,
+      "place_ar": "أخميم (صعيد مصر)",
+      "modern_country_ar": "مصر"
+    },
+    "tags": [
+      "ethics",
+      "wisdom-literature",
+      "piety",
+      "justice"
+    ],
+    "notes": "حكيم وكاتب مصري قديم في عهد الأسرة العشرين، مؤلف تعاليم أمنموبي في الفضيلة والأخلاق",
+    "summary_ar": "أمنموبي بن كانخت يُعتبر المؤلف الظاهري لنص تعاليم أمينيموبي، وهو نص حكمة مصري كُتب خلال عهد الأسرة المصرية العشرون. يُصوَّر أمنموبي على أنه كاتب وحكيم عاش في مصر القديمة خلال عهد الأسرة المصرية العشرون المنتمية لـ المملكة المصرية الحديثة، واستقر في أخميم ، وهي عاصمة الإقليم التاسع من إقليم صعيد مصر. تُعرض خطاباته بالتنسيق التقليدي للتعاليم الموجهة من الأب إلى الابن حول كيفية العيش بحياة صالحة وأخلاقية، ولكنها مقسمة بشكل صريح إلى 30 فصلًا مرقمًا.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%A3%D9%85%D9%86%D9%85%D9%88%D8%A8%D9%8A",
+    "image": null,
+    "fetched_at": "2026-10-12T12:04:48.414Z"
+  },
+  {
+    "id": "ankhsheshonq",
+    "wikidata": "Q770200",
+    "wikipedia_ar": null,
+    "name_ar": "عنخششونق",
+    "name_en": "Ankhsheshonq",
+    "kind": "sage",
+    "legendary": true,
+    "civilization": "egypt",
+    "era": "ancient-egypt",
+    "tradition_ar": "حكمة مصر المتأخرة والعهد البطلمي",
+    "birth": {
+      "year": -350,
+      "approx": true
+    },
+    "death": {
+      "year": -250,
+      "approx": true
+    },
+    "active": {
+      "from": -300,
+      "to": -250
+    },
+    "location": {
+      "lat": 29.8713,
+      "lng": 31.2164,
+      "place_ar": "منف (سقارة)",
+      "modern_country_ar": "مصر"
+    },
+    "tags": [
+      "wisdom-literature",
+      "proverbs",
+      "ethics"
+    ],
+    "notes": "حكيم وكاهن مصري شبه أسطوري منسوبة إليه تعاليم عنخششونق المدونة بالديموطيقية متضمنة أمثالاً وحكماً عملية",
+    "summary_ar": "حكيم وكاهن مصري قديم منسوبة إليه تعاليم عنخششونق المدونة بالخط الديموطيقي، وتعد من أبرز نصوص أدب الحكمة في العصر البطلمي بمصر القديمة متضمنة أمثالاً وتوجيهات عملية.",
+    "summary_source": "manual",
+    "wikipedia_url": null,
+    "image": null,
+    "fetched_at": "2026-10-12T12:04:48.881Z"
+  },
+  {
+    "id": "thales",
+    "wikidata": "Q36303",
+    "wikipedia_ar": "طاليس",
+    "name_ar": "طاليس الملطي",
+    "name_en": "Thales of Miletus",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "presocratic",
+    "tradition_ar": "المدرسة الأيونية (الملطية)",
+    "birth": {
+      "year": -624,
+      "approx": true
+    },
+    "death": {
+      "year": -546,
+      "approx": true
+    },
+    "active": {
+      "from": -585,
+      "to": -546
+    },
+    "location": {
+      "lat": 37.53,
+      "lng": 27.28,
+      "place_ar": "ملطية (إيونيا)",
+      "modern_country_ar": "تركيا"
+    },
+    "tags": [
+      "presocratic",
+      "milesian",
+      "water-arche",
+      "astronomy",
+      "mathematics"
+    ],
+    "notes": "أول فيلسوف في التقليد اليوناني، قال إن الماء هو المبدأ الأول لجميع الأشياء وتنبأ بكسوف الشمس الشهير",
+    "summary_ar": "طاليس الملطي هو رياضياتي وعالم فلك وفيلسوف يوناني من المدرسة الأيونية، وهو أحد «الحكماء السبعة» عند اليونان.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%B7%D8%A7%D9%84%D9%8A%D8%B3",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Illustrerad_Verldshistoria_band_I_Ill_107.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Illustrerad_Verldshistoria_band_I_Ill_107.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Wilhelm Meyer",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Illustrerad_Verldshistoria_band_I_Ill_107.svg"
+    },
+    "fetched_at": "2026-10-12T12:04:55.114Z"
+  },
+  {
+    "id": "anaximander",
+    "wikidata": "Q42458",
+    "wikipedia_ar": "أناكسيماندر",
+    "name_ar": "أناكسيماندر",
+    "name_en": "Anaximander",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "presocratic",
+    "tradition_ar": "المدرسة الأيونية (الملطية)",
+    "birth": {
+      "year": -610,
+      "approx": true
+    },
+    "death": {
+      "year": -546,
+      "approx": true
+    },
+    "active": {
+      "from": -570,
+      "to": -546
+    },
+    "location": {
+      "lat": 37.53,
+      "lng": 27.28,
+      "place_ar": "ملطية (إيونيا)",
+      "modern_country_ar": "تركيا"
+    },
+    "tags": [
+      "presocratic",
+      "apeiron",
+      "cosmology",
+      "metaphysics"
+    ],
+    "notes": "تلميذ طاليس وأول من افترض اللامحدود (الأبيرون) كمبدأ للوجود، ووضع أول خريطة معروفة للعالم",
+    "summary_ar": "أناكسيماندر ـ(610 ق.م, 546 ق.م). كان من فلاسفة ما قبل سقراط وعاش في ميليتوس. إحدى مدن أيونيا. انتمى إلى المدرسة الميليسية وتلقّى تعاليم أستاذه طاليس. وخلّفه وأصبح الأستاذ الثاني لهذه المدرسة حيث جعل أناكسيمنس وفيثاغورس من تلامذته.\nالقليل من كتاباته وحياته معروف اليوم. ووفقاً للوثائق التاريخية المتاحة. فإنه أول فيلسوف يدوّن فلسفته. بالرغم من أن مسودة واحدة فقط من أعماله هي التي نجت.\nأناكسيماندر كان من أوائل الفلاسفة الإغريق الذين ظهروا في بداية العصر المحوري، الفترة من 700 ق.م إلى 200 ق.م حين ظهر كذلك مفكرون ثوريون في الصين، الهند، إيران ،الشرق الأدنى واليونان القديمة. كان نصيراً مبكراّ للعلم وحاول ملاحظة وشرح جوانب الكون المختلفة. مع اهتمام خاص بأصولها، حيث قال أن الطبيعة تحكمها القوانين. تماماً مثل المجتمعات البشرية. وأن أي شيء يهدد توازنها لا يدوم طويلاً. في مجال الفلك، حاول وصف علاقات الأجرام السماوية بالأرض. في الفيزياء، أقر بأن اللانهائي هو أصل كل الأشياء. ومعرفته بالهندسة أتاحت له أن يقدم المزولة لأول مرة إلى العالم الإغريقي. وصنع خريطة للعالم تتفق إلى حد كبير مع المقاييس الجغرافية المتقدمة. كما كان منخرطاً في الميدان السياسي لمدينة ميليتوس وأُرسل كحاكم إلى أحد مستعمراتها.\nوبإعلانه أن القوى الفيزيائية وليست القوى الخارقة هي التي تصنع النظام في الطبيعة. يعتبر أناكسيماندر من ضمن أوائل العلماء. كما يعتبر ضمن أول من استخدم التجريب العلمي.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%A3%D9%86%D8%A7%D9%83%D8%B3%D9%8A%D9%85%D8%A7%D9%86%D8%AF%D8%B1",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Anaximander_Mosaic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Anaximander_Mosaic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "ancient Roman mosaic artist from the early third century AD",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Anaximander_Mosaic.jpg"
+    },
+    "fetched_at": "2026-10-12T12:05:00.102Z"
+  },
+  {
+    "id": "anaximenes",
+    "wikidata": "Q80612",
+    "wikipedia_ar": "أنكسيمانس",
+    "name_ar": "أنكسيمانس",
+    "name_en": "Anaximenes of Miletus",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "presocratic",
+    "tradition_ar": "المدرسة الأيونية (الملطية)",
+    "birth": {
+      "year": -585,
+      "approx": true
+    },
+    "death": {
+      "year": -528,
+      "approx": true
+    },
+    "active": {
+      "from": -550,
+      "to": -528
+    },
+    "location": {
+      "lat": 37.53,
+      "lng": 27.28,
+      "place_ar": "ملطية (إيونيا)",
+      "modern_country_ar": "تركيا"
+    },
+    "tags": [
+      "presocratic",
+      "air-arche",
+      "cosmology"
+    ],
+    "notes": "فيلسوف ملطي اعتبر الهواء المبدأ الأساسي للكون عبر عمليتي التكاثف والتخلخل",
+    "summary_ar": "أنكسيمانس الملطي هو فيلسوف يوناني، ويعتبر من آواخر من يمثل المدرسة الملطية أو الإيونية.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%A3%D9%86%D9%83%D8%B3%D9%8A%D9%85%D8%A7%D9%86%D8%B3",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Anaximenes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Anaximenes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Unknown",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Anaximenes.jpg"
+    },
+    "fetched_at": "2026-10-12T12:05:04.771Z"
+  },
+  {
+    "id": "pythagoras",
+    "wikidata": "Q10261",
+    "wikipedia_ar": "فيثاغورس",
+    "name_ar": "فيثاغورس",
+    "name_en": "Pythagoras",
+    "kind": "philosopher",
+    "legendary": true,
+    "civilization": "greece",
+    "era": "presocratic",
+    "tradition_ar": "الفيثاغورية",
+    "birth": {
+      "year": -570,
+      "approx": true
+    },
+    "death": {
+      "year": -495,
+      "approx": true
+    },
+    "active": {
+      "from": -530,
+      "to": -495
+    },
+    "location": {
+      "lat": 39.08,
+      "lng": 17.12,
+      "place_ar": "كروتوني (ماغنا غراسيا)",
+      "modern_country_ar": "إيطاليا"
+    },
+    "tags": [
+      "pythagoreanism",
+      "mathematics",
+      "harmony",
+      "metempsychosis"
+    ],
+    "notes": "مؤسس الفيثاغورية التي رأت أن الأعداد هي جوهر الوجود ومصدر الانسجام الكوني، وتحيط بشخصيته روايات شبه أسطورية",
+    "summary_ar": "فِيثَاغُورَسُ السَّامُوسِيّ ؛ كان فيلسوفًا يونانيًا إيونيًا قديمًا، ومؤسس الفيثاغورية التي سُميت باسمه. كانت تعاليمه السياسية والدينية منتشرة في ماجنا غراسيا وألهمت الفلاسفة أفلاطون وأرسطو والغرب عمومًا عن طريقهم. تغطى الأسطورة معرفة حياته، لكن يظهر أنه كان ابن منيساركوس، وهو نقاش أحجار كريمة في جزيرة ساموس. يختلف الباحثون المعاصرون فيما يتعلق بتعليم فيثاغورس وملهميه، لكنهم يتفقون على أنه سافر في نحو عام 530 ق.م إلى كروتون في جنوب إيطاليا، حيث أسس مدرسة كان يقسم المبتدئون فيها على السرية ويعيشون حياة مشتركة زاهدة. فرض نمط الحياة هذا عددًا من المحظورات المتعلقة بالنظام الغذائي، ويقال تقليديًا إنه تضمن النباتية، وإن شك الباحثون المعاصرون في أنه دعا يومًا إلى النباتية الكاملة.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D9%81%D9%8A%D8%AB%D8%A7%D8%BA%D9%88%D8%B1%D8%B3",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Kapitolinischer_Pythagoras.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Kapitolinischer_Pythagoras.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "author": "The original uploader was Galilea at German Wikipedia.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kapitolinischer_Pythagoras.jpg"
+    },
+    "fetched_at": "2026-10-12T12:05:11.431Z"
+  },
+  {
+    "id": "xenophanes",
+    "wikidata": "Q131671",
+    "wikipedia_ar": "زينوفان",
+    "name_ar": "زينوفان",
+    "name_en": "Xenophanes",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "presocratic",
+    "tradition_ar": "المدرسة الإيلية المبكرة",
+    "birth": {
+      "year": -570,
+      "approx": true
+    },
+    "death": {
+      "year": -478,
+      "approx": true
+    },
+    "active": {
+      "from": -540,
+      "to": -478
+    },
+    "location": {
+      "lat": 38,
+      "lng": 27.17,
+      "place_ar": "كولوفون (إيونيا)",
+      "modern_country_ar": "تركيا"
+    },
+    "tags": [
+      "theology",
+      "epistemology",
+      "critique-of-polytheism",
+      "monotheism"
+    ],
+    "notes": "شاعر وفيلسوف انتقد تجسيم الآلهة ودعا إلى إله واحد كلي لا يشبه البشر في الصورة أو الفكر",
+    "summary_ar": "زينوفانيس من كولوفون  فيلسوف يوناني، شاعر، وناقد اجتماعي وديني. معرفتنا بوجهاتِ نظره تقتصر على شعرِه الباقي والذي يتضمن هجاء ونقدا لمجموعة واسعة من الأفكار الإغريقية مثل الاعتقاد بالبانثيون. بالنسبة للقليل الذي وصلنا عن فلاسفة اليونان في عصر ما قبل سقراط يعتبر أول من صرح بعقيدته في الألوهية دون غموض أو ترميز حيث يعتبره الكثير من أساتذة الفلسفة أنه ممهد لعلم اللاهوت فضلا عن أنه أول من نادى بالتوحيد الصريح من فلاسفة اليونان رغم ان سبقه فلاسفة بالإشارة إلى ذلك مثل فيثاغورس.. كذلك يذهب أغلب مؤرخى الفلسفة إلى انه ممهد التفكير الميتافيزيقى والنظر إلى ما وراء المادة المحسوسة وترك القول بالعناصر الطبيعة كمبدأ أول للكون على عكس سابقيه طاليس وانيكسماندر وانيكسيمانس وهيراقليطوس وتلامذتهم. وإن كان المشاهد ان كلتا المدرستين الايونية الطبيعية والايولية الميتافيزقية لم يخلو أحد فيهم من التداخل في موضوعات المدرسة الأخرى.\nبالنسبة لارائه الفيزيائية : ينقل عنه أنه بحث في الحفريات ووجد قواقع في قشرة الأرض وحفريات لأسماك في الصخور وأستخلص من ذلك ان الماء سابق وجوده على اليابسة وان الأرض ظهرت من البحر وتوقع ان تعود مغمورة بالمياه ثانية وتنتهى الحياة على اليابسة ثم تتكرر الدورة وتبرز اليابسة من البحر ثانية وتعود الحياة فيها كما سبق... ولو تأملنا هذا القول نجده مقاربا لقول انكسيماندر في ظهور الحياة من المياه وأول من قال بالتطور.\nكذلك ارتأى ان الشمس والنجوم عبارة عن بخار ماء مشتعل والشمس تسير في خط مستقيم وتختفى بنهاية اليوم والشمس القادمة في اليوم التالى هي شمس أخرى من بخارماء حديث التكوين.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%B2%D9%8A%D9%86%D9%88%D9%81%D8%A7%D9%86",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Xenophanes_in_Thomas_Stanley_History_of_Philosophy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Xenophanes_in_Thomas_Stanley_History_of_Philosophy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Unknown authorUnknown author",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Xenophanes_in_Thomas_Stanley_History_of_Philosophy.jpg"
+    },
+    "fetched_at": "2026-10-12T12:05:16.446Z"
+  },
+  {
+    "id": "heraclitus",
+    "wikidata": "Q41155",
+    "wikipedia_ar": "هرقليطس",
+    "name_ar": "هرقليطس",
+    "name_en": "Heraclitus",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "presocratic",
+    "tradition_ar": "فلسفة الصيرورة واللوغوس",
+    "birth": {
+      "year": -535,
+      "approx": true
+    },
+    "death": {
+      "year": -475,
+      "approx": true
+    },
+    "active": {
+      "from": -504,
+      "to": -475
+    },
+    "location": {
+      "lat": 37.94,
+      "lng": 27.34,
+      "place_ar": "أفسس",
+      "modern_country_ar": "تركيا"
+    },
+    "tags": [
+      "flux",
+      "logos",
+      "fire-arche",
+      "dialectic",
+      "opposites"
+    ],
+    "notes": "فيلسوف الصيرورة والتغير الدائم، اشتهر بمقولة 'لا يمكنك النزول في النهر مرتين' ومفهوم اللوغوس كقانون كوني جامع",
+    "summary_ar": "هِرَقْليطُس أو هيراقليتوس فيلسوف يوناني في عصر ما قبل سقراط. كتب بأسلوب غامض، يغلب طابع الحزن على كتاباته، ولذا، عُرف بالفيلسوف الباكي. تأثر بأفكاره كل من سقراط وأفلاطون وأرسطو. قال بأن النار هي الجوهر الأول، ومنها نشأ الكون. وقال أيضاً بالتغيّر الدائم. يصعب تحديد تاريخ حياته بدقة، وقد وضع كتاباً وحيداً، لم يصلنا منه غير شذرات. ولا يعرف المؤرخون عن حياته إلاّ القليل. ولا يكاد يُعرف عنه غير أنه كان من الأسرة المالكة في مدينة أفسس بمنطقة آسيا الصغرى.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D9%87%D8%B1%D9%82%D9%84%D9%8A%D8%B7%D8%B3",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Ca%27_Rezzonico_-_Eraclito_1705_-_Giuseppe_Torretti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Ca%27_Rezzonico_-_Eraclito_1705_-_Giuseppe_Torretti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "author": "Didier Descouens",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ca%27_Rezzonico_-_Eraclito_1705_-_Giuseppe_Torretti.jpg"
+    },
+    "fetched_at": "2026-10-12T12:05:19.942Z"
+  },
+  {
+    "id": "parmenides",
+    "wikidata": "Q125551",
+    "wikipedia_ar": "برمانيدس",
+    "name_ar": "بارمينيدس",
+    "name_en": "Parmenides",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "presocratic",
+    "tradition_ar": "المدرسة الإيلية",
+    "birth": {
+      "year": -515,
+      "approx": true
+    },
+    "death": {
+      "year": -450,
+      "approx": true
+    },
+    "active": {
+      "from": -480,
+      "to": -450
+    },
+    "location": {
+      "lat": 40.16,
+      "lng": 15.15,
+      "place_ar": "إيليا (فاليا)",
+      "modern_country_ar": "إيطاليا"
+    },
+    "tags": [
+      "eleatics",
+      "being",
+      "ontology",
+      "rationalism",
+      "truth"
+    ],
+    "notes": "مؤسس الأنطولوجيا الفلسفية، أكد في قصيدته 'في الطبيعة' أن الوجود واحد وثابت ولا يتغير وأن التغير وهم حسي",
+    "summary_ar": "برمانيدس ‏ هو فيلسوف يوناني ولد في القرن السادس قبل الميلاد في إيليا وهو من فلاسفة عصر ما قبل سقراط",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%85%D8%A7%D9%86%D9%8A%D8%AF%D8%B3",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Busto_di_Parmenide_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Busto_di_Parmenide_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "author": "Sergio Spolti",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Busto_di_Parmenide_(cropped).jpg"
+    },
+    "fetched_at": "2026-10-12T12:05:23.884Z"
+  },
+  {
+    "id": "zeno-of-elea",
+    "wikidata": "Q132157",
+    "wikipedia_ar": "زينون الإيلي",
+    "name_ar": "زينون الإيلي",
+    "name_en": "Zeno of Elea",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "presocratic",
+    "tradition_ar": "المدرسة الإيلية",
+    "birth": {
+      "year": -495,
+      "approx": true
+    },
+    "death": {
+      "year": -430,
+      "approx": true
+    },
+    "active": {
+      "from": -465,
+      "to": -430
+    },
+    "location": {
+      "lat": 40.16,
+      "lng": 15.15,
+      "place_ar": "إيليا (فاليا)",
+      "modern_country_ar": "إيطاليا"
+    },
+    "tags": [
+      "paradoxes",
+      "dialectic",
+      "motion",
+      "eleatics"
+    ],
+    "notes": "تلميذ بارمينيدس وصاحب المفارقات المنطقية الشهيرة (مثل أخيل والسلحفاة) للدفاع عن وحدة الوجود واستحالة الحركة والتعدد",
+    "summary_ar": "زينون من إيليا أو زينون الإيلي أحد فلاسفة ما قبل سقراط، عاش زينون في القرن الخامس قبل الميلاد، من إيليا وهي مدينة يونانية على الساحلِ الجنوبيِ لإيطاليا. وهو من أنصار بارمنيدس في أن عالم الحس وهم باطل. طرح زينو الفكرة بشكل منطقي قائم على نفي الكثرة التي ترى الكون كله شيء واحد لا يقبل التجزئة، وله نظريات عديدة منها نفيه للحركة.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%B2%D9%8A%D9%86%D9%88%D9%86_%D8%A7%D9%84%D8%A5%D9%8A%D9%84%D9%8A",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Portretbuste_van_Zeno_van_Elea_Paradigmata_graphices_variorum_artificum_%28serietitel%29%2C_RP-P-1907-4495.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Portretbuste_van_Zeno_van_Elea_Paradigmata_graphices_variorum_artificum_%28serietitel%29%2C_RP-P-1907-4495.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC0",
+      "author": "Jan de Bisschop",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Portretbuste_van_Zeno_van_Elea_Paradigmata_graphices_variorum_artificum_(serietitel),_RP-P-1907-4495.jpg"
+    },
+    "fetched_at": "2026-10-12T12:05:25.436Z"
+  },
+  {
+    "id": "empedocles",
+    "wikidata": "Q83375",
+    "wikipedia_ar": "أمبادوقليس",
+    "name_ar": "إمبيدوكليس",
+    "name_en": "Empedocles",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "presocratic",
+    "tradition_ar": "الفلسفة التعددية",
+    "birth": {
+      "year": -494,
+      "approx": true
+    },
+    "death": {
+      "year": -434,
+      "approx": true
+    },
+    "active": {
+      "from": -460,
+      "to": -434
+    },
+    "location": {
+      "lat": 37.31,
+      "lng": 13.58,
+      "place_ar": "أكراغاس (صقلية)",
+      "modern_country_ar": "إيطاليا"
+    },
+    "tags": [
+      "four-elements",
+      "love-and-strife",
+      "cosmology"
+    ],
+    "notes": "صاحب نظرية العناصر الأربعة (التراب، الهواء، النار، الماء) المحكومة بقوتي الحب والنزاع في دورة كونية مستمرة",
+    "summary_ar": "أمبادوقليس كان فيلسوفاً يونانياً في فترة ما قبل سقراط، مواطن بمدينة آغريغنتوم، وهي مدينة يونانية بـصقلية، وفلسفة أمبادوقليس كانت المنشأ لنظرية العناصر الأربعة، كما اقترح وجود قوى أطلق عليها الحب والبغض كسبب لتمازج العناصر أو انفصالها عن بعضها، ونتيجة لتأثره بالفلسفة الفيثاغورثية، آمن أمبادوقليس بتناسخ الأرواح، ويُعتبر آخر فيلسوف اغريقي يدوّن أفكاره وفلسفته كأبيات شعرية، توفي عندما ألقى بنفسه في فوهة بركان، كانت مادة ثرية للأساطير والكثير من المعالجات الأدبية.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%A3%D9%85%D8%A8%D8%A7%D8%AF%D9%88%D9%82%D9%84%D9%8A%D8%B3",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Empedokles.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Empedokles.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Unknown authorUnknown author",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Empedokles.jpeg"
+    },
+    "fetched_at": "2026-10-12T12:05:30.411Z"
+  },
+  {
+    "id": "anaxagoras",
+    "wikidata": "Q83041",
+    "wikipedia_ar": "أناكساغوراس",
+    "name_ar": "أناكساغوراس",
+    "name_en": "Anaxagoras",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "presocratic",
+    "tradition_ar": "الفلسفة التعددية العقلية",
+    "birth": {
+      "year": -500,
+      "approx": true
+    },
+    "death": {
+      "year": -428,
+      "approx": true
+    },
+    "active": {
+      "from": -460,
+      "to": -428
+    },
+    "location": {
+      "lat": 38.32,
+      "lng": 26.77,
+      "place_ar": "كلازوميناي / أثينا",
+      "modern_country_ar": "تركيا"
+    },
+    "tags": [
+      "nous",
+      "mind",
+      "pluralism",
+      "astronomy"
+    ],
+    "notes": "أول من أدخل الفلسفة إلى أثينا، واعتبر أن العقل الكوني (النووس) هو القوة المنظمة للمادة والكون",
+    "summary_ar": "أناكسوغوراس (بالإغريقية:Αναξαγόρας) فيلسوف يوناني قام بعرض فكرة نيوس باليونانية، «العقل» إلى فلسفة الأصل؛ الفلاسفة السابقين درسوا العناصر بأنها الحقيقة النهائية.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%A3%D9%86%D8%A7%D9%83%D8%B3%D8%A7%D8%BA%D9%88%D8%B1%D8%A7%D8%B3",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Anaxagoras.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Anaxagoras.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Unknown",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Anaxagoras.png"
+    },
+    "fetched_at": "2026-10-12T12:05:36.245Z"
+  },
+  {
+    "id": "leucippus",
+    "wikidata": "Q165589",
+    "wikipedia_ar": "ليوكيبوس",
+    "name_ar": "ليوكيبوس",
+    "name_en": "Leucippus",
+    "kind": "philosopher",
+    "legendary": true,
+    "civilization": "greece",
+    "era": "presocratic",
+    "tradition_ar": "المدرسة الذرية",
+    "birth": {
+      "year": -490,
+      "approx": true
+    },
+    "death": {
+      "year": -420,
+      "approx": true
+    },
+    "active": {
+      "from": -450,
+      "to": -420
+    },
+    "location": {
+      "lat": 40.98,
+      "lng": 24.98,
+      "place_ar": "أبديرة / ملطية",
+      "modern_country_ar": "اليونان"
+    },
+    "tags": [
+      "atomism",
+      "void",
+      "materialism"
+    ],
+    "notes": "المؤسس الأول للمذهب الذري اليوناني ومعلم ديمقريطس، اعتبر أن العالم مركب من ذرات وفراغ مع وجود غموض تاريخي حول تفاصيل حياته",
+    "summary_ar": "ليوكيبوس ، هو فيلسوف يوناني، ولد في ميليتوس أو ، وهو مؤسس النظرية الذرية، وكان معاصرا لزينون وإيمبيدوكليس وأناكساغوراس. وغطت شهرة تلميذه ديموقريطوس على شهرته، الذي طور النظرية بعد ذلك إلى نظام، حتى أن إبيقور أنكر وجوده، لكن إبيقور ميز ليوكيبوس عن ديموقرطس وأرسطو وثيوفراستوس بأن نسب له اختراع المذهب الذري. لذا فلا يظهر أن هناك سبب للشك بوجوده، رغم أنه لا يوجد شيء معروف عن حياته، وحتى مسقط رأسه مجهول.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D9%84%D9%8A%D9%88%D9%83%D9%8A%D8%A8%D9%88%D8%B3",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Pinacoteca_Querini_Stampalia_-_Leucippus_-_Luca_Giordano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Pinacoteca_Querini_Stampalia_-_Leucippus_-_Luca_Giordano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Didier Descouens",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pinacoteca_Querini_Stampalia_-_Leucippus_-_Luca_Giordano.jpg"
+    },
+    "fetched_at": "2026-10-12T12:05:42.058Z"
+  },
+  {
+    "id": "democritus",
+    "wikidata": "Q41980",
+    "wikipedia_ar": "ديمقريطس",
+    "name_ar": "ديمقريطس",
+    "name_en": "Democritus",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "presocratic",
+    "tradition_ar": "المدرسة الذرية",
+    "birth": {
+      "year": -460,
+      "approx": true
+    },
+    "death": {
+      "year": -370,
+      "approx": true
+    },
+    "active": {
+      "from": -430,
+      "to": -370
+    },
+    "location": {
+      "lat": 40.98,
+      "lng": 24.98,
+      "place_ar": "أبديرة",
+      "modern_country_ar": "اليونان"
+    },
+    "tags": [
+      "atomism",
+      "materialism",
+      "determinism",
+      "ethics"
+    ],
+    "notes": "المطور الأكبر للفلسفة الذرية، صاغ نظرية مادية متكاملة تفسر الوجود بحركة الذرات في الفراغ وعُرف بالفيلسوف الضاحك",
+    "summary_ar": "ديمُقْريطُس أو ديمقراط ، اشتهر بلقب «الفيلسوف الضاحك»، فيلسوف يوناني ولد في أبديرة، تراقيا. كان أحد الفلاسفة المؤثرين في عصر ماقبل سقراط وكان تلميذا للفيلسوف ليوكيبوس، الذي صاغ النظرية الذرية للكون.\nورث من والده أموال طائلة واستنفذ أمواله في الرحلات التي كان مولعا بها وزار مصر وتعلم الرياضيات من العلماء المصريين، ثم ذهب إلى بلاد فارس ثم إلى الهند وحاور الفلاسفة العراة فيها ثم عاد إلى أثينا وقابل سقراط وتعرف عليه.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%AF%D9%8A%D9%85%D9%82%D8%B1%D9%8A%D8%B7%D8%B3",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Bust_of_an_unknown_Greek_-_Museo_archeologico_nazionale_di_Napoli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Bust_of_an_unknown_Greek_-_Museo_archeologico_nazionale_di_Napoli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "author": "Original uploader was Odysses",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bust_of_an_unknown_Greek_-_Museo_archeologico_nazionale_di_Napoli.jpg"
+    },
+    "fetched_at": "2026-10-12T12:05:47.037Z"
+  },
+  {
+    "id": "protagoras",
+    "wikidata": "Q169243",
+    "wikipedia_ar": "بروتاغوراس",
+    "name_ar": "بروتاغوراس",
+    "name_en": "Protagoras",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "presocratic",
+    "tradition_ar": "السفسطائية",
+    "birth": {
+      "year": -490,
+      "approx": true
+    },
+    "death": {
+      "year": -420,
+      "approx": true
+    },
+    "active": {
+      "from": -450,
+      "to": -420
+    },
+    "location": {
+      "lat": 40.98,
+      "lng": 24.98,
+      "place_ar": "أبديرة / أثينا",
+      "modern_country_ar": "اليونان"
+    },
+    "tags": [
+      "sophism",
+      "relativism",
+      "rhetoric",
+      "epistemology"
+    ],
+    "notes": "أشهر السفسطائيين، صاحب القضية الفلسفية 'الإنسان مقياس كل شيء' ورائد النسبية المعرفية والأخلاقية",
+    "summary_ar": "بروتاغوراس ‏ هو زعيم الفكر السوفسطائي في القرن الخامس قبل الميلاد. وتُعتبر أفكار بروتاغوراس هي أساس أفكار السوفسطائيين. كان يعتقد أن الإنسان هو مقياس كل شيء، أي أن الخير والشر الصح والخطأ، كلها يجب أن تُحدد بحسب حاجات الكائن البشري.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%88%D8%AA%D8%A7%D8%BA%D9%88%D8%B1%D8%A7%D8%B3",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Salvator_Rosa_-_D%C3%A9mocrite_et_Protagoras.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Salvator_Rosa_-_D%C3%A9mocrite_et_Protagoras.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Salvator Rosa",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Salvator_Rosa_-_D%C3%A9mocrite_et_Protagoras.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    "fetched_at": "2026-10-12T12:05:50.826Z"
+  },
+  {
+    "id": "gorgias",
+    "wikidata": "Q179785",
+    "wikipedia_ar": "غورغياس",
+    "name_ar": "غورغياس",
+    "name_en": "Gorgias",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "presocratic",
+    "tradition_ar": "السفسطائية والخطابة",
+    "birth": {
+      "year": -483,
+      "approx": true
+    },
+    "death": {
+      "year": -375,
+      "approx": true
+    },
+    "active": {
+      "from": -435,
+      "to": -375
+    },
+    "location": {
+      "lat": 37.28,
+      "lng": 14.99,
+      "place_ar": "ليونتيني (صقلية) / أثينا",
+      "modern_country_ar": "إيطاليا"
+    },
+    "tags": [
+      "sophism",
+      "nihilism",
+      "rhetoric",
+      "skepticism"
+    ],
+    "notes": "فيلسوف سفسطائي وخطيب بارز، اشتهر بأطروحاته التشكيكية الثلاث حول استحالة الوجود واستحالة معرفته واستحالة نقله للآخرين",
+    "summary_ar": "غورغياس ق. م. ولد في ليونتيوم، وتتلمذ على يد أنبادوقليس، واشتغل بالطبيعيات. اهتم باللغة والبيان، فكان أفصح زمانه وأبلغهم. جاء إلى أثينا يطلب العون لمدينته على أهل سراقوصة، فأعجب الناس بأثينا ببلاغته. يصوره أفلاطون في الحوار المعنون باسمه على أنه مفاخرا بمقدرته على الإجابة عن أي سؤال يلقى عليه. مات في تساليا وقد قاربت سنه المائة أو جاوزتها، وعظم صيته، وضخمت ثروته. وضع كتاباً في اللاوجود قد به إلى التمثيل لفنه والإعلان عن مقدرته بالرد على الايليين والتفوق عليهم في الجدال. ويمكن تلخيص أقواله في قضايا ثلاث:لا يوجد شيء.\nإذا كان هناك شيء فالإنسان قاصر عن ادراكه.\nإذا فرضنا أن إنساناً أدركه فلن يستطيع أن يبلغه لغيره من الناس.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%BA%D9%88%D8%B1%D8%BA%D9%8A%D8%A7%D8%B3",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Gorgia_di_Leontini.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Gorgia_di_Leontini.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Giuseppe Emanuele Ortolani e C. Biondi",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gorgia_di_Leontini.png"
+    },
+    "fetched_at": "2026-10-12T12:05:55.208Z"
   },
   {
     "id": "socrates",
@@ -171,9 +1402,11 @@
     },
     "tags": [
       "ethics",
-      "epistemology"
+      "epistemology",
+      "socratic-method",
+      "virtue"
     ],
-    "notes": "Verified against Wikidata Q913 and Arabic Wikipedia",
+    "notes": "أبو الفلسفة الأخلاقية الغربية ورائد المنهج التوليدي الحواري، عاش في أثينا وحُكم عليه بالإعدام لتجرئه على المساءلة الفلسفية",
     "summary_ar": "سُقْرَاط كان فيلسوفًا يونانيًا من أثينا ولد نحو 470 وتُوفِّيَ نحو 399 ق.م، يُعتبر مؤسس الفلسفة الغربية وأحد أوائل الفلاسفة الأخلاقيين في مذهب التفكير الأخلاقي. كان سقراط شخصية غامضة، حيث لم يكتب أي نصوص، وهو معروف أساسًا من خلال روايات كتّاب العصور الكلاسيكية التي جاءت بعد وفاته عبر تلامذته أفلاطون وزينوفون خاصَّة. كُتبت هذه الروايات على شكل حوارات، حيث يناقش سقراط ومحدثوه موضوعًا ما بأسلوب السؤال والجواب؛ مما أدى إلى ظهور النوع الأدبي المعروف بالحوار السقراطي. إن التناقضات بين الروايات حول سقراط تجعل من الصعب جدًا إعادة بناء فلسفته، وهو وضع يُعرف بمشكلة سقراط. كان سقراط شخصية مثيرة للجدل في المجتمع الأثيني. اتُهم في عام 399 قبل الميلاد بالإلحاد وإفساد الشباب. وحُكم عليه بالإعدام بعد محاكمة استمرت ليوم واحد. وقد قضى يومه الأخير في السجن، رافضًا عروضًا لمساعدته على الهرب.",
     "summary_source": "wikipedia_ar",
     "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%B3%D9%82%D8%B1%D8%A7%D8%B7",
@@ -184,7 +1417,55 @@
       "author": "Copy of Lysippos (?)",
       "source_url": "https://commons.wikimedia.org/wiki/File:Socrates_Louvre.jpg"
     },
-    "fetched_at": "2026-10-12T11:41:01.107Z"
+    "fetched_at": "2026-10-12T12:05:55.220Z"
+  },
+  {
+    "id": "antisthenes",
+    "wikidata": "Q179149",
+    "wikipedia_ar": "أنطستينوس",
+    "name_ar": "أنتيسثينس",
+    "name_en": "Antisthenes",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "classical-greek",
+    "tradition_ar": "المدرسة الكلبية المبكرة",
+    "birth": {
+      "year": -446,
+      "approx": true
+    },
+    "death": {
+      "year": -366,
+      "approx": true
+    },
+    "active": {
+      "from": -410,
+      "to": -366
+    },
+    "location": {
+      "lat": 37.9715,
+      "lng": 23.7257,
+      "place_ar": "أثينا",
+      "modern_country_ar": "اليونان"
+    },
+    "tags": [
+      "cynicism",
+      "virtue",
+      "ethics",
+      "asceticism"
+    ],
+    "notes": "تلميذ سقراط ومؤسس المدرسة الكلبية، دعا إلى الفضيلة كغاية وحيدة والاكتفاء الذاتي والزهد في المظاهر الاجتماعية",
+    "summary_ar": "أنتيسِتنيس فيلسوف إغريقي وتلميذ لسقراط. ولد تقريبًا في 445 ق.م ومات 365 ق.م، تعلم الخطابة على يد غورغياس قبل أن يصبح تلميذًا لسقراط. اعتنق وطوّر الجانب الأخلاقي من تعاليم سقراط. تبنى فكرة وجوب أن تحكم الفضيلة حياة الإنسان. وفيما بعد اعتبره الكتاب مؤسسًا للفلسفة الكلبية.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%A3%D9%86%D8%B7%D8%B3%D8%AA%D9%8A%D9%86%D9%88%D8%B3",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Antisthenes_BM_1838.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Antisthenes_BM_1838.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Unknown artistUnknown artist",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Antisthenes_BM_1838.jpg"
+    },
+    "fetched_at": "2026-10-12T12:05:59.680Z"
   },
   {
     "id": "plato",
@@ -218,9 +1499,10 @@
     "tags": [
       "metaphysics",
       "epistemology",
-      "political-philosophy"
+      "political-philosophy",
+      "forms"
     ],
-    "notes": "مؤسس أكاديمية أثينا ومؤلف المحاورات وتلميذ سقراط الأبرز",
+    "notes": "مؤسس أكاديمية أثينا ومؤلف المحاورات ونظرية المثل، تلميذ سقراط الأبرز ومعلم أرسطو",
     "summary_ar": "أَفْلاطُون هُوَ أَرِسْطُقْلِس بن أَرِسْطُن، يوناني كلاسيكي، رياضياتي، كاتب لعدد من الحوارات الفلسفية، ويعتبر مؤسس لأكاديمية أثينا التي هي أول معهد للتعليم العالي في العالم الغربي، معلمه سقراط وتلميذه أرسطو. وضع أفلاطون الأسس الأولى للفلسفة الغربية والعلوم. كان تلميذاً لسقراط، وتأثر بأفكاره كما تأثر بإعدامه الظالم.",
     "summary_source": "wikipedia_ar",
     "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%A3%D9%81%D9%84%D8%A7%D8%B7%D9%88%D9%86",
@@ -231,7 +1513,727 @@
       "author": "Marie-Lan Nguyen",
       "source_url": "https://commons.wikimedia.org/wiki/File:Plato_Silanion_Musei_Capitolini_MC1377.jpg"
     },
-    "fetched_at": "2026-10-12T11:41:01.114Z"
+    "fetched_at": "2026-10-12T12:05:59.697Z"
+  },
+  {
+    "id": "diogenes-of-sinope",
+    "wikidata": "Q59180",
+    "wikipedia_ar": "ديوجانس الكلبي",
+    "name_ar": "ديوجانس الكلبي",
+    "name_en": "Diogenes of Sinope",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "classical-greek",
+    "tradition_ar": "المدرسة الكلبية",
+    "birth": {
+      "year": -412,
+      "approx": true
+    },
+    "death": {
+      "year": -323,
+      "approx": true
+    },
+    "active": {
+      "from": -370,
+      "to": -323
+    },
+    "location": {
+      "lat": 37.91,
+      "lng": 22.93,
+      "place_ar": "كورنث / أثينا",
+      "modern_country_ar": "اليونان"
+    },
+    "tags": [
+      "cynicism",
+      "asceticism",
+      "freedom",
+      "ethics",
+      "provocation"
+    ],
+    "notes": "أشهر أعلام الفلسفة الكلبية، عاش حياة التقشف الكامل في برميل بكورنث وتحدى التقاليد الاجتماعية بحثاً عن الصدق والفضيلة الطبيعية",
+    "summary_ar": "ديوجانس الكلبي فَيلسوف يونانِي، وأحد مؤسسي المدرسة الكلبيّة الأوائل. ولدَ في سينوب بتركيا، ودَرسَ في أثينا على يد الفَيلسوف أنتيستنيس. قالَ صاحبْ الملل والنحل: «كانَ حَكِيماً فاضلاً متقشفاً لا يقتَني شيئاً ولا يأوى إلى مَنزل.» عاصَرَ الأسَكندر المَقدوني، والذي رَوَى أنه قال «لو لمْ أكن الأسكندر لوَددت أن أكون دِيوجانس».",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%AF%D9%8A%D9%88%D8%AC%D8%A7%D9%86%D8%B3_%D8%A7%D9%84%D9%83%D9%84%D8%A8%D9%8A",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Diogenes-statue-Sinop-enhanced.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Diogenes-statue-Sinop-enhanced.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY 3.0",
+      "author": "Diogenes-statue-Sinop.JPG: Tony f\nderivative work: Singinglemon (talk)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Diogenes-statue-Sinop-enhanced.jpg"
+    },
+    "fetched_at": "2026-10-12T12:06:04.948Z"
+  },
+  {
+    "id": "aristotle",
+    "wikidata": "Q868",
+    "wikipedia_ar": "أرسطو",
+    "name_ar": "أرسطو",
+    "name_en": "Aristotle",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "classical-greek",
+    "tradition_ar": "المشائية (الأرسطية)",
+    "birth": {
+      "year": -384,
+      "approx": false
+    },
+    "death": {
+      "year": -322,
+      "approx": false
+    },
+    "active": {
+      "from": -355,
+      "to": -322
+    },
+    "location": {
+      "lat": 37.9715,
+      "lng": 23.7257,
+      "place_ar": "أثينا (الليكيوم) / ستاغيرا",
+      "modern_country_ar": "اليونان"
+    },
+    "tags": [
+      "logic",
+      "metaphysics",
+      "ethics",
+      "politics",
+      "biology",
+      "peripatetic"
+    ],
+    "notes": "المعلم الأول وأحد أعظم المفكرين في التاريخ الإنساني، مؤسس علم المنطق ومدرسة الليكيوم المشائية ومؤلف أعمال شاملة في العلوم والفلسفة",
+    "summary_ar": "أَرِسْطُو أو أَرِسْطُوطالِيس أو أَرِسْطاطالِيس ؛ هُوَ أرسطوطاليس بن نيقوماخس الجراسني الفيثاغوري، والملقب بالمعلم الأول، فيلسوف يوناني وتلميذُ أفلاطونَ ومُعلِّمُ الإسكندرَ المقدونيّ. ويعدُّ مؤسس مدرسة ليقيون ومدرسة الفلسفة المشائية والتقاليد الأرسطية، وواحد من عظماء المفكرين.\nتغطي كتاباته مجالات عدة، منها الفيزياء و‌الميتافيزيقيا و‌الشعر و‌المسرح و‌الموسيقى و‌المنطق و‌البلاغة و‌اللغويات و‌السياسة و‌الحكومة و‌الأخلاقيات و‌علم الأحياء و‌علم الحيوان.كان لفلسفته تأثير فريد على كل شكل من أشكال المعرفة تقريبًا في الغرب، ولا يزال موضوعًا للنقاش الفَلْسَفي المعاصر وتزوج من phyllis.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%A3%D8%B1%D8%B3%D8%B7%D9%88",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Aristotle_Altemps_Inv8575.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Aristotle_Altemps_Inv8575.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "After Lysippos",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aristotle_Altemps_Inv8575.jpg"
+    },
+    "fetched_at": "2026-10-12T12:06:11.932Z"
+  },
+  {
+    "id": "pyrrho",
+    "wikidata": "Q192313",
+    "wikipedia_ar": "بيرو (فيلسوف)",
+    "name_ar": "بيرو الإليسي",
+    "name_en": "Pyrrho",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "hellenistic",
+    "tradition_ar": "الريبية (البيرونية)",
+    "birth": {
+      "year": -360,
+      "approx": true
+    },
+    "death": {
+      "year": -270,
+      "approx": true
+    },
+    "active": {
+      "from": -330,
+      "to": -270
+    },
+    "location": {
+      "lat": 37.89,
+      "lng": 21.37,
+      "place_ar": "إيليس",
+      "modern_country_ar": "اليونان"
+    },
+    "tags": [
+      "skepticism",
+      "epoché",
+      "ataraxia",
+      "epistemology"
+    ],
+    "notes": "مؤسس المدرسة الريبية اليونانية (البيرونية)، رأى أن تعليق الحكم والشك في يقين المعرفة هو السبيل لبلوغ راحة البال",
+    "summary_ar": "بيرّو أو بيرْون هو فيلسوف يوناني توفي عام 275 ق، م. يُعتبر مؤسّس مذهب الشك الذي نُسب إليه فعُرف بـ البيرووية. هو من مدرسة الفلسفة الشرقية، اشتهر بآنه أول فيلسوف شك اغريقي، ملهم المدرسة الفلسفية التي انشئها أنيسيديموس في القرن الميلادي الأول. ومن أشهر مقولاته:",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%A8%D9%8A%D8%B1%D9%88_(%D9%81%D9%8A%D9%84%D8%B3%D9%88%D9%81)",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Pyrrho_Heliensis_-_Illustrium_philosophorum_et_sapientum_effigies_ab_eorum_numistatibus_extractae.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Pyrrho_Heliensis_-_Illustrium_philosophorum_et_sapientum_effigies_ab_eorum_numistatibus_extractae.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Girolamo Olgiati",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pyrrho_Heliensis_-_Illustrium_philosophorum_et_sapientum_effigies_ab_eorum_numistatibus_extractae.png"
+    },
+    "fetched_at": "2026-10-12T12:06:15.787Z"
+  },
+  {
+    "id": "epicurus",
+    "wikidata": "Q43216",
+    "wikipedia_ar": "إبيقور",
+    "name_ar": "إبيقور",
+    "name_en": "Epicurus",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "hellenistic",
+    "tradition_ar": "الإبيقورية",
+    "birth": {
+      "year": -341,
+      "approx": false
+    },
+    "death": {
+      "year": -270,
+      "approx": false
+    },
+    "active": {
+      "from": -311,
+      "to": -270
+    },
+    "location": {
+      "lat": 37.9715,
+      "lng": 23.7257,
+      "place_ar": "أثينا (الحديقة)",
+      "modern_country_ar": "اليونان"
+    },
+    "tags": [
+      "epicureanism",
+      "ataraxia",
+      "atomism",
+      "hedonism",
+      "ethics"
+    ],
+    "notes": "مؤسس الإبيقورية ومدرسة الحديقة بأثينا، دعا إلى الطمأنينة النفسية وتحرير الإنسان من الخوف عبر اللذة العقلية والاعتدال",
+    "summary_ar": "إبيقور هو فيلسوف يوناني قديم عاش في الفترة بين عامي ، أسس مدرسة فلسفية سميت باسمه هي المدرسة (الإبيقوريّة).",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%A5%D8%A8%D9%8A%D9%82%D9%88%D8%B1",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Epicurus_Massimo_Inv197306.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Epicurus_Massimo_Inv197306.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Unknown",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Epicurus_Massimo_Inv197306.jpg"
+    },
+    "fetched_at": "2026-10-12T12:06:20.405Z"
+  },
+  {
+    "id": "zeno-of-citium",
+    "wikidata": "Q171303",
+    "wikipedia_ar": "زينون الرواقي",
+    "name_ar": "زينون الرواقي",
+    "name_en": "Zeno of Citium",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "hellenistic",
+    "tradition_ar": "الرواقية المبكرة",
+    "birth": {
+      "year": -334,
+      "approx": true
+    },
+    "death": {
+      "year": -262,
+      "approx": true
+    },
+    "active": {
+      "from": -300,
+      "to": -262
+    },
+    "location": {
+      "lat": 37.9715,
+      "lng": 23.7257,
+      "place_ar": "أثينا (الستوا)",
+      "modern_country_ar": "اليونان"
+    },
+    "tags": [
+      "stoicism",
+      "logos",
+      "ethics",
+      "virtue",
+      "duty"
+    ],
+    "notes": "فيلسوف فينيقي الأصل أسس المدرسة الرواقية في رواق أثينا الملون، واعتبر أن الفضيلة والعيش وفقاً للطبيعة والعقل هما جوهر الحكمة",
+    "summary_ar": "زينون (334 ق. م. – 262 ق.م) فيلسوف هلنستي من مواليد مستوطنة كيتيوم الفينيقية في قبرص. هاجر إلى أثينا في شبابه ومع أنه رفض أن يصبح من رعاياها إلا أنه بقي مقيمًا فيها حتى وفاته، وبعد دراسته على يد كريتيس الساخر وستيلبو الميجاري وفي الأكاديمية القديمة، أخذ يعلم في الرواق المعمد «من هنا كانت تسمية مذهبه الفلسفي بالرواقية»، وقد أنشأها سنة 300 ق.م وقال فيها بأن الرجل الحكيم يجب أن يتحرر من الانفعال، ولا يتأثر بالفرح أو الترح، وأن يخضع من غير تذمر لحكم الضرورة القاهرة.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%B2%D9%8A%D9%86%D9%88%D9%86_%D8%A7%D9%84%D8%B1%D9%88%D8%A7%D9%82%D9%8A",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Paolo_Monti_-_Servizio_fotografico_%28Napoli%2C_1969%29_-_BEIC_6353768.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Paolo_Monti_-_Servizio_fotografico_%28Napoli%2C_1969%29_-_BEIC_6353768.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "author": "Paolo Monti",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Paolo_Monti_-_Servizio_fotografico_(Napoli,_1969)_-_BEIC_6353768.jpg"
+    },
+    "fetched_at": "2026-10-12T12:06:25.936Z"
+  },
+  {
+    "id": "euclid",
+    "wikidata": "Q8747",
+    "wikipedia_ar": "إقليدس",
+    "name_ar": "إقليدس الإسكندري",
+    "name_en": "Euclid",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "hellenistic",
+    "tradition_ar": "الرياضيات وفلسفة الهندسة السكندرية",
+    "birth": {
+      "year": -330,
+      "approx": true
+    },
+    "death": {
+      "year": -270,
+      "approx": true
+    },
+    "active": {
+      "from": -300,
+      "to": -270
+    },
+    "location": {
+      "lat": 31.2001,
+      "lng": 29.9187,
+      "place_ar": "الإسكندرية",
+      "modern_country_ar": "مصر"
+    },
+    "tags": [
+      "mathematics",
+      "geometry",
+      "axiomatic-method",
+      "alexandria"
+    ],
+    "notes": "أبو الهندسة ومؤسس المنهج البديهي البرهاني في كتاب الأصول الذي شكل أساس التفكير الرياضي والمنطقي لأكثر من ألفي عام",
+    "summary_ar": "إقليدس بن نوقطرس بن برنيقس الإسكندري ولد 300 قبل الميلاد، عالم رياضيات يوناني، يلقب ب‍‍أبي الهندسة. مشوار إقليدس العلمي كان في الإسكندرية في أيام حكم بطليموس الأول. اشتهر إقليدس بكتابه العناصر وهو الكتاب الأكثر تأثيرا في تاريخ الرياضيات، وقد استخدم هذا الكتاب في تدريس الرياضيات منذ بدايات نشره قديما حتى نهاية القرن الـ19 وبداية القرن الـ20 بين ثنايا هذا الكتاب مبادئ ما يعرف اليوم باسم الهندسة الإقليدية التي تتكون من مجموعة من البديهيات. أنشأ إقليدس بعض المصنفات أيضا في حقول عديدة؛ كالمنظور، القطع المخروطي، الهندسة الكروية، ونظرية الأعداد وغيرها.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%A5%D9%82%D9%84%D9%8A%D8%AF%D8%B3",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Euklid2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Euklid2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Justus van Gent",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Euklid2.jpg"
+    },
+    "fetched_at": "2026-10-12T12:06:34.262Z"
+  },
+  {
+    "id": "cleanthes",
+    "wikidata": "Q310149",
+    "wikipedia_ar": "كليانثس",
+    "name_ar": "كليانثس",
+    "name_en": "Cleanthes",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "hellenistic",
+    "tradition_ar": "الرواقية المبكرة",
+    "birth": {
+      "year": -331,
+      "approx": true
+    },
+    "death": {
+      "year": -232,
+      "approx": true
+    },
+    "active": {
+      "from": -280,
+      "to": -232
+    },
+    "location": {
+      "lat": 37.9715,
+      "lng": 23.7257,
+      "place_ar": "أثينا",
+      "modern_country_ar": "اليونان"
+    },
+    "tags": [
+      "stoicism",
+      "theology",
+      "hymn-to-zeus",
+      "ethics"
+    ],
+    "notes": "خليفة زينون في قيادة المدرسة الرواقية ومؤلف أنشودة زيوس الشهيرة التي عبرت عن الرؤية اللاهوتية الرواقية للنظام الكوني",
+    "summary_ar": "كليانثس هو فيلسوف رواقي، وكان من تلاميذ كراتس الطيبي وزينون الرواقي قبل أن يصبح زعيم المدرسة الرواقية.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D9%83%D9%84%D9%8A%D8%A7%D9%86%D8%AB%D8%B3",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Cleanthes_from_L._Annaei_Senecae_philosophi_Opera%2C_1605%2C_title_page_detail.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Cleanthes_from_L._Annaei_Senecae_philosophi_Opera%2C_1605%2C_title_page_detail.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Theodoor Galle",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cleanthes_from_L._Annaei_Senecae_philosophi_Opera,_1605,_title_page_detail.png"
+    },
+    "fetched_at": "2026-10-12T12:06:41.139Z"
+  },
+  {
+    "id": "archimedes",
+    "wikidata": "Q8739",
+    "wikipedia_ar": "أرخميدس",
+    "name_ar": "أرخميدس",
+    "name_en": "Archimedes",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "hellenistic",
+    "tradition_ar": "الفيزياء الرياضية والميكانيكا القديمة",
+    "birth": {
+      "year": -287,
+      "approx": true
+    },
+    "death": {
+      "year": -212,
+      "approx": false
+    },
+    "active": {
+      "from": -260,
+      "to": -212
+    },
+    "location": {
+      "lat": 37.0755,
+      "lng": 15.2866,
+      "place_ar": "سيراكيوز (صقلية)",
+      "modern_country_ar": "إيطاليا"
+    },
+    "tags": [
+      "physics",
+      "mathematics",
+      "mechanics",
+      "buoyancy",
+      "polymath"
+    ],
+    "notes": "أعظم علماء الطبيعة والرياضيات في العصر القديم، ابتكر قوانين الطفو والرافعات وحساب التفاضل البدائي وتطبيقات هندسية ثورية",
+    "summary_ar": "كان أرخميدس من سرقوسة عالم رياضيات يوناني قديم، وفيزيائيًا، ومهندسًا، وعالم فلك، ومخترعًا من مدينة سرقوسة القديمة في صقلية. يعتبر أرخميدس من أبرز العلماء في العصور الكلاسيكية القديمة، وذلك على الرغم من قلة تفاصيل حياته المعروفة. يُعد أيضًا أعظم عالم رياضيات في التاريخ القديم، وأحد أعظم علماء الرياضيات على الإطلاق، وسبق عصره في مجالي التفاضل والتكامل والتحليل الرياضي من خلال تطبيق مبدأ كافالييري وطريقة الاستنفاد لاشتقاق وإثبات مجموعة من النظريات الهندسية بشكل صارم. تشمل هذه النظريات مساحة الدائرة، ومساحة السطح وحجم الكرة، ومساحة القطع الناقص، والمساحة الواقعة أسفل القطع المكافئ، وحجم قطعة السطح المكافئ الدوراني، وحجم قطعة السطح الزائدي الدوراني، ومساحة الحلزون.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%A3%D8%B1%D8%AE%D9%85%D9%8A%D8%AF%D8%B3",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Retrato_de_un_erudito_%28%C2%BFArqu%C3%ADmedes%3F%29%2C_por_Domenico_Fetti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Retrato_de_un_erudito_%28%C2%BFArqu%C3%ADmedes%3F%29%2C_por_Domenico_Fetti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Domenico Fetti",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Retrato_de_un_erudito_%28%C2%BFArqu%C3%ADmedes%3F%29%2C_por_Domenico_Fetti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    "fetched_at": "2026-10-12T12:06:46.533Z"
+  },
+  {
+    "id": "chrysippus",
+    "wikidata": "Q211411",
+    "wikipedia_ar": "خريسيبوس",
+    "name_ar": "خريسيبوس",
+    "name_en": "Chrysippus",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "hellenistic",
+    "tradition_ar": "الرواقية المبكرة",
+    "birth": {
+      "year": -279,
+      "approx": true
+    },
+    "death": {
+      "year": -206,
+      "approx": true
+    },
+    "active": {
+      "from": -245,
+      "to": -206
+    },
+    "location": {
+      "lat": 37.9715,
+      "lng": 23.7257,
+      "place_ar": "أثينا / سولي",
+      "modern_country_ar": "اليونان"
+    },
+    "tags": [
+      "stoicism",
+      "propositional-logic",
+      "physics",
+      "ethics"
+    ],
+    "notes": "المؤسس الثاني للرواقية ورائد المنطق القضائي، رسخ الأركان النظرية للرواقية وقيل عنه 'لولا خريسيبوس لما كانت هناك رواقية'",
+    "summary_ar": "خريسيبوس الصُّولَوِيّ ، فيلسوف يوناني رواقي. يعود أصله إلى صولي في قيليقية، لكنه انتقل إلى أثينا حين كان شابًا، حيث أصبح تلميذًا لكليانثس في المدرسة الرواقية. حين مات كليانثس في حوالي العام 230 قبل الميلاد، أصبح خريسيبوس ثالث رئيس للمدرسة. بصفته كاتبًا غزير المؤلفات، وسع خريسيبوس المذاهب الأساسية لزينون الرواقي، وهو مؤسس المدرسة، ما أكسب خريسيبوس لقب المؤسس الثاني للرواقية.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%AE%D8%B1%D9%8A%D8%B3%D9%8A%D8%A8%D9%88%D8%B3",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Chrysippos_BM_1846.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Chrysippos_BM_1846.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Unknown artistUnknown artist",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chrysippos_BM_1846.jpg"
+    },
+    "fetched_at": "2026-10-12T12:06:50.520Z"
+  },
+  {
+    "id": "eratosthenes",
+    "wikidata": "Q43182",
+    "wikipedia_ar": "إراتوستينس",
+    "name_ar": "إراتوستينس",
+    "name_en": "Eratosthenes",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "hellenistic",
+    "tradition_ar": "الجغرافيا الرياضية والفلك السكندري",
+    "birth": {
+      "year": -276,
+      "approx": true
+    },
+    "death": {
+      "year": -194,
+      "approx": true
+    },
+    "active": {
+      "from": -245,
+      "to": -194
+    },
+    "location": {
+      "lat": 31.2001,
+      "lng": 29.9187,
+      "place_ar": "الإسكندرية",
+      "modern_country_ar": "مصر"
+    },
+    "tags": [
+      "geography",
+      "astronomy",
+      "mathematics",
+      "alexandria",
+      "polymath"
+    ],
+    "notes": "أمين مكتبة الإسكندرية وعالم موسوعي، أول من حسب محيط الكرة الأرضية بدقة مدهشة وابتكر غربال إراتوستينس للأعداد الأولية",
+    "summary_ar": "كان إراتوستينيس القوريني موسوعيًّا إغريقيًّا ورياضيًّا وجغرافيًّا وشاعراً وعالم فلك ومنظّراً موسيقيًّا. كان رجلًا متعلمًا، ولد وتعلم في قورينا، وصار كبير أمناء مكتبة الإسكندرية. يشبه عمله ما يُعرف الآن بدراسة الجغرافيا، وقد قدّم بعض المصطلحات التي ما زالت مستخدمة اليوم.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%A5%D8%B1%D8%A7%D8%AA%D9%88%D8%B3%D8%AA%D9%8A%D9%86%D8%B3",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Eratosthenes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Eratosthenes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Unknown",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Eratosthenes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    "fetched_at": "2026-10-12T12:06:56.178Z"
+  },
+  {
+    "id": "yajnavalkya",
+    "wikidata": "Q1423663",
+    "wikipedia_ar": null,
+    "name_ar": "ياجنافالكيا",
+    "name_en": "Yajnavalkya",
+    "kind": "sage",
+    "legendary": true,
+    "civilization": "india",
+    "era": "ancient-india",
+    "tradition_ar": "فلسفة الأوبانيشاد والفيدانتا المبكرة",
+    "birth": {
+      "year": -800,
+      "approx": true
+    },
+    "death": {
+      "year": -700,
+      "approx": true
+    },
+    "active": {
+      "from": -750,
+      "to": -700
+    },
+    "location": {
+      "lat": 26.12,
+      "lng": 85.9,
+      "place_ar": "ميثيلا (فيهيدها)",
+      "modern_country_ar": "الهند"
+    },
+    "tags": [
+      "upanishads",
+      "vedanta",
+      "metaphysics",
+      "brahman"
+    ],
+    "notes": "حكيم وفيلسوف فيدي أسطوري، ارتبط بحوارات الأوبانيشاد الفلسفية الكبرى ومفهوم البراهمن والآتمان",
+    "summary_ar": "حكيم وفيلسوف فيدي في الهند القديمة، يُنسب إليه دور محوري في حوارات الأوبانيشاد الفلسفية (خاصة بريهادارانياكا أوبانيشاد) حول طبيعة الوجود ومفهوم البراهمن والآتمان.",
+    "summary_source": "manual",
+    "wikipedia_url": null,
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Yajnavalkya_and_Janaka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Yajnavalkya_and_Janaka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "author": "எஸ். பி. கிருஷ்ணமூர்த்தி",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Yajnavalkya_and_Janaka.jpg"
+    },
+    "fetched_at": "2026-10-12T12:06:57.477Z"
+  },
+  {
+    "id": "kapila",
+    "wikidata": "Q574355",
+    "wikipedia_ar": "كابيلا",
+    "name_ar": "كابيلا",
+    "name_en": "Kapila",
+    "kind": "philosopher",
+    "legendary": true,
+    "civilization": "india",
+    "era": "ancient-india",
+    "tradition_ar": "فلسفة السامخيا",
+    "birth": {
+      "year": -600,
+      "approx": true
+    },
+    "death": {
+      "year": -500,
+      "approx": true
+    },
+    "active": {
+      "from": -550,
+      "to": -500
+    },
+    "location": {
+      "lat": 27.57,
+      "lng": 83.05,
+      "place_ar": "كابيلافاستو",
+      "modern_country_ar": "الهند"
+    },
+    "tags": [
+      "samkhya",
+      "dualism",
+      "metaphysics"
+    ],
+    "notes": "حكيم هندي شبه أسطوري يُنسب إليه تأسيس مدرسة السامخيا الفلسفية القائمة على الثنائية بين الوعي والمادة",
+    "summary_ar": "كابيلا  ( ) كان حكيمًا فيديًا ريشي وكان يجسد اللاهوت العليا فيشنو، وقد نُسب إلى أحد مؤسسي مدرسة سامخيا الفلسفية. اشتهر في كتاب بهاغفاتا بورانا الذي يُبرز صور الألوهية لفلسفته السمكهيا. وتصفه المصادر التقليدية الهندوسية كسليل مانو (Manu)، وهو حفيد البراهما. وصور البهاغافاد غيتا كابيلا كـ زاهد يوغي رغم تقدمه الكبير على سيدهيس (siddhis)، أو القوى الروحية.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D9%83%D8%A7%D8%A8%D9%8A%D9%84%D8%A7",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Kapila_muni.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Kapila_muni.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Unknown authorUnknown author",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kapila_muni.jpg"
+    },
+    "fetched_at": "2026-10-12T12:07:00.416Z"
+  },
+  {
+    "id": "charvaka",
+    "wikidata": "Q477243",
+    "wikipedia_ar": "شارفاكا",
+    "name_ar": "شارفاكا",
+    "name_en": "Charvaka",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "india",
+    "era": "ancient-india",
+    "tradition_ar": "المادية الهندية (اللوكاياطا)",
+    "birth": {
+      "year": -600,
+      "approx": true
+    },
+    "death": {
+      "year": -500,
+      "approx": true
+    },
+    "active": {
+      "from": -550,
+      "to": -500
+    },
+    "location": {
+      "lat": 25.3176,
+      "lng": 82.9739,
+      "place_ar": "فاراناسي (بنارس)",
+      "modern_country_ar": "الهند"
+    },
+    "tags": [
+      "materialism",
+      "empiricism",
+      "atheism",
+      "epistemology"
+    ],
+    "notes": "المدرسة الفلسفية المادية والتجريبية في الهند القديمة، رفضت ما وراء الطبيعة واعتبرت الإدراك الحسي المصدر الوحيد للمعرفة",
+    "summary_ar": "شارفاكا هي المدرسة القديمة للفلسفة المادية الهندية. تعتبر مدرسة شارفاكا كل من الإدراك المباشر والتجريبية والاستنباط الشرطي كإحدى المصادر المناسبة من أجل اكتساب المعرفة، وهي تتبنى الشكوكية الفلسفية وترفض الفيدا والديانة الفيدية ومذهب ما وراء الطبيعة.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%B4%D8%A7%D8%B1%D9%81%D8%A7%D9%83%D8%A7",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/1_Pramana_Epistemology_Charvaka_Hindu_school.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/1_Pramana_Epistemology_Charvaka_Hindu_school.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "author": "Ms Sarah Welch",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1_Pramana_Epistemology_Charvaka_Hindu_school.svg"
+    },
+    "fetched_at": "2026-10-12T12:07:04.432Z"
+  },
+  {
+    "id": "kanada",
+    "wikidata": "Q29049",
+    "wikipedia_ar": "كنادة",
+    "name_ar": "كنادة",
+    "name_en": "Kanada",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "india",
+    "era": "ancient-india",
+    "tradition_ar": "فلسفة الفايشيشيكا الذرية",
+    "birth": {
+      "year": -600,
+      "approx": true
+    },
+    "death": {
+      "year": -500,
+      "approx": true
+    },
+    "active": {
+      "from": -550,
+      "to": -500
+    },
+    "location": {
+      "lat": 26.79,
+      "lng": 82.2,
+      "place_ar": "أيوديا",
+      "modern_country_ar": "الهند"
+    },
+    "tags": [
+      "atomism",
+      "physics",
+      "ontology",
+      "naturalism"
+    ],
+    "notes": "فيلسوف وعالم طبيعي هندي قديم أسس مدرسة الفايشيشيكا وابتكر نظرية ذرية مبكرة لتفسير تكوين العالم المادي",
+    "summary_ar": "كان كنادة فيلسوفًا وعالمًا طبيعيًا هنديًا أسس مدرسة فايشيشيكا في الفلسفة الهندية التي مثلت أيضًا بدايات الفيزياء الهندية.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D9%83%D9%86%D8%A7%D8%AF%D8%A9",
+    "image": null,
+    "fetched_at": "2026-10-12T12:07:08.473Z"
+  },
+  {
+    "id": "mahavira",
+    "wikidata": "Q9422",
+    "wikipedia_ar": "ماهافيرا",
+    "name_ar": "ماهافيرا",
+    "name_en": "Mahavira",
+    "kind": "religious-thinker",
+    "legendary": false,
+    "civilization": "india",
+    "era": "ancient-india",
+    "tradition_ar": "الفلسفة الجاينية",
+    "birth": {
+      "year": -599,
+      "approx": true
+    },
+    "death": {
+      "year": -527,
+      "approx": true
+    },
+    "active": {
+      "from": -557,
+      "to": -527
+    },
+    "location": {
+      "lat": 25.61,
+      "lng": 85.14,
+      "place_ar": "فايشالي",
+      "modern_country_ar": "الهند"
+    },
+    "tags": [
+      "jainism",
+      "ahimsa",
+      "epistemology",
+      "ethics"
+    ],
+    "notes": "المعلم الروحي الرابع والعشرون في الجاينية ومطور فلسفة اللاعنف والنسبية المعرفية",
+    "summary_ar": "ماهافيرا ومعناها البطل العظيم هو اللقب الذي يطلقه جماعة الجينس على الرجل الذي قام بتطوير ديانتهم.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D9%85%D8%A7%D9%87%D8%A7%D9%81%D9%8A%D8%B1%D8%A7",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Mahavir.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Mahavir.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "author": "Dayodaya",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mahavir.jpg"
+    },
+    "fetched_at": "2026-10-12T12:07:13.354Z"
   },
   {
     "id": "buddha",
@@ -279,7 +2281,149 @@
       "author": "พระมหาเทวประภาส วชิรญาณเมธี (ผู้ถ่าย-ปล่อยสัญญาอนุญาตภาพให้นำไปใช้ได้เพื่อการศึกษาโดยอยู่ภา่ยใต้ cc-by-sa-3.0)  ผู้สร้างสรรค์ผลงาน/ส่งข้อมูลเก็บในคลังข้อมูลเสรีวิกิมีเดียคอมมอนส์ - เทวประภาส มากคล้าย",
       "source_url": "https://commons.wikimedia.org/wiki/File:Buddha_in_Sarnath_Museum_(Dhammajak_Mutra).jpg"
     },
-    "fetched_at": "2026-10-12T11:41:02.340Z"
+    "fetched_at": "2026-10-12T12:07:13.364Z"
+  },
+  {
+    "id": "chanakya",
+    "wikidata": "Q9045",
+    "wikipedia_ar": "تشانكيا",
+    "name_ar": "تشانكيا",
+    "name_en": "Chanakya",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "india",
+    "era": "ancient-india",
+    "tradition_ar": "الفلسفة السياسية والاقتصادية (أرثاشاسترا)",
+    "birth": {
+      "year": -375,
+      "approx": true
+    },
+    "death": {
+      "year": -283,
+      "approx": true
+    },
+    "active": {
+      "from": -325,
+      "to": -283
+    },
+    "location": {
+      "lat": 25.61,
+      "lng": 85.14,
+      "place_ar": "باتاليبوترا (باتنا)",
+      "modern_country_ar": "الهند"
+    },
+    "tags": [
+      "political-philosophy",
+      "realism",
+      "economics",
+      "statecraft"
+    ],
+    "notes": "فيلسوف سياسي ورجل دولة هندي بارز، مستشار شاندراغوبتا ومؤلف كتاب أرثاشاسترا في فن الحكم والسياسة الواقعية",
+    "summary_ar": " تشانكيا كاوتيليا: كان رئيس وزراء لأول أباطرة موريا الهندية جندرا كوبتا موريا في أواخر القرن الرابع ق.م. اشتهر بدهائه السياسي، الف كتابا في السياسة وكيفية نجاح الحاكم اتسم بالطابع العملي ونبذ المعيارية والمثالية سبق كتاب الامير (لميكافيلي) بنحو 18 قرنا يدعى (أرثاشاسترا) وهو كتيب شاملب عن فن ادارة الدولة يعرض كيفية تأسيس الدول وحراستها مع العمل على تحييد وزعزعة وغزو الدول المجاورة من خلال الدسائس والتحالفات المؤقتة والتجسس وزرع الشقاق بينها.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%AA%D8%B4%D8%A7%D9%86%D9%83%D9%8A%D8%A7",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Chanakya_artistic_depiction.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Chanakya_artistic_depiction.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Unknown authorUnknown author",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chanakya_artistic_depiction.jpg"
+    },
+    "fetched_at": "2026-10-12T12:07:16.738Z"
+  },
+  {
+    "id": "shuruppak",
+    "wikidata": "Q3823132",
+    "wikipedia_ar": "تعاليم شوروباك",
+    "name_ar": "تعاليم شوروباك",
+    "name_en": "Instructions of Shuruppak",
+    "kind": "sage",
+    "legendary": true,
+    "civilization": "mesopotamia",
+    "era": "mesopotamia",
+    "tradition_ar": "أدب الحكمة السومري",
+    "birth": {
+      "year": -2600,
+      "approx": true
+    },
+    "death": {
+      "year": -2500,
+      "approx": true
+    },
+    "active": {
+      "from": -2600,
+      "to": -2500
+    },
+    "location": {
+      "lat": 31.77,
+      "lng": 45.83,
+      "place_ar": "شوروباك (تل فارة)",
+      "modern_country_ar": "العراق"
+    },
+    "tags": [
+      "wisdom-literature",
+      "sumerian",
+      "ethics"
+    ],
+    "notes": "نص سومري قديم في أدب الحكمة منسوب للملك شبه الأسطوري شوروباك يقدم وصايا عملية وأخلاقية لابنه زيوسودرا",
+    "summary_ar": "تعاليم شوروباك هي مثال هام عن أدب الحكمة السومري.\nكان أدب الحكمة المعد لتلقين مكارم الأخلاق، وغرس الفضيلة، والحفاظ على مقاييس المجتمع، شائعًا عبر الشرق الأدنى القديم. وقد أُظهر النص بشكل بالغ القدم من خلال كلمات مقدمته: «في تلك الأيام، في تلك الأوقات البعيدة، في تلك الليالي، في تلك الليالي البعيدة، في تلك السنين، في تلك السنين البعيدة».\nقيلت الوصايا على لسان ملك اسمه سوروباك ، ابن أوبارا-توتو. ذكر أوبارا-توتو في أغلب النسخ الباقية من قائمة ملوك سومر بكونه الملك الأخير لسومر قبل الطوفان. تعود التعاليم مع ألواح مسمارية أخرى من أبو صلابيخ لبدايات الألفية الثالثة قبل الميلاد، معتَبَرة بذلك من أقدم الآداب الباقية.\nيتضمن المحتوى أقوال مأثورة لسوروباك موجهة إلى ابنه الذي سيصبح فيما بعد زيسودرا بطل قصة الطوفان (أوتنابشتنالأكادي). من ناحية أخرى ظهر الاسم كواحدة من المدن الخمسة السابقة لعصر الطوفان في التقاليد السومرية، يظهر الاسم «سوروباك» في مخطوطة واحدة من قائمة ملوك سومر حيث أقحم كجيل إضافي بين أوبارا-توتو وزيسودرا الذان يظهران في كل الحالات الأخرى كأب وابن. ذكر لامبرت أن اقتراحاً وضع بأن الاسم ظهر من خلال فهم خاطيء للقب الأب الذي أضيف إلى اسم شخصية جديدة. ومع ذلك، فإن هذا اللقب الموجود في لوح غلجامش الحادي عشر هو إشارة لأوتنابشتن وليس إلى أبيه.\nإن لوح أبو صلابيخ العائد إلى منتصف الألفية الثالثة قبل الميلاد هو أقدم نسخة باقية، وتؤكد النسخ الباقية العديدة على شعبيته المستمرة في الشرائع الأدبية السومرية/الأكادية.\nإن النصائح في القوائم الثلاثة المترابطة فيما بينها هي نصائح بليغة، تشكل ثلث الأسطر في اللوح المسماري. وبعضها نصائح عملية تمامًا: لا تحدد حقلاً على طريق؛.... لا تحفر بئرًا في حقلك: ستسبب الناس أذًا لك بسببه.. تتبع النتائج العملية السيئة للمخالفات الأوامر الأخلاقية: عليك ألا تعبث مع فتاة متزوجة: قد تكون الافتراءات خطيرة.. يلعب رأي المجتمع واحتمال الافتراء دؤرًا رئيسًا، سواء الرأي الهام «للشارع» أو الرأي الأقل أهمية للسوق، حيث تسترعي الإهانات والكلام الأحمق اهتمام البلد.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%AA%D8%B9%D8%A7%D9%84%D9%8A%D9%85_%D8%B4%D9%88%D8%B1%D9%88%D8%A8%D8%A7%D9%83",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Instructions_of_Shurrupak%2C_Sumerian_proverb_collection%2C_c._2400_BC_-_Oriental_Institute_Museum%2C_University_of_Chicago_-_DSC07114.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Instructions_of_Shurrupak%2C_Sumerian_proverb_collection%2C_c._2400_BC_-_Oriental_Institute_Museum%2C_University_of_Chicago_-_DSC07114.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC0",
+      "author": "Daderot",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Instructions_of_Shurrupak,_Sumerian_proverb_collection,_c._2400_BC_-_Oriental_Institute_Museum,_University_of_Chicago_-_DSC07114.JPG"
+    },
+    "fetched_at": "2026-10-12T12:07:18.998Z"
+  },
+  {
+    "id": "enheduanna",
+    "wikidata": "Q232505",
+    "wikipedia_ar": "إنخيدوانا",
+    "name_ar": "إنخيدوانا",
+    "name_en": "Enheduanna",
+    "kind": "religious-thinker",
+    "legendary": false,
+    "civilization": "mesopotamia",
+    "era": "mesopotamia",
+    "tradition_ar": "اللاهوت والفكر الأكادي-السومري",
+    "birth": {
+      "year": -2300,
+      "approx": true
+    },
+    "death": {
+      "year": -2225,
+      "approx": true
+    },
+    "active": {
+      "from": -2285,
+      "to": -2250
+    },
+    "location": {
+      "lat": 30.962,
+      "lng": 46.103,
+      "place_ar": "أور",
+      "modern_country_ar": "العراق"
+    },
+    "tags": [
+      "theology",
+      "hymns",
+      "poetry"
+    ],
+    "notes": "كاهنة كبرى للإله نانا في أور وابنة سرجون الأكادي، وتعد أول مؤلفة ومفكرة مسجلة بالاسم في تاريخ العالم",
+    "summary_ar": "إنخيدوانا اسمها إنخيدوانا أو إن-هيدو-انا، و.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%A5%D9%86%D8%AE%D9%8A%D8%AF%D9%88%D8%A7%D9%86%D8%A7",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Enheduanna%2C_daughter_of_Sargon_of_Akkad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Enheduanna%2C_daughter_of_Sargon_of_Akkad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC0",
+      "author": "Mefman00",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Enheduanna,_daughter_of_Sargon_of_Akkad.jpg"
+    },
+    "fetched_at": "2026-10-12T12:07:22.598Z"
   },
   {
     "id": "hammurabi",
@@ -326,7 +2470,7 @@
       "author": "Mbzt",
       "source_url": "https://commons.wikimedia.org/wiki/File:F0182_Louvre_Code_Hammourabi_Bas-relief_Sb8_rwk.jpg"
     },
-    "fetched_at": "2026-10-12T11:41:02.346Z"
+    "fetched_at": "2026-10-12T12:07:22.605Z"
   },
   {
     "id": "zoroaster",
@@ -373,6 +2517,6 @@
       "author": "Photo is extracted from \"Persia by a Persian: being personal experiences, manners, customs, habits, religious and social life in Persia\". Author: Isaac Adams. Published by: E. Stock, 1906.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Zartosht_30salegee.jpg"
     },
-    "fetched_at": "2026-10-12T11:41:02.349Z"
+    "fetched_at": "2026-10-12T12:07:22.610Z"
   }
 ]
