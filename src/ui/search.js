@@ -149,8 +149,11 @@ export class SearchComponent {
         this.navigateResults(-1);
       } else if (e.key === 'Enter') {
         e.preventDefault();
-        if (this.focusedIndex >= 0 && this.searchResults[this.focusedIndex]) {
-          this.selectFigure(this.searchResults[this.focusedIndex]);
+        const target = this.focusedIndex >= 0
+          ? this.searchResults[this.focusedIndex]
+          : this.searchResults[0];
+        if (target) {
+          this.selectFigure(target);
         }
       } else if (e.key === 'Escape') {
         e.preventDefault();
@@ -165,8 +168,8 @@ export class SearchComponent {
       }
     });
 
-    // Dropdown item click delegation
-    dropdown.addEventListener('click', (e) => {
+    // Dropdown item selection
+    const handleItemSelect = (e) => {
       const itemEl = e.target.closest('.search-item');
       if (!itemEl) return;
       const figureId = itemEl.getAttribute('data-figure-id');
@@ -174,7 +177,10 @@ export class SearchComponent {
       if (figure) {
         this.selectFigure(figure);
       }
-    });
+    };
+
+    dropdown.addEventListener('pointerdown', handleItemSelect);
+    dropdown.addEventListener('click', handleItemSelect);
   }
 
   /**
@@ -301,9 +307,22 @@ export class SearchComponent {
       setMapView([figure.location.lat, figure.location.lng], 6.5);
     }
 
-    // 3. Set timeline year and selectedFigure in store
+    // 3. Ensure figure's civilization and kind are enabled in filters
+    const state = store.getState();
+    let nextCivs = state.civs;
+    if (Array.isArray(state.civs) && state.civs.length > 0 && !state.civs.includes(figure.civilization)) {
+      nextCivs = [...state.civs, figure.civilization];
+    }
+    let nextKinds = state.kinds;
+    if (Array.isArray(state.kinds) && state.kinds.length > 0 && !state.kinds.includes(figure.kind)) {
+      nextKinds = [...state.kinds, figure.kind];
+    }
+
+    // 4. Set timeline year and selectedFigure in store
     store.setState({
       year: midYear,
+      civs: nextCivs,
+      kinds: nextKinds,
       selectedFigure: figure.id,
     });
 

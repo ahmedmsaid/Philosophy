@@ -14,9 +14,10 @@
     "death": { "year": -2600, "approx": true },
     "active": { "from": -2650, "to": -2600 },
     "location": {
-      "lat": 29.8713,
-      "lng": 31.2164,
-      "place_ar": "منف (سقارة)",
+      "lat": 29.85,
+      "lng": 31.2333,
+      "place_ar": "سقارة (منف)",
+      "place_wikidata": "Q192134",
       "modern_country_ar": "مصر"
     },
     "tags": ["wisdom-literature", "architecture", "medicine", "polymath"],
@@ -37,9 +38,10 @@
     "death": { "year": -2400, "approx": true },
     "active": { "from": -2450, "to": -2400 },
     "location": {
-      "lat": 29.8713,
-      "lng": 31.2164,
-      "place_ar": "منف (سقارة)",
+      "lat": 29.8447,
+      "lng": 31.2509,
+      "place_ar": "منف",
+      "place_wikidata": "Q5715",
       "modern_country_ar": "مصر"
     },
     "tags": ["ethics", "wisdom-literature", "sebayt"],
@@ -60,9 +62,10 @@
     "death": { "year": -2320, "approx": true },
     "active": { "from": -2345, "to": -2320 },
     "location": {
-      "lat": 29.8713,
-      "lng": 31.2164,
-      "place_ar": "منف (سقارة)",
+      "lat": 29.85,
+      "lng": 31.2333,
+      "place_ar": "سقارة (منف)",
+      "place_wikidata": "Q192134",
       "modern_country_ar": "مصر"
     },
     "tags": ["ethics", "wisdom-literature", "sebayt"],
@@ -83,9 +86,10 @@
     "death": { "year": -2020, "approx": true },
     "active": { "from": -2050, "to": -2020 },
     "location": {
-      "lat": 29.074,
-      "lng": 30.935,
+      "lat": 29.0856,
+      "lng": 30.9344,
       "place_ar": "إهناسيا (هيراكليوبوليس)",
+      "place_wikidata": "Q249480",
       "modern_country_ar": "مصر"
     },
     "tags": ["political-philosophy", "ethics", "wisdom-literature", "justice"],
@@ -106,9 +110,10 @@
     "death": { "year": -1336, "approx": true },
     "active": { "from": -1353, "to": -1336 },
     "location": {
-      "lat": 27.646,
-      "lng": 30.900,
+      "lat": 27.6617,
+      "lng": 30.9056,
       "place_ar": "أخت آتون (تل العمارنة)",
+      "place_wikidata": "Q5736",
       "modern_country_ar": "مصر"
     },
     "tags": ["monotheism", "theology", "sun-hymns", "religious-reform"],
@@ -129,9 +134,10 @@
     "death": { "year": -1075, "approx": true },
     "active": { "from": -1100, "to": -1075 },
     "location": {
-      "lat": 26.56,
-      "lng": 31.75,
+      "lat": 26.5642,
+      "lng": 31.7461,
       "place_ar": "أخميم (صعيد مصر)",
+      "place_wikidata": "Q340572",
       "modern_country_ar": "مصر"
     },
     "tags": ["ethics", "wisdom-literature", "piety", "justice"],
@@ -152,9 +158,10 @@
     "death": { "year": -250, "approx": true },
     "active": { "from": -300, "to": -250 },
     "location": {
-      "lat": 29.8713,
-      "lng": 31.2164,
-      "place_ar": "منف (سقارة)",
+      "lat": 29.85,
+      "lng": 31.2333,
+      "place_ar": "سقارة (منف)",
+      "place_wikidata": "Q192134",
       "modern_country_ar": "مصر"
     },
     "tags": ["wisdom-literature", "proverbs", "ethics"],

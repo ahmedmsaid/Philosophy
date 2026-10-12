@@ -268,9 +268,31 @@ export class TimelineComponent {
     if (this.elements.densityContainer && this.figures.length > 0) {
       renderDensityStrip(this.elements.densityContainer, this.figures, {
         onJumpToYear: (targetYear, figureId) => {
-          this.setYear(targetYear);
+          let sanitized = targetYear === 0 ? -1 : targetYear;
+          sanitized = Math.max(MIN_TIMELINE_YEAR, Math.min(MAX_TIMELINE_YEAR, sanitized));
+          if (this.elements.slider) {
+            this.elements.slider.value = sanitized;
+          }
+
           if (figureId) {
-            store.setState({ selectedFigure: figureId });
+            const fig = this.figures.find((f) => f.id === figureId);
+            const state = store.getState();
+            let nextCivs = state.civs;
+            if (fig && Array.isArray(state.civs) && state.civs.length > 0 && !state.civs.includes(fig.civilization)) {
+              nextCivs = [...state.civs, fig.civilization];
+            }
+            let nextKinds = state.kinds;
+            if (fig && Array.isArray(state.kinds) && state.kinds.length > 0 && !state.kinds.includes(fig.kind)) {
+              nextKinds = [...state.kinds, fig.kind];
+            }
+            store.setState({
+              year: sanitized,
+              civs: nextCivs,
+              kinds: nextKinds,
+              selectedFigure: figureId,
+            });
+          } else {
+            store.setState({ year: sanitized });
           }
         },
       });
@@ -383,7 +405,8 @@ export class TimelineComponent {
    */
   jumpToEra(era) {
     if (!era) return;
-    this.setYear(era.from);
+    const targetYear = era.focusYear ?? era.from;
+    this.setYear(targetYear);
     if (era.center && era.zoom) {
       setMapView(era.center, era.zoom);
     }

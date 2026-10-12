@@ -14,9 +14,10 @@
     "death": { "year": -900, "approx": true },
     "active": { "from": -1000, "to": -900 },
     "location": {
-      "lat": 36.75,
-      "lng": 66.89,
+      "lat": 36.7581,
+      "lng": 66.8989,
       "place_ar": "بلخ",
+      "place_wikidata": "Q182159",
       "modern_country_ar": "إيران الكبرى"
     },
     "tags": ["dualism", "ethics", "theology"],

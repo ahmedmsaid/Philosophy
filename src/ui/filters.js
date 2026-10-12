@@ -210,16 +210,42 @@ export class FiltersComponent {
    * @param {string} civId
    */
   toggleCivFilter(civId) {
-    const currentCivs = [...(store.getState().civs || [])];
+    const state = store.getState();
+    const currentCivs = [...(state.civs || [])];
     const index = currentCivs.indexOf(civId);
 
     if (index > -1) {
       currentCivs.splice(index, 1);
+      store.setState({ civs: currentCivs });
     } else {
       currentCivs.push(civId);
-    }
+      const civFocusYears = {
+        greece: -399,
+        egypt: -2450,
+        mesopotamia: -2250,
+        persia: -950,
+        india: -520,
+        china: -500,
+      };
+      const civRanges = {
+        greece: [-624, -31],
+        egypt: [-2670, -250],
+        mesopotamia: [-2600, -1750],
+        persia: [-1000, -900],
+        india: [-800, -280],
+        china: [-600, -230],
+      };
+      const range = civRanges[civId];
+      const focusYear = civFocusYears[civId];
 
-    store.setState({ civs: currentCivs });
+      if (currentCivs.length === 1 && range && focusYear !== undefined) {
+        if (state.year < range[0] || state.year > range[1]) {
+          store.setState({ civs: currentCivs, year: focusYear });
+          return;
+        }
+      }
+      store.setState({ civs: currentCivs });
+    }
   }
 
   /**

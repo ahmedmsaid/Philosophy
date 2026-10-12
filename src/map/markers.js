@@ -20,6 +20,55 @@ import 'leaflet.markercluster';
 import { formatHistoricalYear, toArabicDigits, formatYearRange } from '../utils/format.js';
 import { store } from '../utils/state.js';
 
+// Defensive patches for Leaflet & Leaflet.markercluster to prevent 'stamp(undefined)' crashes
+if (L && L.Util && typeof L.Util.stamp === 'function') {
+  const origStamp = L.Util.stamp;
+  L.Util.stamp = function (obj) {
+    if (!obj || typeof obj !== 'object') {
+      return undefined;
+    }
+    return origStamp(obj);
+  };
+}
+
+if (L && L.Map && L.Map.prototype && typeof L.Map.prototype.hasLayer === 'function') {
+  const origMapHasLayer = L.Map.prototype.hasLayer;
+  L.Map.prototype.hasLayer = function (layer) {
+    if (!layer) return false;
+    return origMapHasLayer.call(this, layer);
+  };
+}
+
+if (L && L.LayerGroup && L.LayerGroup.prototype && typeof L.LayerGroup.prototype.hasLayer === 'function') {
+  const origLayerGroupHasLayer = L.LayerGroup.prototype.hasLayer;
+  L.LayerGroup.prototype.hasLayer = function (layer) {
+    if (!layer) return false;
+    return origLayerGroupHasLayer.call(this, layer);
+  };
+}
+
+if (L && L.MarkerClusterGroup && L.MarkerClusterGroup.prototype) {
+  const origZoomToShowLayer = L.MarkerClusterGroup.prototype.zoomToShowLayer;
+  L.MarkerClusterGroup.prototype.zoomToShowLayer = function (layer, callback) {
+    if (!layer) {
+      if (typeof callback === 'function') callback();
+      return;
+    }
+    if (!layer.__parent || typeof layer.__parent.zoomToBounds !== 'function') {
+      if (this._map && typeof layer.getLatLng === 'function') {
+        try {
+          this._map.panTo(layer.getLatLng(), { animate: true });
+        } catch (_) {}
+      }
+      if (typeof callback === 'function') {
+        callback();
+      }
+      return;
+    }
+    return origZoomToShowLayer.call(this, layer, callback);
+  };
+}
+
 /** Fallback colors for civilizations */
 export const DEFAULT_CIV_COLORS = {
   egypt: '#C9A227',
@@ -61,6 +110,7 @@ export class MarkerLayerManager {
     this.markerMap = new Map();
     this.activeFigureIds = new Set();
     this.selectedFigureId = null;
+    this.loggedMissingLocationFigures = new Set();
 
     // Initialize Leaflet MarkerClusterGroup
     this.clusterGroup = L.markerClusterGroup({
@@ -70,6 +120,23 @@ export class MarkerLayerManager {
       zoomToBoundsOnClick: true,
       animate: true,
       iconCreateFunction: (cluster) => this.createClusterIcon(cluster),
+    });
+
+    // Immediate spiderfy on click for clusters sharing the exact same coordinates (e.g. Athens/Alexandria)
+    this.clusterGroup.on('clusterclick', (a) => {
+      if (a.layer && typeof a.layer.getAllChildMarkers === 'function') {
+        const markers = a.layer.getAllChildMarkers();
+        if (markers.length > 0) {
+          const first = markers[0].getLatLng();
+          const allSame = markers.every(m => {
+            const ll = m.getLatLng();
+            return Math.abs(ll.lat - first.lat) < 0.005 && Math.abs(ll.lng - first.lng) < 0.005;
+          });
+          if (allSame || a.layer._zoom >= 7) {
+            a.layer.spiderfy();
+          }
+        }
+      }
     });
 
     this.map.addLayer(this.clusterGroup);
@@ -180,11 +247,14 @@ export class MarkerLayerManager {
   /**
    * Creates a Leaflet Marker instance for a figure.
    * @param {object} figure
-   * @returns {L.Marker}
+   * @returns {L.Marker|null}
    */
   createMarker(figure) {
-    const lat = figure.location?.lat ?? 0;
-    const lng = figure.location?.lng ?? 0;
+    if (!figure.location || typeof figure.location.lat !== 'number' || typeof figure.location.lng !== 'number') {
+      return null;
+    }
+
+    const { lat, lng } = figure.location;
 
     const icon = this.createFigureIcon(figure);
     const marker = L.marker([lat, lng], {
@@ -221,7 +291,7 @@ export class MarkerLayerManager {
     const triggerSelection = () => {
       this.selectFigure(figure.id);
       if (this.options.onFigureSelect) {
-        this.options.onFigureSelect(figure.id);
+        this.options.onFigureSelect(figure.id, marker, figure);
       }
     };
 
@@ -264,6 +334,15 @@ export class MarkerLayerManager {
       // Check kind filter
       if (activeKinds && !activeKinds.has(fig.kind)) continue;
 
+      // Check location validity (T8.3: A figure with no location gets no marker and is logged once)
+      if (!fig.location || typeof fig.location.lat !== 'number' || typeof fig.location.lng !== 'number') {
+        if (!this.loggedMissingLocationFigures.has(fig.id)) {
+          this.loggedMissingLocationFigures.add(fig.id);
+          console.info(`[MarkerLayer] تم تخطي عرض علامة الشخصية "${fig.id}" (${fig.name_ar}) لعدم توفر موقع جغرافي محدد.`);
+        }
+        continue;
+      }
+
       targetFigureIds.add(fig.id);
 
       if (!this.activeFigureIds.has(fig.id)) {
@@ -271,10 +350,14 @@ export class MarkerLayerManager {
         let entry = this.markerMap.get(fig.id);
         if (!entry) {
           const marker = this.createMarker(fig);
-          entry = { figure: fig, marker };
-          this.markerMap.set(fig.id, entry);
+          if (marker) {
+            entry = { figure: fig, marker };
+            this.markerMap.set(fig.id, entry);
+            markersToAdd.push(marker);
+          }
+        } else if (entry.marker) {
+          markersToAdd.push(entry.marker);
         }
-        markersToAdd.push(entry.marker);
       }
     }
 
@@ -331,6 +414,77 @@ export class MarkerLayerManager {
    */
   getFigure(figureId) {
     return this.figures.find((f) => f.id === figureId) || null;
+  }
+
+  /**
+   * Gets the Leaflet marker for a figure if created.
+   * @param {string} figureId
+   * @returns {L.Marker|null}
+   */
+  getMarker(figureId) {
+    return this.markerMap.get(figureId)?.marker || null;
+  }
+
+  /**
+   * Opens cluster and focuses figure marker if inside a cluster.
+   * @param {string} figureId
+   * @param {function(L.Marker, object): void} [callback]
+   */
+  zoomToShowFigure(figureId, callback) {
+    let entry = this.markerMap.get(figureId);
+    const fig = this.getFigure(figureId);
+
+    if (!fig || !fig.location || typeof fig.location.lat !== 'number' || typeof fig.location.lng !== 'number') {
+      return;
+    }
+
+    if (!entry || !entry.marker) {
+      const marker = this.createMarker(fig);
+      if (marker) {
+        entry = { figure: fig, marker };
+        this.markerMap.set(fig.id, entry);
+      }
+    }
+
+    if (!entry || !entry.marker) return;
+
+    if (!this.clusterGroup.hasLayer(entry.marker)) {
+      this.clusterGroup.addLayer(entry.marker);
+    }
+    this.activeFigureIds.add(fig.id);
+
+    const latlng = entry.marker.getLatLng();
+
+    const doOpen = () => {
+      if (callback) callback(entry.marker, entry.figure);
+    };
+
+    const hasClusterParent = Boolean(entry.marker.__parent && typeof entry.marker.__parent.zoomToBounds === 'function');
+    if (hasClusterParent) {
+      // If already spiderfied, don't collapse or re-zoom
+      if (entry.marker.__parent._spiderfied) {
+        doOpen();
+        return;
+      }
+      try {
+        this.clusterGroup.zoomToShowLayer(entry.marker, () => {
+          try {
+            this.map.panTo(latlng, { animate: true });
+          } catch (_) {}
+          doOpen();
+        });
+        return;
+      } catch (err) {
+        console.warn('[MarkerLayer] zoomToShowLayer fallback to panTo:', err);
+      }
+    }
+
+    try {
+      this.map.panTo(latlng, { animate: true });
+    } catch (err) {
+      console.warn('[MarkerLayer] panTo error:', err);
+    }
+    doOpen();
   }
 
   /**

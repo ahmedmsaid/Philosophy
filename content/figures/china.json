@@ -14,13 +14,14 @@
     "death": { "year": -500, "approx": true },
     "active": { "from": -570, "to": -500 },
     "location": {
-      "lat": 34.0,
-      "lng": 115.0,
+      "lat": null,
+      "lng": null,
       "place_ar": "ولاية تشو القديمة",
+      "place_wikidata": "Q504759",
       "modern_country_ar": "الصين"
     },
     "tags": ["daoism", "metaphysics", "wu-wei"],
-    "notes": "مؤسس الفلسفة الطاوية ومؤلف كتاب داو دي جينغ، مع وجود خلافات تاريخية حول تفاصيل حياته وهويته"
+    "notes": "مؤسس الفلسفة الطاوية ومؤلف كتاب داو دي جينغ، شخصية شبه أسطورية ومكان نشاطه الدقيق غير محدد تاريخياً (NEEDS VERIFICATION: location disputed / legendary)"
   },
   {
     "id": "confucius",
@@ -37,9 +38,10 @@
     "death": { "year": -479, "approx": false },
     "active": { "from": -520, "to": -479 },
     "location": {
-      "lat": 35.5947,
-      "lng": 116.9859,
+      "lat": 35.6,
+      "lng": 116.9833,
       "place_ar": "تشوفو (ولاية لو)",
+      "place_wikidata": "Q210287",
       "modern_country_ar": "الصين"
     },
     "tags": ["ethics", "political-philosophy", "virtue"],
@@ -60,9 +62,10 @@
     "death": { "year": -496, "approx": true },
     "active": { "from": -512, "to": -496 },
     "location": {
-      "lat": 31.30,
-      "lng": 120.60,
+      "lat": 31.3,
+      "lng": 120.6194,
       "place_ar": "سوتشو (ولاية وو)",
+      "place_wikidata": "Q42622",
       "modern_country_ar": "الصين"
     },
     "tags": ["strategy", "philosophy-of-war", "daoism", "epistemology"],
@@ -83,9 +86,10 @@
     "death": { "year": -391, "approx": true },
     "active": { "from": -430, "to": -391 },
     "location": {
-      "lat": 35.0,
-      "lng": 117.0,
+      "lat": 35.0833,
+      "lng": 117.15,
       "place_ar": "تنغتشو (ولاية لو)",
+      "place_wikidata": "Q1207076",
       "modern_country_ar": "الصين"
     },
     "tags": ["mohism", "ethics", "universal-love", "utilitarianism", "logic"],
@@ -106,9 +110,10 @@
     "death": { "year": -289, "approx": true },
     "active": { "from": -330, "to": -289 },
     "location": {
-      "lat": 35.39,
-      "lng": 116.97,
+      "lat": 35.3667,
+      "lng": 116.45,
       "place_ar": "زوكسيان (ولاية زو)",
+      "place_wikidata": "Q227034",
       "modern_country_ar": "الصين"
     },
     "tags": ["confucianism", "human-nature", "ethics", "political-philosophy"],
@@ -129,9 +134,10 @@
     "death": { "year": -286, "approx": true },
     "active": { "from": -340, "to": -286 },
     "location": {
-      "lat": 34.45,
-      "lng": 115.65,
+      "lat": 34.4259,
+      "lng": 115.6467,
       "place_ar": "منغ (ولاية سونغ)",
+      "place_wikidata": "Q404817",
       "modern_country_ar": "الصين"
     },
     "tags": ["daoism", "epistemology", "relativism", "freedom", "spontaneity"],
@@ -152,9 +158,10 @@
     "death": { "year": -235, "approx": true },
     "active": { "from": -280, "to": -235 },
     "location": {
-      "lat": 35.30,
-      "lng": 112.85,
-      "place_ar": "ولاية تشاو",
+      "lat": 36.6116,
+      "lng": 114.4894,
+      "place_ar": "هاندان (ولاية تشاو)",
+      "place_wikidata": "Q58570",
       "modern_country_ar": "الصين"
     },
     "tags": ["confucianism", "human-nature", "ritual", "realism", "education"],
@@ -175,9 +182,10 @@
     "death": { "year": -233, "approx": true },
     "active": { "from": -250, "to": -233 },
     "location": {
-      "lat": 34.20,
-      "lng": 113.80,
-      "place_ar": "ولاية هان (شينتشنغ)",
+      "lat": 34.3962,
+      "lng": 113.7249,
+      "place_ar": "شينتشنغ (ولاية هان)",
+      "place_wikidata": "Q1024662",
       "modern_country_ar": "الصين"
     },
     "tags": ["legalism", "political-philosophy", "statecraft", "power"],

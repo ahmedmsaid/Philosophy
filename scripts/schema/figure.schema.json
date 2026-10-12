@@ -132,24 +132,32 @@
     },
     "location": {
       "type": "object",
-      "required": ["lat", "lng", "place_ar"],
+      "required": ["lat", "lng", "place_ar", "modern_country_ar", "place_wikidata"],
       "properties": {
         "lat": {
-          "type": "number",
+          "type": ["number", "null"],
           "minimum": -90,
           "maximum": 90
         },
         "lng": {
-          "type": "number",
+          "type": ["number", "null"],
           "minimum": -180,
           "maximum": 180
         },
         "place_ar": {
           "type": "string",
-          "minLength": 1
+          "minLength": 1,
+          "description": "Historical place/city name in Arabic"
         },
         "modern_country_ar": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1,
+          "description": "Modern country name in Arabic"
+        },
+        "place_wikidata": {
+          "type": "string",
+          "pattern": "^Q[1-9][0-9]*$",
+          "description": "Wikidata QID of the historical place/city, verified by hand"
         }
       },
       "additionalProperties": false

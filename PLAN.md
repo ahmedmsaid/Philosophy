@@ -116,24 +116,24 @@ Proposed kind in brackets: **[P]** philosopher · **[S]** sage / wisdom literatu
 
 Goal: every figure appears on the map at its **verified known location** (CONTEXT §4.2, §7 rule 4), and clicking its marker opens a **popup anchored to the marker** on the map. The full figure card from T5.3 stays available through a "المزيد" button (CONTEXT §6.6). The year filter from T5.1 does not change: a marker shows only while the figure is active.
 
-- [ ] **T8.1 Location audit** (`scripts/audit-locations.mjs`): for every figure in `content/figures/*.json`, read the Wikidata coordinates (P625) of the place where the figure was **mainly active** and compare them with `location.lat/lng`.
+- [x] **T8.1 Location audit** (`scripts/audit-locations.mjs`): for every figure in `content/figures/*.json`, read the Wikidata coordinates (P625) of the place where the figure was **mainly active** and compare them with `location.lat/lng`.
   - Add `location.place_wikidata` (the place's QID, verified by hand, CONTEXT §7 rule 2) to every figure.
   - The script writes a report: figure id, `place_ar`, current coords, Wikidata coords, and distance in km. It flags anything over 25 km, any missing place QID, and `(0, 0)` coords.
   - Fix the wrong entries in `content/` (never in `public/data/figures.json`). If the place is unknown or disputed, set `lat/lng` to `null` and add `notes: "NEEDS VERIFICATION: location …"`. Do not guess.
   - ✅ The report shows no flagged entries. Every unresolved location is `null` and has a `NEEDS VERIFICATION` note.
-- [ ] **T8.2 Location validation**: extend `figure.schema.json` and `validate-data.mjs`. Rules: `location` is required, `place_ar` and `modern_country_ar` are not empty, `place_wikidata` matches `^Q\d+$`, `(0, 0)` is rejected, and a `null` lat/lng is allowed only with a `NEEDS VERIFICATION` note (a warning, not an error).
+- [x] **T8.2 Location validation**: extend `figure.schema.json` and `validate-data.mjs`. Rules: `location` is required, `place_ar` and `modern_country_ar` are not empty, `place_wikidata` matches `^Q\d+$`, `(0, 0)` is rejected, and a `null` lat/lng is allowed only with a `NEEDS VERIFICATION` note (a warning, not an error).
   - ✅ `npm run validate` fails on a bad or missing location and passes on the audited data.
-- [ ] **T8.3 Accurate marker placement** (`src/map/markers.js`): place every marker at exactly `location.lat/lng`. Remove the `?? 0` fallback. A figure with no location gets **no marker** and is logged once in the console.
+- [x] **T8.3 Accurate marker placement** (`src/map/markers.js`): place every marker at exactly `location.lat/lng`. Remove the `?? 0` fallback. A figure with no location gets **no marker** and is logged once in the console.
   - Figures that share one place (Athens, Alexandria, Lu) must stay reachable: the cluster spiderfies on click at max zoom, and markers never stack invisibly.
   - ✅ Spot-check at least 10 figures against their place on the map. No marker sits in the sea or at `(0, 0)`. Every figure in a shared place can be clicked.
-- [ ] **T8.4 On-map popup** (`src/ui/figure-popup.js` + `src/styles/figure-popup.css`): clicking (or pressing Enter on) a marker opens a Leaflet popup anchored to it, in place of the side card. The popup is a compact glass card with:
+- [x] **T8.4 On-map popup** (`src/ui/figure-popup.js` + `src/styles/figure-popup.css`): clicking (or pressing Enter on) a marker opens a Leaflet popup anchored to it, in place of the side card. The popup is a compact glass card with:
   - thumbnail (if any), `name_ar`, dates ("حوالي" when approximate), `place_ar` + `modern_country_ar`, civilization chip, kind chip, and the approximate-date and legendary badges;
   - a **"المزيد"** button (`figure-popup-more`) that opens the full figure card / bottom sheet (T5.3), and a close button (`figure-popup-close`).
   - RTL layout, Eastern Arabic numerals, matches the design tokens. Only one popup is open at a time.
   - ✅ Clicking a marker opens its popup at the marker. "المزيد" opens the full card for the same figure. Closing the full card returns focus to the popup or marker.
-- [ ] **T8.5 Popup ↔ state & URL sync**: opening a popup sets `selectedFigure` (`#…&figure=socrates`). Loading a URL that contains `figure=` flies to the marker, opens its cluster if needed, and opens its popup. A search result (T5.5) and a density-strip jump do the same. If the timeline moves past the figure's active range, the popup closes and `figure` is removed from the URL.
+- [x] **T8.5 Popup ↔ state & URL sync**: opening a popup sets `selectedFigure` (`#…&figure=socrates`). Loading a URL that contains `figure=` flies to the marker, opens its cluster if needed, and opens its popup. A search result (T5.5) and a density-strip jump do the same. If the timeline moves past the figure's active range, the popup closes and `figure` is removed from the URL.
   - ✅ Reloading or sharing a URL with `figure=` restores the same popup at the same place.
-- [ ] **T8.6 Popup motion, mobile & a11y**: the popup scales/fades in (respect `prefers-reduced-motion`, T7.3). The map auto-pans so the popup is not hidden under the header, the timeline, or the filters panel. At ≤ 768px the popup stays compact, and "المزيد" opens the bottom sheet. The popup has `role="dialog"`, an Arabic `aria-label`, Esc closes it, and focus returns to the marker.
+- [x] **T8.6 Popup motion, mobile & a11y**: the popup scales/fades in (respect `prefers-reduced-motion`, T7.3). The map auto-pans so the popup is not hidden under the header, the timeline, or the filters panel. At ≤ 768px the popup stays compact, and "المزيد" opens the bottom sheet. The popup has `role="dialog"`, an Arabic `aria-label`, Esc closes it, and focus returns to the marker.
   - ✅ A keyboard-only and a 360px walkthrough can open, read, expand, and close a popup.
 
 ## Phase 9: Testing & release

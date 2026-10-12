@@ -48,16 +48,11 @@ export class FigureCardComponent {
   init() {
     this.bindKeyboard();
 
-    // Subscribe to selected figure in store
+    // Subscribe to selected figure in store - if deselected, hide full card
     store.subscribe((state, changedKeys) => {
       if (changedKeys.includes('selectedFigure')) {
-        if (state.selectedFigure) {
-          const fig = this.figuresMap.get(state.selectedFigure);
-          if (fig) {
-            this.show(fig);
-          }
-        } else {
-          this.hide();
+        if (!state.selectedFigure && this.currentFigure) {
+          this.hide(false);
         }
       }
     });
@@ -72,22 +67,17 @@ export class FigureCardComponent {
     for (const fig of figures) {
       this.figuresMap.set(fig.id, fig);
     }
-
-    // Check if initial URL had a selectedFigure
-    const currentSelectedId = store.getState().selectedFigure;
-    if (currentSelectedId && this.figuresMap.has(currentSelectedId)) {
-      this.show(this.figuresMap.get(currentSelectedId));
-    }
   }
 
   /**
    * Displays the figure card.
    * @param {object} figure
+   * @param {HTMLElement} [returnFocusElement]
    */
-  show(figure) {
+  show(figure, returnFocusElement = null) {
     if (!figure) return;
     this.currentFigure = figure;
-    this.previousFocusedElement = document.activeElement;
+    this.previousFocusedElement = returnFocusElement || document.activeElement;
 
     this.render(figure);
 
@@ -102,18 +92,23 @@ export class FigureCardComponent {
 
   /**
    * Closes and hides the figure card.
+   * @param {boolean} [clearSelection=false] - Whether to clear store selection
    */
-  hide() {
+  hide(clearSelection = false) {
     if (!this.currentFigure) return;
     this.currentFigure = null;
     this.container.innerHTML = '';
 
-    if (store.getState().selectedFigure !== null) {
+    if (clearSelection && store.getState().selectedFigure !== null) {
       store.setState({ selectedFigure: null });
     }
 
     if (this.previousFocusedElement && typeof this.previousFocusedElement.focus === 'function') {
-      this.previousFocusedElement.focus();
+      try {
+        this.previousFocusedElement.focus();
+      } catch {
+        // ignore focus error
+      }
       this.previousFocusedElement = null;
     }
 

@@ -9,6 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "validate": "node scripts/validate-data.mjs",
+    "audit-locations": "node scripts/audit-locations.mjs",
     "fetch-wiki": "node scripts/fetch-wikipedia.mjs",
     "download-borders": "node scripts/download-borders.mjs",
     "test": "node --test tests/*.test.mjs"

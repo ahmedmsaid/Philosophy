@@ -23,9 +23,10 @@
       "to": -500
     },
     "location": {
-      "lat": 34,
-      "lng": 115,
+      "lat": null,
+      "lng": null,
       "place_ar": "ولاية تشو القديمة",
+      "place_wikidata": "Q504759",
       "modern_country_ar": "الصين"
     },
     "tags": [
@@ -33,7 +34,7 @@
       "metaphysics",
       "wu-wei"
     ],
-    "notes": "مؤسس الفلسفة الطاوية ومؤلف كتاب داو دي جينغ، مع وجود خلافات تاريخية حول تفاصيل حياته وهويته",
+    "notes": "مؤسس الفلسفة الطاوية ومؤلف كتاب داو دي جينغ، شخصية شبه أسطورية ومكان نشاطه الدقيق غير محدد تاريخياً (NEEDS VERIFICATION: location disputed / legendary)",
     "summary_ar": "لاو تزه أو لاو تسي أو لاوتزو فيلسوف صيني قديم وشخصية مهمة في الطاوية ولد 604 ق.م. تعني الكلمة السيد القديم وتعتبر لقب تفخيم. ومن ألقابه تايشانغ لاوجون وهو أحد الأنقياء الثلاثة في الطاوية. حسب التقليد الصيني عاش لاوتزه في القرن السادس قبل الميلاد، لكن المؤرخين يقولون إنه شخصية خيالية أو أن الشخصية نتيجة جمع عدة شخصيات مختلفة أو إنه عاش في القرن الرابع قبل الميلاد بالتزامن مع مدارس التفكير المائة وعصر الدول المتحاربة. ينسب إليه كتابة العمل الأهم في الطاوية الذي كان يعرف باسم لاوتزه. لاوتزه من الشخصيات الرئيسية في الحضارة الصينية، ويدعي نبلاء وعامة أنهم ينتسبون لنسله. وعبر التاريخ اعتنقت عدة حركات معادية للسلطات أفكار لاوتزه.",
     "summary_source": "wikipedia_ar",
     "wikipedia_url": "https://ar.wikipedia.org/wiki/%D9%84%D8%A7%D9%88%D8%AA%D8%B2%D9%87",
@@ -44,7 +45,7 @@
       "author": "Zhang Lu",
       "source_url": "https://commons.wikimedia.org/wiki/File:Zhang_Lu-Laozi_Riding_an_Ox_(cropped).jpg"
     },
-    "fetched_at": "2026-10-12T12:04:11.657Z"
+    "fetched_at": "2026-10-12T12:42:43.633Z"
   },
   {
     "id": "confucius",
@@ -70,9 +71,10 @@
       "to": -479
     },
     "location": {
-      "lat": 35.5947,
-      "lng": 116.9859,
+      "lat": 35.6,
+      "lng": 116.9833,
       "place_ar": "تشوفو (ولاية لو)",
+      "place_wikidata": "Q210287",
       "modern_country_ar": "الصين"
     },
     "tags": [
@@ -91,7 +93,7 @@
       "author": "Anonymous Chinese painter of the Western Han period",
       "source_url": "https://commons.wikimedia.org/wiki/File:Confucius,_fresco_from_a_Western_Han_tomb_of_Dongping_County,_Shandong_province,_China.jpg"
     },
-    "fetched_at": "2026-10-12T12:04:11.663Z"
+    "fetched_at": "2026-10-12T12:42:43.650Z"
   },
   {
     "id": "sunzi",
@@ -118,8 +120,9 @@
     },
     "location": {
       "lat": 31.3,
-      "lng": 120.6,
+      "lng": 120.6194,
       "place_ar": "سوتشو (ولاية وو)",
+      "place_wikidata": "Q42622",
       "modern_country_ar": "الصين"
     },
     "tags": [
@@ -139,7 +142,7 @@
       "author": "Unknown authorUnknown author",
       "source_url": "https://commons.wikimedia.org/wiki/File:%E5%90%B4%E5%8F%B8%E9%A9%AC%E5%AD%99%E6%AD%A6.jpg"
     },
-    "fetched_at": "2026-10-12T12:04:16.651Z"
+    "fetched_at": "2026-10-12T12:42:43.660Z"
   },
   {
     "id": "mozi",
@@ -165,9 +168,10 @@
       "to": -391
     },
     "location": {
-      "lat": 35,
-      "lng": 117,
+      "lat": 35.0833,
+      "lng": 117.15,
       "place_ar": "تنغتشو (ولاية لو)",
+      "place_wikidata": "Q1207076",
       "modern_country_ar": "الصين"
     },
     "tags": [
@@ -188,7 +192,7 @@
       "author": "Vjacheslav Rublevskiy",
       "source_url": "https://commons.wikimedia.org/wiki/File:%D0%A4%D0%B8%D0%BB%D0%BE%D1%81%D0%BE%D1%84_%D0%9C%D0%BE-%D0%A6%D0%B7%D1%8B.jpg"
     },
-    "fetched_at": "2026-10-12T12:04:21.125Z"
+    "fetched_at": "2026-10-12T12:42:43.668Z"
   },
   {
     "id": "mencius",
@@ -214,9 +218,10 @@
       "to": -289
     },
     "location": {
-      "lat": 35.39,
-      "lng": 116.97,
+      "lat": 35.3667,
+      "lng": 116.45,
       "place_ar": "زوكسيان (ولاية زو)",
+      "place_wikidata": "Q227034",
       "modern_country_ar": "الصين"
     },
     "tags": [
@@ -236,7 +241,7 @@
       "author": "anonymous",
       "source_url": "https://commons.wikimedia.org/wiki/File:Half_Portraits_of_the_Great_Sage_and_Virtuous_Men_of_Old_-_Meng_Ke_(%E5%AD%9F%E8%BB%BB).jpg"
     },
-    "fetched_at": "2026-10-12T12:04:25.594Z"
+    "fetched_at": "2026-10-12T12:42:43.679Z"
   },
   {
     "id": "zhuangzi",
@@ -262,9 +267,10 @@
       "to": -286
     },
     "location": {
-      "lat": 34.45,
-      "lng": 115.65,
+      "lat": 34.4259,
+      "lng": 115.6467,
       "place_ar": "منغ (ولاية سونغ)",
+      "place_wikidata": "Q404817",
       "modern_country_ar": "الصين"
     },
     "tags": [
@@ -285,7 +291,7 @@
       "author": "Unknown authorUnknown author",
       "source_url": "https://commons.wikimedia.org/wiki/File:Zhuangzi.png"
     },
-    "fetched_at": "2026-10-12T12:04:30.565Z"
+    "fetched_at": "2026-10-12T12:42:43.689Z"
   },
   {
     "id": "xunzi",
@@ -311,9 +317,10 @@
       "to": -235
     },
     "location": {
-      "lat": 35.3,
-      "lng": 112.85,
-      "place_ar": "ولاية تشاو",
+      "lat": 36.6116,
+      "lng": 114.4894,
+      "place_ar": "هاندان (ولاية تشاو)",
+      "place_wikidata": "Q58570",
       "modern_country_ar": "الصين"
     },
     "tags": [
@@ -334,7 +341,7 @@
       "author": "Unknown authorUnknown author",
       "source_url": "https://commons.wikimedia.org/wiki/File:Portrait_of_Xun_Zi.jpg"
     },
-    "fetched_at": "2026-10-12T12:04:35.147Z"
+    "fetched_at": "2026-10-12T12:42:43.702Z"
   },
   {
     "id": "hanfeizi",
@@ -360,9 +367,10 @@
       "to": -233
     },
     "location": {
-      "lat": 34.2,
-      "lng": 113.8,
-      "place_ar": "ولاية هان (شينتشنغ)",
+      "lat": 34.3962,
+      "lng": 113.7249,
+      "place_ar": "شينتشنغ (ولاية هان)",
+      "place_wikidata": "Q1024662",
       "modern_country_ar": "الصين"
     },
     "tags": [
@@ -382,7 +390,7 @@
       "author": "Sabinowitz",
       "source_url": "https://commons.wikimedia.org/wiki/File:Statue_Of_Han_Fei.png"
     },
-    "fetched_at": "2026-10-12T12:04:39.781Z"
+    "fetched_at": "2026-10-12T12:42:43.710Z"
   },
   {
     "id": "imhotep",
@@ -408,9 +416,10 @@
       "to": -2600
     },
     "location": {
-      "lat": 29.8713,
-      "lng": 31.2164,
-      "place_ar": "منف (سقارة)",
+      "lat": 29.85,
+      "lng": 31.2333,
+      "place_ar": "سقارة (منف)",
+      "place_wikidata": "Q192134",
       "modern_country_ar": "مصر"
     },
     "tags": [
@@ -430,7 +439,7 @@
       "author": "Rama",
       "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Imhotep-E_3639-IMG_4607-gradient.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     },
-    "fetched_at": "2026-10-12T12:04:43.474Z"
+    "fetched_at": "2026-10-12T12:42:43.716Z"
   },
   {
     "id": "ptahhotep",
@@ -456,9 +465,10 @@
       "to": -2400
     },
     "location": {
-      "lat": 29.8713,
-      "lng": 31.2164,
-      "place_ar": "منف (سقارة)",
+      "lat": 29.8447,
+      "lng": 31.2509,
+      "place_ar": "منف",
+      "place_wikidata": "Q5715",
       "modern_country_ar": "مصر"
     },
     "tags": [
@@ -477,7 +487,7 @@
       "author": "AnnekeBart",
       "source_url": "https://commons.wikimedia.org/wiki/File:Ptahhotep-Khamerernebty.jpg"
     },
-    "fetched_at": "2026-10-12T12:04:43.484Z"
+    "fetched_at": "2026-10-12T12:42:43.722Z"
   },
   {
     "id": "kagemni",
@@ -503,9 +513,10 @@
       "to": -2320
     },
     "location": {
-      "lat": 29.8713,
-      "lng": 31.2164,
-      "place_ar": "منف (سقارة)",
+      "lat": 29.85,
+      "lng": 31.2333,
+      "place_ar": "سقارة (منف)",
+      "place_wikidata": "Q192134",
       "modern_country_ar": "مصر"
     },
     "tags": [
@@ -524,7 +535,7 @@
       "author": "Jon Bodsworth",
       "source_url": "https://commons.wikimedia.org/wiki/File:01_kagemni_door_figure.jpg"
     },
-    "fetched_at": "2026-10-12T12:04:44.819Z"
+    "fetched_at": "2026-10-12T12:42:43.731Z"
   },
   {
     "id": "merikare",
@@ -550,9 +561,10 @@
       "to": -2020
     },
     "location": {
-      "lat": 29.074,
-      "lng": 30.935,
+      "lat": 29.0856,
+      "lng": 30.9344,
       "place_ar": "إهناسيا (هيراكليوبوليس)",
+      "place_wikidata": "Q249480",
       "modern_country_ar": "مصر"
     },
     "tags": [
@@ -566,7 +578,7 @@
     "summary_source": "wikipedia_ar",
     "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%AA%D8%B9%D8%A7%D9%84%D9%8A%D9%85_%D9%85%D8%B1%D9%8A%D9%83%D8%A7%D8%B1%D8%B9",
     "image": null,
-    "fetched_at": "2026-10-12T12:04:45.933Z"
+    "fetched_at": "2026-10-12T12:42:43.734Z"
   },
   {
     "id": "akhenaten",
@@ -592,9 +604,10 @@
       "to": -1336
     },
     "location": {
-      "lat": 27.646,
-      "lng": 30.9,
+      "lat": 27.6617,
+      "lng": 30.9056,
       "place_ar": "أخت آتون (تل العمارنة)",
+      "place_wikidata": "Q5736",
       "modern_country_ar": "مصر"
     },
     "tags": [
@@ -614,7 +627,7 @@
       "author": "Unknown",
       "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/GD-EG-Caire-Mus%C3%A9e061.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     },
-    "fetched_at": "2026-10-12T12:04:47.547Z"
+    "fetched_at": "2026-10-12T12:42:43.743Z"
   },
   {
     "id": "amenemope",
@@ -640,9 +653,10 @@
       "to": -1075
     },
     "location": {
-      "lat": 26.56,
-      "lng": 31.75,
+      "lat": 26.5642,
+      "lng": 31.7461,
       "place_ar": "أخميم (صعيد مصر)",
+      "place_wikidata": "Q340572",
       "modern_country_ar": "مصر"
     },
     "tags": [
@@ -656,7 +670,7 @@
     "summary_source": "wikipedia_ar",
     "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%A3%D9%85%D9%86%D9%85%D9%88%D8%A8%D9%8A",
     "image": null,
-    "fetched_at": "2026-10-12T12:04:48.414Z"
+    "fetched_at": "2026-10-12T12:42:43.749Z"
   },
   {
     "id": "ankhsheshonq",
@@ -682,9 +696,10 @@
       "to": -250
     },
     "location": {
-      "lat": 29.8713,
-      "lng": 31.2164,
-      "place_ar": "منف (سقارة)",
+      "lat": 29.85,
+      "lng": 31.2333,
+      "place_ar": "سقارة (منف)",
+      "place_wikidata": "Q192134",
       "modern_country_ar": "مصر"
     },
     "tags": [
@@ -697,7 +712,7 @@
     "summary_source": "manual",
     "wikipedia_url": null,
     "image": null,
-    "fetched_at": "2026-10-12T12:04:48.881Z"
+    "fetched_at": "2026-10-12T12:42:43.750Z"
   },
   {
     "id": "thales",
@@ -723,9 +738,10 @@
       "to": -546
     },
     "location": {
-      "lat": 37.53,
-      "lng": 27.28,
+      "lat": 37.5311,
+      "lng": 27.2756,
       "place_ar": "ملطية (إيونيا)",
+      "place_wikidata": "Q169460",
       "modern_country_ar": "تركيا"
     },
     "tags": [
@@ -746,7 +762,7 @@
       "author": "Wilhelm Meyer",
       "source_url": "https://commons.wikimedia.org/wiki/File:Illustrerad_Verldshistoria_band_I_Ill_107.svg"
     },
-    "fetched_at": "2026-10-12T12:04:55.114Z"
+    "fetched_at": "2026-10-12T12:42:43.760Z"
   },
   {
     "id": "anaximander",
@@ -772,9 +788,10 @@
       "to": -546
     },
     "location": {
-      "lat": 37.53,
-      "lng": 27.28,
+      "lat": 37.5311,
+      "lng": 27.2756,
       "place_ar": "ملطية (إيونيا)",
+      "place_wikidata": "Q169460",
       "modern_country_ar": "تركيا"
     },
     "tags": [
@@ -794,7 +811,7 @@
       "author": "ancient Roman mosaic artist from the early third century AD",
       "source_url": "https://commons.wikimedia.org/wiki/File:Anaximander_Mosaic.jpg"
     },
-    "fetched_at": "2026-10-12T12:05:00.102Z"
+    "fetched_at": "2026-10-12T12:42:43.769Z"
   },
   {
     "id": "anaximenes",
@@ -820,9 +837,10 @@
       "to": -528
     },
     "location": {
-      "lat": 37.53,
-      "lng": 27.28,
+      "lat": 37.5311,
+      "lng": 27.2756,
       "place_ar": "ملطية (إيونيا)",
+      "place_wikidata": "Q169460",
       "modern_country_ar": "تركيا"
     },
     "tags": [
@@ -841,7 +859,7 @@
       "author": "Unknown",
       "source_url": "https://commons.wikimedia.org/wiki/File:Anaximenes.jpg"
     },
-    "fetched_at": "2026-10-12T12:05:04.771Z"
+    "fetched_at": "2026-10-12T12:42:43.778Z"
   },
   {
     "id": "pythagoras",
@@ -867,9 +885,10 @@
       "to": -495
     },
     "location": {
-      "lat": 39.08,
-      "lng": 17.12,
+      "lat": 39.0833,
+      "lng": 17.1167,
       "place_ar": "كروتوني (ماغنا غراسيا)",
+      "place_wikidata": "Q6681",
       "modern_country_ar": "إيطاليا"
     },
     "tags": [
@@ -889,7 +908,7 @@
       "author": "The original uploader was Galilea at German Wikipedia.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Kapitolinischer_Pythagoras.jpg"
     },
-    "fetched_at": "2026-10-12T12:05:11.431Z"
+    "fetched_at": "2026-10-12T12:42:43.785Z"
   },
   {
     "id": "xenophanes",
@@ -915,9 +934,10 @@
       "to": -478
     },
     "location": {
-      "lat": 38,
-      "lng": 27.17,
+      "lat": 38.1156,
+      "lng": 27.1422,
       "place_ar": "كولوفون (إيونيا)",
+      "place_wikidata": "Q1142488",
       "modern_country_ar": "تركيا"
     },
     "tags": [
@@ -937,7 +957,7 @@
       "author": "Unknown authorUnknown author",
       "source_url": "https://commons.wikimedia.org/wiki/File:Xenophanes_in_Thomas_Stanley_History_of_Philosophy.jpg"
     },
-    "fetched_at": "2026-10-12T12:05:16.446Z"
+    "fetched_at": "2026-10-12T12:42:43.794Z"
   },
   {
     "id": "heraclitus",
@@ -963,9 +983,10 @@
       "to": -475
     },
     "location": {
-      "lat": 37.94,
-      "lng": 27.34,
+      "lat": 37.9406,
+      "lng": 27.3394,
       "place_ar": "أفسس",
+      "place_wikidata": "Q47611",
       "modern_country_ar": "تركيا"
     },
     "tags": [
@@ -986,7 +1007,7 @@
       "author": "Didier Descouens",
       "source_url": "https://commons.wikimedia.org/wiki/File:Ca%27_Rezzonico_-_Eraclito_1705_-_Giuseppe_Torretti.jpg"
     },
-    "fetched_at": "2026-10-12T12:05:19.942Z"
+    "fetched_at": "2026-10-12T12:42:43.802Z"
   },
   {
     "id": "parmenides",
@@ -1012,9 +1033,10 @@
       "to": -450
     },
     "location": {
-      "lat": 40.16,
-      "lng": 15.15,
+      "lat": 40.1594,
+      "lng": 15.1544,
       "place_ar": "إيليا (فاليا)",
+      "place_wikidata": "Q272968",
       "modern_country_ar": "إيطاليا"
     },
     "tags": [
@@ -1035,7 +1057,7 @@
       "author": "Sergio Spolti",
       "source_url": "https://commons.wikimedia.org/wiki/File:Busto_di_Parmenide_(cropped).jpg"
     },
-    "fetched_at": "2026-10-12T12:05:23.884Z"
+    "fetched_at": "2026-10-12T12:42:43.810Z"
   },
   {
     "id": "zeno-of-elea",
@@ -1061,9 +1083,10 @@
       "to": -430
     },
     "location": {
-      "lat": 40.16,
-      "lng": 15.15,
+      "lat": 40.1594,
+      "lng": 15.1544,
       "place_ar": "إيليا (فاليا)",
+      "place_wikidata": "Q272968",
       "modern_country_ar": "إيطاليا"
     },
     "tags": [
@@ -1083,7 +1106,7 @@
       "author": "Jan de Bisschop",
       "source_url": "https://commons.wikimedia.org/wiki/File:Portretbuste_van_Zeno_van_Elea_Paradigmata_graphices_variorum_artificum_(serietitel),_RP-P-1907-4495.jpg"
     },
-    "fetched_at": "2026-10-12T12:05:25.436Z"
+    "fetched_at": "2026-10-12T12:42:43.819Z"
   },
   {
     "id": "empedocles",
@@ -1109,9 +1132,10 @@
       "to": -434
     },
     "location": {
-      "lat": 37.31,
-      "lng": 13.58,
+      "lat": 37.3125,
+      "lng": 13.575,
       "place_ar": "أكراغاس (صقلية)",
+      "place_wikidata": "Q13678",
       "modern_country_ar": "إيطاليا"
     },
     "tags": [
@@ -1130,7 +1154,7 @@
       "author": "Unknown authorUnknown author",
       "source_url": "https://commons.wikimedia.org/wiki/File:Empedokles.jpeg"
     },
-    "fetched_at": "2026-10-12T12:05:30.411Z"
+    "fetched_at": "2026-10-12T12:42:43.830Z"
   },
   {
     "id": "anaxagoras",
@@ -1156,10 +1180,11 @@
       "to": -428
     },
     "location": {
-      "lat": 38.32,
-      "lng": 26.77,
-      "place_ar": "كلازوميناي / أثينا",
-      "modern_country_ar": "تركيا"
+      "lat": 37.9842,
+      "lng": 23.7281,
+      "place_ar": "أثينا",
+      "place_wikidata": "Q1524",
+      "modern_country_ar": "اليونان"
     },
     "tags": [
       "nous",
@@ -1178,7 +1203,7 @@
       "author": "Unknown",
       "source_url": "https://commons.wikimedia.org/wiki/File:Anaxagoras.png"
     },
-    "fetched_at": "2026-10-12T12:05:36.245Z"
+    "fetched_at": "2026-10-12T12:42:43.842Z"
   },
   {
     "id": "leucippus",
@@ -1204,9 +1229,10 @@
       "to": -420
     },
     "location": {
-      "lat": 40.98,
-      "lng": 24.98,
-      "place_ar": "أبديرة / ملطية",
+      "lat": 40.9337,
+      "lng": 24.9733,
+      "place_ar": "أبديرة",
+      "place_wikidata": "Q132527193",
       "modern_country_ar": "اليونان"
     },
     "tags": [
@@ -1225,7 +1251,7 @@
       "author": "Didier Descouens",
       "source_url": "https://commons.wikimedia.org/wiki/File:Pinacoteca_Querini_Stampalia_-_Leucippus_-_Luca_Giordano.jpg"
     },
-    "fetched_at": "2026-10-12T12:05:42.058Z"
+    "fetched_at": "2026-10-12T12:42:43.849Z"
   },
   {
     "id": "democritus",
@@ -1251,9 +1277,10 @@
       "to": -370
     },
     "location": {
-      "lat": 40.98,
-      "lng": 24.98,
+      "lat": 40.9337,
+      "lng": 24.9733,
       "place_ar": "أبديرة",
+      "place_wikidata": "Q132527193",
       "modern_country_ar": "اليونان"
     },
     "tags": [
@@ -1273,7 +1300,7 @@
       "author": "Original uploader was Odysses",
       "source_url": "https://commons.wikimedia.org/wiki/File:Bust_of_an_unknown_Greek_-_Museo_archeologico_nazionale_di_Napoli.jpg"
     },
-    "fetched_at": "2026-10-12T12:05:47.037Z"
+    "fetched_at": "2026-10-12T12:42:43.856Z"
   },
   {
     "id": "protagoras",
@@ -1299,9 +1326,10 @@
       "to": -420
     },
     "location": {
-      "lat": 40.98,
-      "lng": 24.98,
+      "lat": 40.9337,
+      "lng": 24.9733,
       "place_ar": "أبديرة / أثينا",
+      "place_wikidata": "Q132527193",
       "modern_country_ar": "اليونان"
     },
     "tags": [
@@ -1321,7 +1349,7 @@
       "author": "Salvator Rosa",
       "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Salvator_Rosa_-_D%C3%A9mocrite_et_Protagoras.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     },
-    "fetched_at": "2026-10-12T12:05:50.826Z"
+    "fetched_at": "2026-10-12T12:42:43.867Z"
   },
   {
     "id": "gorgias",
@@ -1347,9 +1375,10 @@
       "to": -375
     },
     "location": {
-      "lat": 37.28,
-      "lng": 14.99,
+      "lat": 37.2833,
+      "lng": 15,
       "place_ar": "ليونتيني (صقلية) / أثينا",
+      "place_wikidata": "Q488240",
       "modern_country_ar": "إيطاليا"
     },
     "tags": [
@@ -1369,7 +1398,7 @@
       "author": "Giuseppe Emanuele Ortolani e C. Biondi",
       "source_url": "https://commons.wikimedia.org/wiki/File:Gorgia_di_Leontini.png"
     },
-    "fetched_at": "2026-10-12T12:05:55.208Z"
+    "fetched_at": "2026-10-12T12:42:43.875Z"
   },
   {
     "id": "socrates",
@@ -1395,9 +1424,10 @@
       "to": -399
     },
     "location": {
-      "lat": 37.9715,
-      "lng": 23.7257,
+      "lat": 37.9842,
+      "lng": 23.7281,
       "place_ar": "أثينا",
+      "place_wikidata": "Q1524",
       "modern_country_ar": "اليونان"
     },
     "tags": [
@@ -1417,7 +1447,7 @@
       "author": "Copy of Lysippos (?)",
       "source_url": "https://commons.wikimedia.org/wiki/File:Socrates_Louvre.jpg"
     },
-    "fetched_at": "2026-10-12T12:05:55.220Z"
+    "fetched_at": "2026-10-12T12:42:43.888Z"
   },
   {
     "id": "antisthenes",
@@ -1443,9 +1473,10 @@
       "to": -366
     },
     "location": {
-      "lat": 37.9715,
-      "lng": 23.7257,
+      "lat": 37.9842,
+      "lng": 23.7281,
       "place_ar": "أثينا",
+      "place_wikidata": "Q1524",
       "modern_country_ar": "اليونان"
     },
     "tags": [
@@ -1465,7 +1496,7 @@
       "author": "Unknown artistUnknown artist",
       "source_url": "https://commons.wikimedia.org/wiki/File:Antisthenes_BM_1838.jpg"
     },
-    "fetched_at": "2026-10-12T12:05:59.680Z"
+    "fetched_at": "2026-10-12T12:42:43.897Z"
   },
   {
     "id": "plato",
@@ -1491,9 +1522,10 @@
       "to": -348
     },
     "location": {
-      "lat": 37.9715,
-      "lng": 23.7257,
+      "lat": 37.9842,
+      "lng": 23.7281,
       "place_ar": "أثينا",
+      "place_wikidata": "Q1524",
       "modern_country_ar": "اليونان"
     },
     "tags": [
@@ -1513,7 +1545,7 @@
       "author": "Marie-Lan Nguyen",
       "source_url": "https://commons.wikimedia.org/wiki/File:Plato_Silanion_Musei_Capitolini_MC1377.jpg"
     },
-    "fetched_at": "2026-10-12T12:05:59.697Z"
+    "fetched_at": "2026-10-12T12:42:43.911Z"
   },
   {
     "id": "diogenes-of-sinope",
@@ -1539,9 +1571,10 @@
       "to": -323
     },
     "location": {
-      "lat": 37.91,
-      "lng": 22.93,
+      "lat": 37.9058,
+      "lng": 22.8787,
       "place_ar": "كورنث / أثينا",
+      "place_wikidata": "Q1363688",
       "modern_country_ar": "اليونان"
     },
     "tags": [
@@ -1562,7 +1595,7 @@
       "author": "Diogenes-statue-Sinop.JPG: Tony f\nderivative work: Singinglemon (talk)",
       "source_url": "https://commons.wikimedia.org/wiki/File:Diogenes-statue-Sinop-enhanced.jpg"
     },
-    "fetched_at": "2026-10-12T12:06:04.948Z"
+    "fetched_at": "2026-10-12T12:42:43.925Z"
   },
   {
     "id": "aristotle",
@@ -1588,9 +1621,10 @@
       "to": -322
     },
     "location": {
-      "lat": 37.9715,
-      "lng": 23.7257,
-      "place_ar": "أثينا (الليكيوم) / ستاغيرا",
+      "lat": 37.9842,
+      "lng": 23.7281,
+      "place_ar": "أثينا (الليكيوم)",
+      "place_wikidata": "Q1524",
       "modern_country_ar": "اليونان"
     },
     "tags": [
@@ -1612,7 +1646,7 @@
       "author": "After Lysippos",
       "source_url": "https://commons.wikimedia.org/wiki/File:Aristotle_Altemps_Inv8575.jpg"
     },
-    "fetched_at": "2026-10-12T12:06:11.932Z"
+    "fetched_at": "2026-10-12T12:42:43.950Z"
   },
   {
     "id": "pyrrho",
@@ -1638,9 +1672,10 @@
       "to": -270
     },
     "location": {
-      "lat": 37.89,
-      "lng": 21.37,
+      "lat": 37.8922,
+      "lng": 21.3744,
       "place_ar": "إيليس",
+      "place_wikidata": "Q217667",
       "modern_country_ar": "اليونان"
     },
     "tags": [
@@ -1660,7 +1695,7 @@
       "author": "Girolamo Olgiati",
       "source_url": "https://commons.wikimedia.org/wiki/File:Pyrrho_Heliensis_-_Illustrium_philosophorum_et_sapientum_effigies_ab_eorum_numistatibus_extractae.png"
     },
-    "fetched_at": "2026-10-12T12:06:15.787Z"
+    "fetched_at": "2026-10-12T12:42:43.962Z"
   },
   {
     "id": "epicurus",
@@ -1686,9 +1721,10 @@
       "to": -270
     },
     "location": {
-      "lat": 37.9715,
-      "lng": 23.7257,
+      "lat": 37.9842,
+      "lng": 23.7281,
       "place_ar": "أثينا (الحديقة)",
+      "place_wikidata": "Q1524",
       "modern_country_ar": "اليونان"
     },
     "tags": [
@@ -1709,7 +1745,7 @@
       "author": "Unknown",
       "source_url": "https://commons.wikimedia.org/wiki/File:Epicurus_Massimo_Inv197306.jpg"
     },
-    "fetched_at": "2026-10-12T12:06:20.405Z"
+    "fetched_at": "2026-10-12T12:42:43.968Z"
   },
   {
     "id": "zeno-of-citium",
@@ -1735,9 +1771,10 @@
       "to": -262
     },
     "location": {
-      "lat": 37.9715,
-      "lng": 23.7257,
+      "lat": 37.9842,
+      "lng": 23.7281,
       "place_ar": "أثينا (الستوا)",
+      "place_wikidata": "Q1524",
       "modern_country_ar": "اليونان"
     },
     "tags": [
@@ -1758,7 +1795,7 @@
       "author": "Paolo Monti",
       "source_url": "https://commons.wikimedia.org/wiki/File:Paolo_Monti_-_Servizio_fotografico_(Napoli,_1969)_-_BEIC_6353768.jpg"
     },
-    "fetched_at": "2026-10-12T12:06:25.936Z"
+    "fetched_at": "2026-10-12T12:42:43.978Z"
   },
   {
     "id": "euclid",
@@ -1784,9 +1821,10 @@
       "to": -270
     },
     "location": {
-      "lat": 31.2001,
-      "lng": 29.9187,
+      "lat": 31.1975,
+      "lng": 29.8925,
       "place_ar": "الإسكندرية",
+      "place_wikidata": "Q87",
       "modern_country_ar": "مصر"
     },
     "tags": [
@@ -1806,7 +1844,7 @@
       "author": "Justus van Gent",
       "source_url": "https://commons.wikimedia.org/wiki/File:Euklid2.jpg"
     },
-    "fetched_at": "2026-10-12T12:06:34.262Z"
+    "fetched_at": "2026-10-12T12:42:43.986Z"
   },
   {
     "id": "cleanthes",
@@ -1832,9 +1870,10 @@
       "to": -232
     },
     "location": {
-      "lat": 37.9715,
-      "lng": 23.7257,
-      "place_ar": "أثينا",
+      "lat": 37.9842,
+      "lng": 23.7281,
+      "place_ar": "أثينا (الستوا)",
+      "place_wikidata": "Q1524",
       "modern_country_ar": "اليونان"
     },
     "tags": [
@@ -1854,7 +1893,7 @@
       "author": "Theodoor Galle",
       "source_url": "https://commons.wikimedia.org/wiki/File:Cleanthes_from_L._Annaei_Senecae_philosophi_Opera,_1605,_title_page_detail.png"
     },
-    "fetched_at": "2026-10-12T12:06:41.139Z"
+    "fetched_at": "2026-10-12T12:42:43.996Z"
   },
   {
     "id": "archimedes",
@@ -1880,9 +1919,10 @@
       "to": -212
     },
     "location": {
-      "lat": 37.0755,
-      "lng": 15.2866,
+      "lat": 37.0692,
+      "lng": 15.2875,
       "place_ar": "سيراكيوز (صقلية)",
+      "place_wikidata": "Q13670",
       "modern_country_ar": "إيطاليا"
     },
     "tags": [
@@ -1903,7 +1943,7 @@
       "author": "Domenico Fetti",
       "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Retrato_de_un_erudito_%28%C2%BFArqu%C3%ADmedes%3F%29%2C_por_Domenico_Fetti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     },
-    "fetched_at": "2026-10-12T12:06:46.533Z"
+    "fetched_at": "2026-10-12T12:42:44.009Z"
   },
   {
     "id": "chrysippus",
@@ -1929,9 +1969,10 @@
       "to": -206
     },
     "location": {
-      "lat": 37.9715,
-      "lng": 23.7257,
-      "place_ar": "أثينا / سولي",
+      "lat": 37.9842,
+      "lng": 23.7281,
+      "place_ar": "أثينا (الستوا)",
+      "place_wikidata": "Q1524",
       "modern_country_ar": "اليونان"
     },
     "tags": [
@@ -1951,7 +1992,7 @@
       "author": "Unknown artistUnknown artist",
       "source_url": "https://commons.wikimedia.org/wiki/File:Chrysippos_BM_1846.jpg"
     },
-    "fetched_at": "2026-10-12T12:06:50.520Z"
+    "fetched_at": "2026-10-12T12:42:44.016Z"
   },
   {
     "id": "eratosthenes",
@@ -1977,9 +2018,10 @@
       "to": -194
     },
     "location": {
-      "lat": 31.2001,
-      "lng": 29.9187,
+      "lat": 31.1975,
+      "lng": 29.8925,
       "place_ar": "الإسكندرية",
+      "place_wikidata": "Q87",
       "modern_country_ar": "مصر"
     },
     "tags": [
@@ -2000,7 +2042,7 @@
       "author": "Unknown",
       "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Eratosthenes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     },
-    "fetched_at": "2026-10-12T12:06:56.178Z"
+    "fetched_at": "2026-10-12T12:42:44.024Z"
   },
   {
     "id": "yajnavalkya",
@@ -2026,9 +2068,10 @@
       "to": -700
     },
     "location": {
-      "lat": 26.12,
-      "lng": 85.9,
-      "place_ar": "ميثيلا (فيهيدها)",
+      "lat": 26.7122,
+      "lng": 85.9217,
+      "place_ar": "ميثيلا (جاناكبور)",
+      "place_wikidata": "Q378649",
       "modern_country_ar": "الهند"
     },
     "tags": [
@@ -2037,7 +2080,7 @@
       "metaphysics",
       "brahman"
     ],
-    "notes": "حكيم وفيلسوف فيدي أسطوري، ارتبط بحوارات الأوبانيشاد الفلسفية الكبرى ومفهوم البراهمن والآتمان",
+    "notes": "حكيم وفيلسوف فيدي أسطوري، ارتبط بحوارات الأوبانيشاد الفلسفية الكبرى في بلاط ملك ميثيلا ومفهوم البراهمن والآتمان",
     "summary_ar": "حكيم وفيلسوف فيدي في الهند القديمة، يُنسب إليه دور محوري في حوارات الأوبانيشاد الفلسفية (خاصة بريهادارانياكا أوبانيشاد) حول طبيعة الوجود ومفهوم البراهمن والآتمان.",
     "summary_source": "manual",
     "wikipedia_url": null,
@@ -2048,7 +2091,7 @@
       "author": "எஸ். பி. கிருஷ்ணமூர்த்தி",
       "source_url": "https://commons.wikimedia.org/wiki/File:Yajnavalkya_and_Janaka.jpg"
     },
-    "fetched_at": "2026-10-12T12:06:57.477Z"
+    "fetched_at": "2026-10-12T12:42:44.030Z"
   },
   {
     "id": "kapila",
@@ -2074,9 +2117,10 @@
       "to": -500
     },
     "location": {
-      "lat": 27.57,
-      "lng": 83.05,
+      "lat": 27.5765,
+      "lng": 83.055,
       "place_ar": "كابيلافاستو",
+      "place_wikidata": "Q30610827",
       "modern_country_ar": "الهند"
     },
     "tags": [
@@ -2095,7 +2139,7 @@
       "author": "Unknown authorUnknown author",
       "source_url": "https://commons.wikimedia.org/wiki/File:Kapila_muni.jpg"
     },
-    "fetched_at": "2026-10-12T12:07:00.416Z"
+    "fetched_at": "2026-10-12T12:42:44.033Z"
   },
   {
     "id": "charvaka",
@@ -2121,9 +2165,10 @@
       "to": -500
     },
     "location": {
-      "lat": 25.3176,
-      "lng": 82.9739,
+      "lat": 25.3189,
+      "lng": 83.0128,
       "place_ar": "فاراناسي (بنارس)",
+      "place_wikidata": "Q79980",
       "modern_country_ar": "الهند"
     },
     "tags": [
@@ -2143,7 +2188,7 @@
       "author": "Ms Sarah Welch",
       "source_url": "https://commons.wikimedia.org/wiki/File:1_Pramana_Epistemology_Charvaka_Hindu_school.svg"
     },
-    "fetched_at": "2026-10-12T12:07:04.432Z"
+    "fetched_at": "2026-10-12T12:42:44.036Z"
   },
   {
     "id": "kanada",
@@ -2169,9 +2214,10 @@
       "to": -500
     },
     "location": {
-      "lat": 26.79,
-      "lng": 82.2,
+      "lat": 26.7992,
+      "lng": 82.2044,
       "place_ar": "أيوديا",
+      "place_wikidata": "Q186040",
       "modern_country_ar": "الهند"
     },
     "tags": [
@@ -2185,7 +2231,7 @@
     "summary_source": "wikipedia_ar",
     "wikipedia_url": "https://ar.wikipedia.org/wiki/%D9%83%D9%86%D8%A7%D8%AF%D8%A9",
     "image": null,
-    "fetched_at": "2026-10-12T12:07:08.473Z"
+    "fetched_at": "2026-10-12T12:42:44.041Z"
   },
   {
     "id": "mahavira",
@@ -2211,9 +2257,10 @@
       "to": -527
     },
     "location": {
-      "lat": 25.61,
-      "lng": 85.14,
+      "lat": 25.9866,
+      "lng": 85.1256,
       "place_ar": "فايشالي",
+      "place_wikidata": "Q1509463",
       "modern_country_ar": "الهند"
     },
     "tags": [
@@ -2233,7 +2280,7 @@
       "author": "Dayodaya",
       "source_url": "https://commons.wikimedia.org/wiki/File:Mahavir.jpg"
     },
-    "fetched_at": "2026-10-12T12:07:13.354Z"
+    "fetched_at": "2026-10-12T12:42:44.052Z"
   },
   {
     "id": "buddha",
@@ -2259,9 +2306,10 @@
       "to": -483
     },
     "location": {
-      "lat": 24.6951,
-      "lng": 84.9913,
+      "lat": 24.695,
+      "lng": 84.9925,
       "place_ar": "بود جايا",
+      "place_wikidata": "Q176767",
       "modern_country_ar": "الهند"
     },
     "tags": [
@@ -2281,7 +2329,7 @@
       "author": "พระมหาเทวประภาส วชิรญาณเมธี (ผู้ถ่าย-ปล่อยสัญญาอนุญาตภาพให้นำไปใช้ได้เพื่อการศึกษาโดยอยู่ภา่ยใต้ cc-by-sa-3.0)  ผู้สร้างสรรค์ผลงาน/ส่งข้อมูลเก็บในคลังข้อมูลเสรีวิกิมีเดียคอมมอนส์ - เทวประภาส มากคล้าย",
       "source_url": "https://commons.wikimedia.org/wiki/File:Buddha_in_Sarnath_Museum_(Dhammajak_Mutra).jpg"
     },
-    "fetched_at": "2026-10-12T12:07:13.364Z"
+    "fetched_at": "2026-10-12T12:42:44.065Z"
   },
   {
     "id": "chanakya",
@@ -2307,9 +2355,10 @@
       "to": -283
     },
     "location": {
-      "lat": 25.61,
-      "lng": 85.14,
+      "lat": 25.611,
+      "lng": 85.144,
       "place_ar": "باتاليبوترا (باتنا)",
+      "place_wikidata": "Q389755",
       "modern_country_ar": "الهند"
     },
     "tags": [
@@ -2329,7 +2378,7 @@
       "author": "Unknown authorUnknown author",
       "source_url": "https://commons.wikimedia.org/wiki/File:Chanakya_artistic_depiction.jpg"
     },
-    "fetched_at": "2026-10-12T12:07:16.738Z"
+    "fetched_at": "2026-10-12T12:42:44.076Z"
   },
   {
     "id": "shuruppak",
@@ -2355,9 +2404,10 @@
       "to": -2500
     },
     "location": {
-      "lat": 31.77,
-      "lng": 45.83,
+      "lat": 31.7774,
+      "lng": 45.5098,
       "place_ar": "شوروباك (تل فارة)",
+      "place_wikidata": "Q392725",
       "modern_country_ar": "العراق"
     },
     "tags": [
@@ -2376,7 +2426,7 @@
       "author": "Daderot",
       "source_url": "https://commons.wikimedia.org/wiki/File:Instructions_of_Shurrupak,_Sumerian_proverb_collection,_c._2400_BC_-_Oriental_Institute_Museum,_University_of_Chicago_-_DSC07114.JPG"
     },
-    "fetched_at": "2026-10-12T12:07:18.998Z"
+    "fetched_at": "2026-10-12T12:42:44.082Z"
   },
   {
     "id": "enheduanna",
@@ -2402,9 +2452,10 @@
       "to": -2250
     },
     "location": {
-      "lat": 30.962,
-      "lng": 46.103,
+      "lat": 30.9622,
+      "lng": 46.1044,
       "place_ar": "أور",
+      "place_wikidata": "Q5699",
       "modern_country_ar": "العراق"
     },
     "tags": [
@@ -2423,7 +2474,7 @@
       "author": "Mefman00",
       "source_url": "https://commons.wikimedia.org/wiki/File:Enheduanna,_daughter_of_Sargon_of_Akkad.jpg"
     },
-    "fetched_at": "2026-10-12T12:07:22.598Z"
+    "fetched_at": "2026-10-12T12:42:44.086Z"
   },
   {
     "id": "hammurabi",
@@ -2449,9 +2500,10 @@
       "to": -1750
     },
     "location": {
-      "lat": 32.5364,
-      "lng": 44.4208,
+      "lat": 32.5425,
+      "lng": 44.4211,
       "place_ar": "بابل",
+      "place_wikidata": "Q5684",
       "modern_country_ar": "العراق"
     },
     "tags": [
@@ -2470,7 +2522,7 @@
       "author": "Mbzt",
       "source_url": "https://commons.wikimedia.org/wiki/File:F0182_Louvre_Code_Hammourabi_Bas-relief_Sb8_rwk.jpg"
     },
-    "fetched_at": "2026-10-12T12:07:22.605Z"
+    "fetched_at": "2026-10-12T12:42:44.097Z"
   },
   {
     "id": "zoroaster",
@@ -2496,9 +2548,10 @@
       "to": -900
     },
     "location": {
-      "lat": 36.75,
-      "lng": 66.89,
+      "lat": 36.7581,
+      "lng": 66.8989,
       "place_ar": "بلخ",
+      "place_wikidata": "Q182159",
       "modern_country_ar": "إيران الكبرى"
     },
     "tags": [
@@ -2517,6 +2570,6 @@
       "author": "Photo is extracted from \"Persia by a Persian: being personal experiences, manners, customs, habits, religious and social life in Persia\". Author: Isaac Adams. Published by: E. Stock, 1906.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Zartosht_30salegee.jpg"
     },
-    "fetched_at": "2026-10-12T12:07:22.610Z"
+    "fetched_at": "2026-10-12T12:42:44.103Z"
   }
 ]

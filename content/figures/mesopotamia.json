@@ -14,9 +14,10 @@
     "death": { "year": -2500, "approx": true },
     "active": { "from": -2600, "to": -2500 },
     "location": {
-      "lat": 31.77,
-      "lng": 45.83,
+      "lat": 31.7774,
+      "lng": 45.5098,
       "place_ar": "شوروباك (تل فارة)",
+      "place_wikidata": "Q392725",
       "modern_country_ar": "العراق"
     },
     "tags": ["wisdom-literature", "sumerian", "ethics"],
@@ -37,9 +38,10 @@
     "death": { "year": -2225, "approx": true },
     "active": { "from": -2285, "to": -2250 },
     "location": {
-      "lat": 30.962,
-      "lng": 46.103,
+      "lat": 30.9622,
+      "lng": 46.1044,
       "place_ar": "أور",
+      "place_wikidata": "Q5699",
       "modern_country_ar": "العراق"
     },
     "tags": ["theology", "hymns", "poetry"],
@@ -60,9 +62,10 @@
     "death": { "year": -1750, "approx": false },
     "active": { "from": -1792, "to": -1750 },
     "location": {
-      "lat": 32.5364,
-      "lng": 44.4208,
+      "lat": 32.5425,
+      "lng": 44.4211,
       "place_ar": "بابل",
+      "place_wikidata": "Q5684",
       "modern_country_ar": "العراق"
     },
     "tags": ["law", "ethics", "justice"],

@@ -10,16 +10,32 @@
     "civilization": "greece",
     "era": "presocratic",
     "tradition_ar": "المدرسة الأيونية (الملطية)",
-    "birth": { "year": -624, "approx": true },
-    "death": { "year": -546, "approx": true },
-    "active": { "from": -585, "to": -546 },
+    "birth": {
+      "year": -624,
+      "approx": true
+    },
+    "death": {
+      "year": -546,
+      "approx": true
+    },
+    "active": {
+      "from": -585,
+      "to": -546
+    },
     "location": {
-      "lat": 37.53,
-      "lng": 27.28,
+      "lat": 37.5311,
+      "lng": 27.2756,
       "place_ar": "ملطية (إيونيا)",
+      "place_wikidata": "Q169460",
       "modern_country_ar": "تركيا"
     },
-    "tags": ["presocratic", "milesian", "water-arche", "astronomy", "mathematics"],
+    "tags": [
+      "presocratic",
+      "milesian",
+      "water-arche",
+      "astronomy",
+      "mathematics"
+    ],
     "notes": "أول فيلسوف في التقليد اليوناني، قال إن الماء هو المبدأ الأول لجميع الأشياء وتنبأ بكسوف الشمس الشهير"
   },
   {
@@ -33,16 +49,31 @@
     "civilization": "greece",
     "era": "presocratic",
     "tradition_ar": "المدرسة الأيونية (الملطية)",
-    "birth": { "year": -610, "approx": true },
-    "death": { "year": -546, "approx": true },
-    "active": { "from": -570, "to": -546 },
+    "birth": {
+      "year": -610,
+      "approx": true
+    },
+    "death": {
+      "year": -546,
+      "approx": true
+    },
+    "active": {
+      "from": -570,
+      "to": -546
+    },
     "location": {
-      "lat": 37.53,
-      "lng": 27.28,
+      "lat": 37.5311,
+      "lng": 27.2756,
       "place_ar": "ملطية (إيونيا)",
+      "place_wikidata": "Q169460",
       "modern_country_ar": "تركيا"
     },
-    "tags": ["presocratic", "apeiron", "cosmology", "metaphysics"],
+    "tags": [
+      "presocratic",
+      "apeiron",
+      "cosmology",
+      "metaphysics"
+    ],
     "notes": "تلميذ طاليس وأول من افترض اللامحدود (الأبيرون) كمبدأ للوجود، ووضع أول خريطة معروفة للعالم"
   },
   {
@@ -56,16 +87,30 @@
     "civilization": "greece",
     "era": "presocratic",
     "tradition_ar": "المدرسة الأيونية (الملطية)",
-    "birth": { "year": -585, "approx": true },
-    "death": { "year": -528, "approx": true },
-    "active": { "from": -550, "to": -528 },
+    "birth": {
+      "year": -585,
+      "approx": true
+    },
+    "death": {
+      "year": -528,
+      "approx": true
+    },
+    "active": {
+      "from": -550,
+      "to": -528
+    },
     "location": {
-      "lat": 37.53,
-      "lng": 27.28,
+      "lat": 37.5311,
+      "lng": 27.2756,
       "place_ar": "ملطية (إيونيا)",
+      "place_wikidata": "Q169460",
       "modern_country_ar": "تركيا"
     },
-    "tags": ["presocratic", "air-arche", "cosmology"],
+    "tags": [
+      "presocratic",
+      "air-arche",
+      "cosmology"
+    ],
     "notes": "فيلسوف ملطي اعتبر الهواء المبدأ الأساسي للكون عبر عمليتي التكاثف والتخلخل"
   },
   {
@@ -79,16 +124,31 @@
     "civilization": "greece",
     "era": "presocratic",
     "tradition_ar": "الفيثاغورية",
-    "birth": { "year": -570, "approx": true },
-    "death": { "year": -495, "approx": true },
-    "active": { "from": -530, "to": -495 },
+    "birth": {
+      "year": -570,
+      "approx": true
+    },
+    "death": {
+      "year": -495,
+      "approx": true
+    },
+    "active": {
+      "from": -530,
+      "to": -495
+    },
     "location": {
-      "lat": 39.08,
-      "lng": 17.12,
+      "lat": 39.0833,
+      "lng": 17.1167,
       "place_ar": "كروتوني (ماغنا غراسيا)",
+      "place_wikidata": "Q6681",
       "modern_country_ar": "إيطاليا"
     },
-    "tags": ["pythagoreanism", "mathematics", "harmony", "metempsychosis"],
+    "tags": [
+      "pythagoreanism",
+      "mathematics",
+      "harmony",
+      "metempsychosis"
+    ],
     "notes": "مؤسس الفيثاغورية التي رأت أن الأعداد هي جوهر الوجود ومصدر الانسجام الكوني، وتحيط بشخصيته روايات شبه أسطورية"
   },
   {
@@ -102,16 +162,31 @@
     "civilization": "greece",
     "era": "presocratic",
     "tradition_ar": "المدرسة الإيلية المبكرة",
-    "birth": { "year": -570, "approx": true },
-    "death": { "year": -478, "approx": true },
-    "active": { "from": -540, "to": -478 },
+    "birth": {
+      "year": -570,
+      "approx": true
+    },
+    "death": {
+      "year": -478,
+      "approx": true
+    },
+    "active": {
+      "from": -540,
+      "to": -478
+    },
     "location": {
-      "lat": 38.00,
-      "lng": 27.17,
+      "lat": 38.1156,
+      "lng": 27.1422,
       "place_ar": "كولوفون (إيونيا)",
+      "place_wikidata": "Q1142488",
       "modern_country_ar": "تركيا"
     },
-    "tags": ["theology", "epistemology", "critique-of-polytheism", "monotheism"],
+    "tags": [
+      "theology",
+      "epistemology",
+      "critique-of-polytheism",
+      "monotheism"
+    ],
     "notes": "شاعر وفيلسوف انتقد تجسيم الآلهة ودعا إلى إله واحد كلي لا يشبه البشر في الصورة أو الفكر"
   },
   {
@@ -125,16 +200,32 @@
     "civilization": "greece",
     "era": "presocratic",
     "tradition_ar": "فلسفة الصيرورة واللوغوس",
-    "birth": { "year": -535, "approx": true },
-    "death": { "year": -475, "approx": true },
-    "active": { "from": -504, "to": -475 },
+    "birth": {
+      "year": -535,
+      "approx": true
+    },
+    "death": {
+      "year": -475,
+      "approx": true
+    },
+    "active": {
+      "from": -504,
+      "to": -475
+    },
     "location": {
-      "lat": 37.94,
-      "lng": 27.34,
+      "lat": 37.9406,
+      "lng": 27.3394,
       "place_ar": "أفسس",
+      "place_wikidata": "Q47611",
       "modern_country_ar": "تركيا"
     },
-    "tags": ["flux", "logos", "fire-arche", "dialectic", "opposites"],
+    "tags": [
+      "flux",
+      "logos",
+      "fire-arche",
+      "dialectic",
+      "opposites"
+    ],
     "notes": "فيلسوف الصيرورة والتغير الدائم، اشتهر بمقولة 'لا يمكنك النزول في النهر مرتين' ومفهوم اللوغوس كقانون كوني جامع"
   },
   {
@@ -148,16 +239,32 @@
     "civilization": "greece",
     "era": "presocratic",
     "tradition_ar": "المدرسة الإيلية",
-    "birth": { "year": -515, "approx": true },
-    "death": { "year": -450, "approx": true },
-    "active": { "from": -480, "to": -450 },
+    "birth": {
+      "year": -515,
+      "approx": true
+    },
+    "death": {
+      "year": -450,
+      "approx": true
+    },
+    "active": {
+      "from": -480,
+      "to": -450
+    },
     "location": {
-      "lat": 40.16,
-      "lng": 15.15,
+      "lat": 40.1594,
+      "lng": 15.1544,
       "place_ar": "إيليا (فاليا)",
+      "place_wikidata": "Q272968",
       "modern_country_ar": "إيطاليا"
     },
-    "tags": ["eleatics", "being", "ontology", "rationalism", "truth"],
+    "tags": [
+      "eleatics",
+      "being",
+      "ontology",
+      "rationalism",
+      "truth"
+    ],
     "notes": "مؤسس الأنطولوجيا الفلسفية، أكد في قصيدته 'في الطبيعة' أن الوجود واحد وثابت ولا يتغير وأن التغير وهم حسي"
   },
   {
@@ -171,16 +278,31 @@
     "civilization": "greece",
     "era": "presocratic",
     "tradition_ar": "المدرسة الإيلية",
-    "birth": { "year": -495, "approx": true },
-    "death": { "year": -430, "approx": true },
-    "active": { "from": -465, "to": -430 },
+    "birth": {
+      "year": -495,
+      "approx": true
+    },
+    "death": {
+      "year": -430,
+      "approx": true
+    },
+    "active": {
+      "from": -465,
+      "to": -430
+    },
     "location": {
-      "lat": 40.16,
-      "lng": 15.15,
+      "lat": 40.1594,
+      "lng": 15.1544,
       "place_ar": "إيليا (فاليا)",
+      "place_wikidata": "Q272968",
       "modern_country_ar": "إيطاليا"
     },
-    "tags": ["paradoxes", "dialectic", "motion", "eleatics"],
+    "tags": [
+      "paradoxes",
+      "dialectic",
+      "motion",
+      "eleatics"
+    ],
     "notes": "تلميذ بارمينيدس وصاحب المفارقات المنطقية الشهيرة (مثل أخيل والسلحفاة) للدفاع عن وحدة الوجود واستحالة الحركة والتعدد"
   },
   {
@@ -194,16 +316,30 @@
     "civilization": "greece",
     "era": "presocratic",
     "tradition_ar": "الفلسفة التعددية",
-    "birth": { "year": -494, "approx": true },
-    "death": { "year": -434, "approx": true },
-    "active": { "from": -460, "to": -434 },
+    "birth": {
+      "year": -494,
+      "approx": true
+    },
+    "death": {
+      "year": -434,
+      "approx": true
+    },
+    "active": {
+      "from": -460,
+      "to": -434
+    },
     "location": {
-      "lat": 37.31,
-      "lng": 13.58,
+      "lat": 37.3125,
+      "lng": 13.575,
       "place_ar": "أكراغاس (صقلية)",
+      "place_wikidata": "Q13678",
       "modern_country_ar": "إيطاليا"
     },
-    "tags": ["four-elements", "love-and-strife", "cosmology"],
+    "tags": [
+      "four-elements",
+      "love-and-strife",
+      "cosmology"
+    ],
     "notes": "صاحب نظرية العناصر الأربعة (التراب، الهواء، النار، الماء) المحكومة بقوتي الحب والنزاع في دورة كونية مستمرة"
   },
   {
@@ -217,16 +353,31 @@
     "civilization": "greece",
     "era": "presocratic",
     "tradition_ar": "الفلسفة التعددية العقلية",
-    "birth": { "year": -500, "approx": true },
-    "death": { "year": -428, "approx": true },
-    "active": { "from": -460, "to": -428 },
-    "location": {
-      "lat": 38.32,
-      "lng": 26.77,
-      "place_ar": "كلازوميناي / أثينا",
-      "modern_country_ar": "تركيا"
+    "birth": {
+      "year": -500,
+      "approx": true
     },
-    "tags": ["nous", "mind", "pluralism", "astronomy"],
+    "death": {
+      "year": -428,
+      "approx": true
+    },
+    "active": {
+      "from": -460,
+      "to": -428
+    },
+    "location": {
+      "lat": 37.9842,
+      "lng": 23.7281,
+      "place_ar": "أثينا",
+      "place_wikidata": "Q1524",
+      "modern_country_ar": "اليونان"
+    },
+    "tags": [
+      "nous",
+      "mind",
+      "pluralism",
+      "astronomy"
+    ],
     "notes": "أول من أدخل الفلسفة إلى أثينا، واعتبر أن العقل الكوني (النووس) هو القوة المنظمة للمادة والكون"
   },
   {
@@ -240,16 +391,30 @@
     "civilization": "greece",
     "era": "presocratic",
     "tradition_ar": "المدرسة الذرية",
-    "birth": { "year": -490, "approx": true },
-    "death": { "year": -420, "approx": true },
-    "active": { "from": -450, "to": -420 },
+    "birth": {
+      "year": -490,
+      "approx": true
+    },
+    "death": {
+      "year": -420,
+      "approx": true
+    },
+    "active": {
+      "from": -450,
+      "to": -420
+    },
     "location": {
-      "lat": 40.98,
-      "lng": 24.98,
-      "place_ar": "أبديرة / ملطية",
+      "lat": 40.9337,
+      "lng": 24.9733,
+      "place_ar": "أبديرة",
+      "place_wikidata": "Q132527193",
       "modern_country_ar": "اليونان"
     },
-    "tags": ["atomism", "void", "materialism"],
+    "tags": [
+      "atomism",
+      "void",
+      "materialism"
+    ],
     "notes": "المؤسس الأول للمذهب الذري اليوناني ومعلم ديمقريطس، اعتبر أن العالم مركب من ذرات وفراغ مع وجود غموض تاريخي حول تفاصيل حياته"
   },
   {
@@ -263,16 +428,31 @@
     "civilization": "greece",
     "era": "presocratic",
     "tradition_ar": "المدرسة الذرية",
-    "birth": { "year": -460, "approx": true },
-    "death": { "year": -370, "approx": true },
-    "active": { "from": -430, "to": -370 },
+    "birth": {
+      "year": -460,
+      "approx": true
+    },
+    "death": {
+      "year": -370,
+      "approx": true
+    },
+    "active": {
+      "from": -430,
+      "to": -370
+    },
     "location": {
-      "lat": 40.98,
-      "lng": 24.98,
+      "lat": 40.9337,
+      "lng": 24.9733,
       "place_ar": "أبديرة",
+      "place_wikidata": "Q132527193",
       "modern_country_ar": "اليونان"
     },
-    "tags": ["atomism", "materialism", "determinism", "ethics"],
+    "tags": [
+      "atomism",
+      "materialism",
+      "determinism",
+      "ethics"
+    ],
     "notes": "المطور الأكبر للفلسفة الذرية، صاغ نظرية مادية متكاملة تفسر الوجود بحركة الذرات في الفراغ وعُرف بالفيلسوف الضاحك"
   },
   {
@@ -286,16 +466,31 @@
     "civilization": "greece",
     "era": "presocratic",
     "tradition_ar": "السفسطائية",
-    "birth": { "year": -490, "approx": true },
-    "death": { "year": -420, "approx": true },
-    "active": { "from": -450, "to": -420 },
+    "birth": {
+      "year": -490,
+      "approx": true
+    },
+    "death": {
+      "year": -420,
+      "approx": true
+    },
+    "active": {
+      "from": -450,
+      "to": -420
+    },
     "location": {
-      "lat": 40.98,
-      "lng": 24.98,
+      "lat": 40.9337,
+      "lng": 24.9733,
       "place_ar": "أبديرة / أثينا",
+      "place_wikidata": "Q132527193",
       "modern_country_ar": "اليونان"
     },
-    "tags": ["sophism", "relativism", "rhetoric", "epistemology"],
+    "tags": [
+      "sophism",
+      "relativism",
+      "rhetoric",
+      "epistemology"
+    ],
     "notes": "أشهر السفسطائيين، صاحب القضية الفلسفية 'الإنسان مقياس كل شيء' ورائد النسبية المعرفية والأخلاقية"
   },
   {
@@ -309,16 +504,31 @@
     "civilization": "greece",
     "era": "presocratic",
     "tradition_ar": "السفسطائية والخطابة",
-    "birth": { "year": -483, "approx": true },
-    "death": { "year": -375, "approx": true },
-    "active": { "from": -435, "to": -375 },
+    "birth": {
+      "year": -483,
+      "approx": true
+    },
+    "death": {
+      "year": -375,
+      "approx": true
+    },
+    "active": {
+      "from": -435,
+      "to": -375
+    },
     "location": {
-      "lat": 37.28,
-      "lng": 14.99,
+      "lat": 37.2833,
+      "lng": 15,
       "place_ar": "ليونتيني (صقلية) / أثينا",
+      "place_wikidata": "Q488240",
       "modern_country_ar": "إيطاليا"
     },
-    "tags": ["sophism", "nihilism", "rhetoric", "skepticism"],
+    "tags": [
+      "sophism",
+      "nihilism",
+      "rhetoric",
+      "skepticism"
+    ],
     "notes": "فيلسوف سفسطائي وخطيب بارز، اشتهر بأطروحاته التشكيكية الثلاث حول استحالة الوجود واستحالة معرفته واستحالة نقله للآخرين"
   },
   {
@@ -332,16 +542,31 @@
     "civilization": "greece",
     "era": "classical-greek",
     "tradition_ar": "الفلسفة الكلاسيكية",
-    "birth": { "year": -470, "approx": true },
-    "death": { "year": -399, "approx": false },
-    "active": { "from": -450, "to": -399 },
+    "birth": {
+      "year": -470,
+      "approx": true
+    },
+    "death": {
+      "year": -399,
+      "approx": false
+    },
+    "active": {
+      "from": -450,
+      "to": -399
+    },
     "location": {
-      "lat": 37.9715,
-      "lng": 23.7257,
+      "lat": 37.9842,
+      "lng": 23.7281,
       "place_ar": "أثينا",
+      "place_wikidata": "Q1524",
       "modern_country_ar": "اليونان"
     },
-    "tags": ["ethics", "epistemology", "socratic-method", "virtue"],
+    "tags": [
+      "ethics",
+      "epistemology",
+      "socratic-method",
+      "virtue"
+    ],
     "notes": "أبو الفلسفة الأخلاقية الغربية ورائد المنهج التوليدي الحواري، عاش في أثينا وحُكم عليه بالإعدام لتجرئه على المساءلة الفلسفية"
   },
   {
@@ -355,16 +580,31 @@
     "civilization": "greece",
     "era": "classical-greek",
     "tradition_ar": "المدرسة الكلبية المبكرة",
-    "birth": { "year": -446, "approx": true },
-    "death": { "year": -366, "approx": true },
-    "active": { "from": -410, "to": -366 },
+    "birth": {
+      "year": -446,
+      "approx": true
+    },
+    "death": {
+      "year": -366,
+      "approx": true
+    },
+    "active": {
+      "from": -410,
+      "to": -366
+    },
     "location": {
-      "lat": 37.9715,
-      "lng": 23.7257,
+      "lat": 37.9842,
+      "lng": 23.7281,
       "place_ar": "أثينا",
+      "place_wikidata": "Q1524",
       "modern_country_ar": "اليونان"
     },
-    "tags": ["cynicism", "virtue", "ethics", "asceticism"],
+    "tags": [
+      "cynicism",
+      "virtue",
+      "ethics",
+      "asceticism"
+    ],
     "notes": "تلميذ سقراط ومؤسس المدرسة الكلبية، دعا إلى الفضيلة كغاية وحيدة والاكتفاء الذاتي والزهد في المظاهر الاجتماعية"
   },
   {
@@ -378,16 +618,31 @@
     "civilization": "greece",
     "era": "classical-greek",
     "tradition_ar": "الأفلاطونية",
-    "birth": { "year": -428, "approx": true },
-    "death": { "year": -348, "approx": true },
-    "active": { "from": -399, "to": -348 },
+    "birth": {
+      "year": -428,
+      "approx": true
+    },
+    "death": {
+      "year": -348,
+      "approx": true
+    },
+    "active": {
+      "from": -399,
+      "to": -348
+    },
     "location": {
-      "lat": 37.9715,
-      "lng": 23.7257,
+      "lat": 37.9842,
+      "lng": 23.7281,
       "place_ar": "أثينا",
+      "place_wikidata": "Q1524",
       "modern_country_ar": "اليونان"
     },
-    "tags": ["metaphysics", "epistemology", "political-philosophy", "forms"],
+    "tags": [
+      "metaphysics",
+      "epistemology",
+      "political-philosophy",
+      "forms"
+    ],
     "notes": "مؤسس أكاديمية أثينا ومؤلف المحاورات ونظرية المثل، تلميذ سقراط الأبرز ومعلم أرسطو"
   },
   {
@@ -401,16 +656,32 @@
     "civilization": "greece",
     "era": "classical-greek",
     "tradition_ar": "المدرسة الكلبية",
-    "birth": { "year": -412, "approx": true },
-    "death": { "year": -323, "approx": true },
-    "active": { "from": -370, "to": -323 },
+    "birth": {
+      "year": -412,
+      "approx": true
+    },
+    "death": {
+      "year": -323,
+      "approx": true
+    },
+    "active": {
+      "from": -370,
+      "to": -323
+    },
     "location": {
-      "lat": 37.91,
-      "lng": 22.93,
+      "lat": 37.9058,
+      "lng": 22.8787,
       "place_ar": "كورنث / أثينا",
+      "place_wikidata": "Q1363688",
       "modern_country_ar": "اليونان"
     },
-    "tags": ["cynicism", "asceticism", "freedom", "ethics", "provocation"],
+    "tags": [
+      "cynicism",
+      "asceticism",
+      "freedom",
+      "ethics",
+      "provocation"
+    ],
     "notes": "أشهر أعلام الفلسفة الكلبية، عاش حياة التقشف الكامل في برميل بكورنث وتحدى التقاليد الاجتماعية بحثاً عن الصدق والفضيلة الطبيعية"
   },
   {
@@ -424,16 +695,33 @@
     "civilization": "greece",
     "era": "classical-greek",
     "tradition_ar": "المشائية (الأرسطية)",
-    "birth": { "year": -384, "approx": false },
-    "death": { "year": -322, "approx": false },
-    "active": { "from": -355, "to": -322 },
+    "birth": {
+      "year": -384,
+      "approx": false
+    },
+    "death": {
+      "year": -322,
+      "approx": false
+    },
+    "active": {
+      "from": -355,
+      "to": -322
+    },
     "location": {
-      "lat": 37.9715,
-      "lng": 23.7257,
-      "place_ar": "أثينا (الليكيوم) / ستاغيرا",
+      "lat": 37.9842,
+      "lng": 23.7281,
+      "place_ar": "أثينا (الليكيوم)",
+      "place_wikidata": "Q1524",
       "modern_country_ar": "اليونان"
     },
-    "tags": ["logic", "metaphysics", "ethics", "politics", "biology", "peripatetic"],
+    "tags": [
+      "logic",
+      "metaphysics",
+      "ethics",
+      "politics",
+      "biology",
+      "peripatetic"
+    ],
     "notes": "المعلم الأول وأحد أعظم المفكرين في التاريخ الإنساني، مؤسس علم المنطق ومدرسة الليكيوم المشائية ومؤلف أعمال شاملة في العلوم والفلسفة"
   },
   {
@@ -447,16 +735,31 @@
     "civilization": "greece",
     "era": "hellenistic",
     "tradition_ar": "الريبية (البيرونية)",
-    "birth": { "year": -360, "approx": true },
-    "death": { "year": -270, "approx": true },
-    "active": { "from": -330, "to": -270 },
+    "birth": {
+      "year": -360,
+      "approx": true
+    },
+    "death": {
+      "year": -270,
+      "approx": true
+    },
+    "active": {
+      "from": -330,
+      "to": -270
+    },
     "location": {
-      "lat": 37.89,
-      "lng": 21.37,
+      "lat": 37.8922,
+      "lng": 21.3744,
       "place_ar": "إيليس",
+      "place_wikidata": "Q217667",
       "modern_country_ar": "اليونان"
     },
-    "tags": ["skepticism", "epoché", "ataraxia", "epistemology"],
+    "tags": [
+      "skepticism",
+      "epoché",
+      "ataraxia",
+      "epistemology"
+    ],
     "notes": "مؤسس المدرسة الريبية اليونانية (البيرونية)، رأى أن تعليق الحكم والشك في يقين المعرفة هو السبيل لبلوغ راحة البال"
   },
   {
@@ -470,16 +773,32 @@
     "civilization": "greece",
     "era": "hellenistic",
     "tradition_ar": "الإبيقورية",
-    "birth": { "year": -341, "approx": false },
-    "death": { "year": -270, "approx": false },
-    "active": { "from": -311, "to": -270 },
+    "birth": {
+      "year": -341,
+      "approx": false
+    },
+    "death": {
+      "year": -270,
+      "approx": false
+    },
+    "active": {
+      "from": -311,
+      "to": -270
+    },
     "location": {
-      "lat": 37.9715,
-      "lng": 23.7257,
+      "lat": 37.9842,
+      "lng": 23.7281,
       "place_ar": "أثينا (الحديقة)",
+      "place_wikidata": "Q1524",
       "modern_country_ar": "اليونان"
     },
-    "tags": ["epicureanism", "ataraxia", "atomism", "hedonism", "ethics"],
+    "tags": [
+      "epicureanism",
+      "ataraxia",
+      "atomism",
+      "hedonism",
+      "ethics"
+    ],
     "notes": "مؤسس الإبيقورية ومدرسة الحديقة بأثينا، دعا إلى الطمأنينة النفسية وتحرير الإنسان من الخوف عبر اللذة العقلية والاعتدال"
   },
   {
@@ -493,16 +812,32 @@
     "civilization": "greece",
     "era": "hellenistic",
     "tradition_ar": "الرواقية المبكرة",
-    "birth": { "year": -334, "approx": true },
-    "death": { "year": -262, "approx": true },
-    "active": { "from": -300, "to": -262 },
+    "birth": {
+      "year": -334,
+      "approx": true
+    },
+    "death": {
+      "year": -262,
+      "approx": true
+    },
+    "active": {
+      "from": -300,
+      "to": -262
+    },
     "location": {
-      "lat": 37.9715,
-      "lng": 23.7257,
+      "lat": 37.9842,
+      "lng": 23.7281,
       "place_ar": "أثينا (الستوا)",
+      "place_wikidata": "Q1524",
       "modern_country_ar": "اليونان"
     },
-    "tags": ["stoicism", "logos", "ethics", "virtue", "duty"],
+    "tags": [
+      "stoicism",
+      "logos",
+      "ethics",
+      "virtue",
+      "duty"
+    ],
     "notes": "فيلسوف فينيقي الأصل أسس المدرسة الرواقية في رواق أثينا الملون، واعتبر أن الفضيلة والعيش وفقاً للطبيعة والعقل هما جوهر الحكمة"
   },
   {
@@ -516,16 +851,31 @@
     "civilization": "greece",
     "era": "hellenistic",
     "tradition_ar": "الرياضيات وفلسفة الهندسة السكندرية",
-    "birth": { "year": -330, "approx": true },
-    "death": { "year": -270, "approx": true },
-    "active": { "from": -300, "to": -270 },
+    "birth": {
+      "year": -330,
+      "approx": true
+    },
+    "death": {
+      "year": -270,
+      "approx": true
+    },
+    "active": {
+      "from": -300,
+      "to": -270
+    },
     "location": {
-      "lat": 31.2001,
-      "lng": 29.9187,
+      "lat": 31.1975,
+      "lng": 29.8925,
       "place_ar": "الإسكندرية",
+      "place_wikidata": "Q87",
       "modern_country_ar": "مصر"
     },
-    "tags": ["mathematics", "geometry", "axiomatic-method", "alexandria"],
+    "tags": [
+      "mathematics",
+      "geometry",
+      "axiomatic-method",
+      "alexandria"
+    ],
     "notes": "أبو الهندسة ومؤسس المنهج البديهي البرهاني في كتاب الأصول الذي شكل أساس التفكير الرياضي والمنطقي لأكثر من ألفي عام"
   },
   {
@@ -539,16 +889,31 @@
     "civilization": "greece",
     "era": "hellenistic",
     "tradition_ar": "الرواقية المبكرة",
-    "birth": { "year": -331, "approx": true },
-    "death": { "year": -232, "approx": true },
-    "active": { "from": -280, "to": -232 },
+    "birth": {
+      "year": -331,
+      "approx": true
+    },
+    "death": {
+      "year": -232,
+      "approx": true
+    },
+    "active": {
+      "from": -280,
+      "to": -232
+    },
     "location": {
-      "lat": 37.9715,
-      "lng": 23.7257,
-      "place_ar": "أثينا",
+      "lat": 37.9842,
+      "lng": 23.7281,
+      "place_ar": "أثينا (الستوا)",
+      "place_wikidata": "Q1524",
       "modern_country_ar": "اليونان"
     },
-    "tags": ["stoicism", "theology", "hymn-to-zeus", "ethics"],
+    "tags": [
+      "stoicism",
+      "theology",
+      "hymn-to-zeus",
+      "ethics"
+    ],
     "notes": "خليفة زينون في قيادة المدرسة الرواقية ومؤلف أنشودة زيوس الشهيرة التي عبرت عن الرؤية اللاهوتية الرواقية للنظام الكوني"
   },
   {
@@ -562,16 +927,32 @@
     "civilization": "greece",
     "era": "hellenistic",
     "tradition_ar": "الفيزياء الرياضية والميكانيكا القديمة",
-    "birth": { "year": -287, "approx": true },
-    "death": { "year": -212, "approx": false },
-    "active": { "from": -260, "to": -212 },
+    "birth": {
+      "year": -287,
+      "approx": true
+    },
+    "death": {
+      "year": -212,
+      "approx": false
+    },
+    "active": {
+      "from": -260,
+      "to": -212
+    },
     "location": {
-      "lat": 37.0755,
-      "lng": 15.2866,
+      "lat": 37.0692,
+      "lng": 15.2875,
       "place_ar": "سيراكيوز (صقلية)",
+      "place_wikidata": "Q13670",
       "modern_country_ar": "إيطاليا"
     },
-    "tags": ["physics", "mathematics", "mechanics", "buoyancy", "polymath"],
+    "tags": [
+      "physics",
+      "mathematics",
+      "mechanics",
+      "buoyancy",
+      "polymath"
+    ],
     "notes": "أعظم علماء الطبيعة والرياضيات في العصر القديم، ابتكر قوانين الطفو والرافعات وحساب التفاضل البدائي وتطبيقات هندسية ثورية"
   },
   {
@@ -585,16 +966,31 @@
     "civilization": "greece",
     "era": "hellenistic",
     "tradition_ar": "الرواقية المبكرة",
-    "birth": { "year": -279, "approx": true },
-    "death": { "year": -206, "approx": true },
-    "active": { "from": -245, "to": -206 },
+    "birth": {
+      "year": -279,
+      "approx": true
+    },
+    "death": {
+      "year": -206,
+      "approx": true
+    },
+    "active": {
+      "from": -245,
+      "to": -206
+    },
     "location": {
-      "lat": 37.9715,
-      "lng": 23.7257,
-      "place_ar": "أثينا / سولي",
+      "lat": 37.9842,
+      "lng": 23.7281,
+      "place_ar": "أثينا (الستوا)",
+      "place_wikidata": "Q1524",
       "modern_country_ar": "اليونان"
     },
-    "tags": ["stoicism", "propositional-logic", "physics", "ethics"],
+    "tags": [
+      "stoicism",
+      "propositional-logic",
+      "physics",
+      "ethics"
+    ],
     "notes": "المؤسس الثاني للرواقية ورائد المنطق القضائي، رسخ الأركان النظرية للرواقية وقيل عنه 'لولا خريسيبوس لما كانت هناك رواقية'"
   },
   {
@@ -608,16 +1004,32 @@
     "civilization": "greece",
     "era": "hellenistic",
     "tradition_ar": "الجغرافيا الرياضية والفلك السكندري",
-    "birth": { "year": -276, "approx": true },
-    "death": { "year": -194, "approx": true },
-    "active": { "from": -245, "to": -194 },
+    "birth": {
+      "year": -276,
+      "approx": true
+    },
+    "death": {
+      "year": -194,
+      "approx": true
+    },
+    "active": {
+      "from": -245,
+      "to": -194
+    },
     "location": {
-      "lat": 31.2001,
-      "lng": 29.9187,
+      "lat": 31.1975,
+      "lng": 29.8925,
       "place_ar": "الإسكندرية",
+      "place_wikidata": "Q87",
       "modern_country_ar": "مصر"
     },
-    "tags": ["geography", "astronomy", "mathematics", "alexandria", "polymath"],
+    "tags": [
+      "geography",
+      "astronomy",
+      "mathematics",
+      "alexandria",
+      "polymath"
+    ],
     "notes": "أمين مكتبة الإسكندرية وعالم موسوعي، أول من حسب محيط الكرة الأرضية بدقة مدهشة وابتكر غربال إراتوستينس للأعداد الأولية"
   }
 ]

@@ -215,14 +215,48 @@ function runValidation() {
         }
       }
 
-      // Location checks
-      if (figure.location) {
-        const { lat, lng } = figure.location;
-        if (typeof lat !== 'number' || lat < -90 || lat > 90) {
-          logError(file, figId, `خط العرض غير صحيح (${lat})`);
+      // Location checks (CONTEXT §4.2, §7 rule 4 & PLAN T8.2)
+      if (!figure.location) {
+        logError(file, figId, 'حقل location إلزامي لكل شخصية');
+      } else {
+        const { lat, lng, place_ar, modern_country_ar, place_wikidata } = figure.location;
+
+        if (!place_ar || typeof place_ar !== 'string' || place_ar.trim().length === 0) {
+          logError(file, figId, 'حقل place_ar غير موجود أو فارغ');
         }
-        if (typeof lng !== 'number' || lng < -180 || lng > 180) {
-          logError(file, figId, `خط الطول غير صحيح (${lng})`);
+
+        if (!modern_country_ar || typeof modern_country_ar !== 'string' || modern_country_ar.trim().length === 0) {
+          logError(file, figId, 'حقل modern_country_ar غير موجود أو فارغ');
+        }
+
+        if (!place_wikidata || !/^Q[1-9]\d*$/.test(place_wikidata)) {
+          logError(file, figId, `معرف ويكي بيانات للمكان (place_wikidata) غير صالح أو مفقود: "${place_wikidata}"`);
+        }
+
+        // Check for (0, 0) coordinates
+        if (lat === 0 && lng === 0) {
+          logError(file, figId, 'الإحداثيات عند النقطة (0, 0) مرفوضة تماماً');
+        }
+
+        // Check null coordinates
+        if (lat === null || lng === null) {
+          if (lat !== null || lng !== null) {
+            logError(file, figId, 'يجب أن يكون كلا خطي العرض والطول فارغين null معاً');
+          } else {
+            const hasNeedsVerification = figure.notes && figure.notes.includes('NEEDS VERIFICATION');
+            if (!hasNeedsVerification) {
+              logError(file, figId, 'إحداثيات الموقع فارغة null دون وجود ملاحظة NEEDS VERIFICATION في حقل notes');
+            } else {
+              logWarning(file, figId, 'موقع غير محسوم / مختلف عليه وموثق بملاحظة NEEDS VERIFICATION (لن تظهر له علامة على الخريطة)');
+            }
+          }
+        } else {
+          if (typeof lat !== 'number' || lat < -90 || lat > 90) {
+            logError(file, figId, `خط العرض غير صحيح (${lat})`);
+          }
+          if (typeof lng !== 'number' || lng < -180 || lng > 180) {
+            logError(file, figId, `خط الطول غير صحيح (${lng})`);
+          }
         }
       }
 

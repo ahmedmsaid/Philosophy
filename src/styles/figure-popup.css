@@ -1,0 +1,279 @@
+/**
+ * figure-popup.css - Philosophy Timeline Atlas (أطلس تاريخ الفلسفة)
+ * Compact on-map Leaflet popup anchored to thinker markers.
+ * RTL layout, glassmorphism, Eastern Arabic numerals, accessible.
+ * (CONTEXT §4.2, §6.4, §6.6 and PLAN T8.4, T8.6)
+ */
+
+/* Leaflet default popup container override */
+.leaflet-popup.atlas-figure-popup-wrapper {
+  margin-bottom: 24px;
+}
+
+.leaflet-popup.atlas-figure-popup-wrapper .leaflet-popup-content-wrapper {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: var(--radius-lg) !important;
+  overflow: visible !important;
+}
+
+.leaflet-popup.atlas-figure-popup-wrapper .leaflet-popup-content {
+  margin: 0 !important;
+  line-height: inherit !important;
+  width: auto !important;
+}
+
+.leaflet-popup.atlas-figure-popup-wrapper .leaflet-popup-tip-container {
+  display: none !important;
+}
+
+/* Compact Glass Popup Card */
+.figure-popup {
+  position: relative;
+  width: 300px;
+  max-width: calc(100vw - 32px);
+  background: var(--glass-bg-elevated);
+  backdrop-filter: blur(var(--glass-blur-heavy));
+  -webkit-backdrop-filter: blur(var(--glass-blur-heavy));
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-xl), var(--glass-inner-glow);
+  border-radius: var(--radius-lg);
+  color: var(--color-parchment);
+  padding: var(--space-md);
+  direction: rtl;
+  text-align: start;
+  font-family: var(--font-ui);
+  box-sizing: border-box;
+  animation: popupScaleIn var(--motion-normal) var(--ease-out);
+  outline: none;
+}
+
+@keyframes popupScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .figure-popup {
+    animation: none !important;
+  }
+}
+
+/* Close Button (Required ID: figure-popup-close) */
+.figure-popup__close {
+  position: absolute;
+  top: var(--space-xs);
+  inset-inline-end: var(--space-xs);
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(14, 21, 38, 0.6);
+  border: 1px solid var(--glass-border-subtle);
+  color: var(--color-parchment-muted);
+  cursor: pointer;
+  transition: all var(--motion-fast) var(--ease-out);
+  z-index: 2;
+}
+
+.figure-popup__close:hover {
+  background: rgba(212, 175, 55, 0.25);
+  border-color: var(--color-gold-base);
+  color: var(--color-parchment-bright);
+  transform: scale(1.08);
+}
+
+.figure-popup__close:focus-visible {
+  outline: 2px solid var(--color-gold-base);
+  outline-offset: 2px;
+}
+
+/* Header: Thumbnail + Titles */
+.figure-popup__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding-inline-end: var(--space-lg);
+  margin-block-end: var(--space-sm);
+}
+
+.figure-popup__portrait {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  border: 2px solid var(--color-gold-base);
+  background: rgba(10, 16, 30, 0.8);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.figure-popup__portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.figure-popup__portrait-placeholder {
+  font-family: var(--font-body);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gold-light);
+}
+
+.figure-popup__titles {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
+}
+
+.figure-popup__name-ar {
+  margin: 0;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-parchment-bright);
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.figure-popup__name-en {
+  font-size: 0.72rem;
+  color: var(--color-parchment-muted);
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-ui);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.figure-popup__dates {
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-gold-light);
+  margin-top: 1px;
+}
+
+/* Place context row */
+.figure-popup__place-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  font-size: 0.75rem;
+  color: var(--color-parchment-muted);
+  margin-block-end: var(--space-xs);
+  padding-block-end: var(--space-xs);
+  border-block-end: 1px solid var(--glass-border-subtle);
+}
+
+.figure-popup__place-row svg {
+  color: var(--color-gold-base);
+  flex-shrink: 0;
+}
+
+/* Chips & Badges container */
+.figure-popup__chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2xs);
+  margin-block-end: var(--space-sm);
+}
+
+.figure-popup__chips .chip {
+  padding: 2px var(--space-xs);
+  font-size: 0.7rem;
+}
+
+.figure-popup__chips .kind-chip {
+  padding: 2px var(--space-xs);
+  font-size: 0.7rem;
+}
+
+.figure-popup__chips .badge {
+  padding: 2px var(--space-xs);
+  font-size: 0.65rem;
+}
+
+/* Actions footer */
+.figure-popup__actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-block-start: var(--space-xs);
+  border-block-start: 1px solid var(--glass-border-subtle);
+}
+
+/* More Button (Required ID: figure-popup-more) */
+.figure-popup__more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 4px var(--space-md);
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-ink-darkest);
+  background: linear-gradient(135deg, var(--color-gold-light) 0%, var(--color-gold-base) 100%);
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--motion-fast) var(--ease-out);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.figure-popup__more-btn:hover {
+  filter: brightness(1.12);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.4);
+}
+
+.figure-popup__more-btn:active {
+  transform: translateY(0);
+}
+
+.figure-popup__more-btn:focus-visible {
+  outline: 2px solid var(--color-parchment-bright);
+  outline-offset: 2px;
+}
+
+.figure-popup__more-btn svg {
+  transition: transform var(--motion-fast) var(--ease-out);
+}
+
+.figure-popup__more-btn:hover svg {
+  transform: translateX(-3px);
+}
+
+/* Responsive adjustments (≤ 768px mobile) */
+@media (max-width: 768px) {
+  .figure-popup {
+    width: 270px;
+    padding: var(--space-sm);
+  }
+
+  .figure-popup__portrait {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+  }
+
+  .figure-popup__name-ar {
+    font-size: var(--font-size-sm);
+  }
+}
