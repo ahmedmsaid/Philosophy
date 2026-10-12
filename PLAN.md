@@ -12,9 +12,9 @@
 |---|---|---|
 | Q1 | Timeline direction: old dates on the **right** (RTL) or the left? | ✅ **Resolved:** right (old) → left (new) |
 | Q2 | Numerals: Eastern Arabic (٤٧٠) or Western (470)? | ✅ **Resolved:** Eastern Arabic in UI |
-| Q3 | Should the popup show the figure's **modern country** too, or only the ancient place? | ⏳ Open (default: show both) |
-| Q4 | Final font pair? | ⏳ Open (default: Cairo UI + Amiri text) |
-| Q5 | Hosting target? | ⏳ Open (default: GitHub Pages) |
+| Q3 | Should the popup show the figure's **modern country** too, or only the ancient place? | ✅ **Resolved:** show both ancient place and modern country |
+| Q4 | Final font pair? | ✅ **Resolved:** Cairo (UI) + Amiri (text) |
+| Q5 | Hosting target? | ✅ **Resolved:** GitHub Pages |
 | Q6 | Is GPL-3.0 (historical-basemaps) acceptable for this project's license? | ✅ **Resolved:** yes, project is GPL-3.0 |
 | Q7 | Include early wisdom literature & religious thinkers? | ✅ **Resolved:** include, classified by `kind` field |
 
@@ -22,7 +22,7 @@
 
 ## Phase 0: Setup & decisions
 
-- [/] **T0.1 Resolve open questions** with the project owner, then update CONTEXT.md (§6, §9). Q1, Q2, Q6, Q7 done. Q3, Q4, Q5 remain.
+- [x] **T0.1 Resolve open questions** with the project owner, then update CONTEXT.md (§6, §9). All questions Q1–Q7 resolved.
   - ✅ No open question is left on "default" without the owner agreeing.
 - [x] **T0.2 Init repo**: `git init`, `.gitignore`, `README.md` (short, links to CONTEXT/PLAN), **GPL-3.0** `LICENSE`.
   - ✅ Repo builds from a clean clone.

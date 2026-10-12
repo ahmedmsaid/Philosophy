@@ -42,8 +42,8 @@ Later releases (out of scope until MVP is done): Roman, Late Antiquity, Islamic 
 | Historical borders | [`aourednik/historical-basemaps`](https://github.com/aourednik/historical-basemaps) GeoJSON | **GPL-3.0**: attribution is required. The project itself is licensed **GPL-3.0** (owner approved) |
 | Base layer | Unlabeled physical/terrain tiles, or Natural Earth land polygons | **Never use modern labeled tiles** (modern country names would be anachronistic) |
 | Content source | **Arabic Wikipedia** REST API + **Wikidata** | Fetched at **build time** by a script and cached as JSON, not fetched live in the browser |
-| Fonts | Google Fonts: **Cairo** or **Tajawal** for UI, **Amiri** or **Noto Naskh Arabic** for long text | Final pick happens in task T2.1 |
-| Hosting | Static hosting (GitHub Pages / Netlify / Vercel) | Output is a pure static site |
+| Fonts | Google Fonts: **Cairo** for UI, **Amiri** for long text | Owner decision (Q4) |
+| Hosting | **GitHub Pages** | Owner decision (Q5); output is a pure static site |
 
 Changing any row above needs an entry in the **Decision Log (§9)**.
 
@@ -230,6 +230,9 @@ The timeline default range for the MVP is **-3000 → 0**. It extends as later e
 | 2026-10-12 | Eastern Arabic numerals in UI, Western digits in data/URLs | Owner decision (Q2) |
 | 2026-10-12 | Project licensed GPL-3.0 | Owner decision (Q6), compatible with historical-basemaps |
 | 2026-10-12 | Include wisdom-literature sages & religious thinkers, classified by `kind` | Owner decision (Q7) |
+| 2026-10-12 | Display both ancient place and modern country in popup cards | Owner decision (Q3) |
+| 2026-10-12 | Arabic typography: Cairo (UI) + Amiri (text) | Owner decision (Q4) |
+| 2026-10-12 | Hosting target: GitHub Pages | Owner decision (Q5) |
 
 ---
 
