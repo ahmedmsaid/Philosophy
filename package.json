@@ -1,0 +1,23 @@
+{
+  "name": "philosophy-timeline-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "أطلس تاريخ الفلسفة - خريطة تفاعلية لتاريخ الفلسفة وأعلام الفكر الإنساني",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "validate": "node scripts/validate-data.mjs",
+    "fetch-wiki": "node scripts/fetch-wikipedia.mjs",
+    "download-borders": "node scripts/download-borders.mjs"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "vite": "^6.2.0"
+  }
+}

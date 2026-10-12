@@ -1,0 +1,74 @@
+[
+  {
+    "year": -3000,
+    "file": "world_bc3000.geojson",
+    "featuresCount": 138,
+    "sizeKb": 395.2
+  },
+  {
+    "year": -2000,
+    "file": "world_bc2000.geojson",
+    "featuresCount": 145,
+    "sizeKb": 439
+  },
+  {
+    "year": -1500,
+    "file": "world_bc1500.geojson",
+    "featuresCount": 163,
+    "sizeKb": 449.9
+  },
+  {
+    "year": -1000,
+    "file": "world_bc1000.geojson",
+    "featuresCount": 163,
+    "sizeKb": 449.7
+  },
+  {
+    "year": -700,
+    "file": "world_bc700.geojson",
+    "featuresCount": 174,
+    "sizeKb": 453.2
+  },
+  {
+    "year": -500,
+    "file": "world_bc500.geojson",
+    "featuresCount": 189,
+    "sizeKb": 472.2
+  },
+  {
+    "year": -400,
+    "file": "world_bc400.geojson",
+    "featuresCount": 190,
+    "sizeKb": 465.6
+  },
+  {
+    "year": -323,
+    "file": "world_bc323.geojson",
+    "featuresCount": 149,
+    "sizeKb": 456
+  },
+  {
+    "year": -300,
+    "file": "world_bc300.geojson",
+    "featuresCount": 155,
+    "sizeKb": 465.4
+  },
+  {
+    "year": -200,
+    "file": "world_bc200.geojson",
+    "featuresCount": 183,
+    "sizeKb": 494.1
+  },
+  {
+    "year": -100,
+    "file": "world_bc100.geojson",
+    "featuresCount": 233,
+    "sizeKb": 495.4
+  },
+  {
+    "year": -1,
+    "file": "world_bc1.geojson",
+    "featuresCount": 442,
+    "sizeKb": 613.8
+  }
+]

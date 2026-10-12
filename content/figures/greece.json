@@ -1,0 +1,25 @@
+[
+  {
+    "id": "socrates",
+    "wikidata": "Q913",
+    "wikipedia_ar": "سقراط",
+    "name_ar": "سقراط",
+    "name_en": "Socrates",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "classical-greek",
+    "tradition_ar": "الفلسفة الكلاسيكية",
+    "birth": { "year": -470, "approx": true },
+    "death": { "year": -399, "approx": false },
+    "active": { "from": -450, "to": -399 },
+    "location": {
+      "lat": 37.9715,
+      "lng": 23.7257,
+      "place_ar": "أثينا",
+      "modern_country_ar": "اليونان"
+    },
+    "tags": ["ethics", "epistemology"],
+    "notes": "Verified against Wikidata Q913 and Arabic Wikipedia"
+  }
+]

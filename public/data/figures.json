@@ -1,0 +1,48 @@
+[
+  {
+    "id": "socrates",
+    "wikidata": "Q913",
+    "wikipedia_ar": "سقراط",
+    "name_ar": "سقراط",
+    "name_en": "Socrates",
+    "kind": "philosopher",
+    "legendary": false,
+    "civilization": "greece",
+    "era": "classical-greek",
+    "tradition_ar": "الفلسفة الكلاسيكية",
+    "birth": {
+      "year": -470,
+      "approx": true
+    },
+    "death": {
+      "year": -399,
+      "approx": false
+    },
+    "active": {
+      "from": -450,
+      "to": -399
+    },
+    "location": {
+      "lat": 37.9715,
+      "lng": 23.7257,
+      "place_ar": "أثينا",
+      "modern_country_ar": "اليونان"
+    },
+    "tags": [
+      "ethics",
+      "epistemology"
+    ],
+    "notes": "Verified against Wikidata Q913 and Arabic Wikipedia",
+    "summary_ar": "سُقْرَاط كان فيلسوفًا يونانيًا من أثينا ولد نحو 470 وتُوفِّيَ نحو 399 ق.م، يُعتبر مؤسس الفلسفة الغربية وأحد أوائل الفلاسفة الأخلاقيين في مذهب التفكير الأخلاقي. كان سقراط شخصية غامضة، حيث لم يكتب أي نصوص، وهو معروف أساسًا من خلال روايات كتّاب العصور الكلاسيكية التي جاءت بعد وفاته عبر تلامذته أفلاطون وزينوفون خاصَّة. كُتبت هذه الروايات على شكل حوارات، حيث يناقش سقراط ومحدثوه موضوعًا ما بأسلوب السؤال والجواب؛ مما أدى إلى ظهور النوع الأدبي المعروف بالحوار السقراطي. إن التناقضات بين الروايات حول سقراط تجعل من الصعب جدًا إعادة بناء فلسفته، وهو وضع يُعرف بمشكلة سقراط. كان سقراط شخصية مثيرة للجدل في المجتمع الأثيني. اتُهم في عام 399 قبل الميلاد بالإلحاد وإفساد الشباب. وحُكم عليه بالإعدام بعد محاكمة استمرت ليوم واحد. وقد قضى يومه الأخير في السجن، رافضًا عروضًا لمساعدته على الهرب.",
+    "summary_source": "wikipedia_ar",
+    "wikipedia_url": "https://ar.wikipedia.org/wiki/%D8%B3%D9%82%D8%B1%D8%A7%D8%B7",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Socrates_Louvre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Socrates_Louvre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "author": "Copy of Lysippos (?)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Socrates_Louvre.jpg"
+    },
+    "fetched_at": "2026-10-12T10:34:30.507Z"
+  }
+]

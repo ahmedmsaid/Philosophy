@@ -1,0 +1,44 @@
+[
+  {
+    "id": "egypt",
+    "name_ar": "مصر القديمة",
+    "color": "#C9A227",
+    "center": [26.8, 30.8],
+    "zoom": 6
+  },
+  {
+    "id": "mesopotamia",
+    "name_ar": "بلاد الرافدين",
+    "color": "#C86432",
+    "center": [33.3, 44.4],
+    "zoom": 6
+  },
+  {
+    "id": "persia",
+    "name_ar": "فارس القديمة",
+    "color": "#2A7B9B",
+    "center": [32.0, 53.0],
+    "zoom": 5
+  },
+  {
+    "id": "india",
+    "name_ar": "الهند القديمة",
+    "color": "#D97706",
+    "center": [25.0, 82.0],
+    "zoom": 5
+  },
+  {
+    "id": "china",
+    "name_ar": "الصين القديمة",
+    "color": "#B83A4B",
+    "center": [34.5, 110.0],
+    "zoom": 5
+  },
+  {
+    "id": "greece",
+    "name_ar": "اليونان القديمة",
+    "color": "#3D5A80",
+    "center": [38.0, 24.0],
+    "zoom": 6
+  }
+]

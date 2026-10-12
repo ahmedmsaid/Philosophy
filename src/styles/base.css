@@ -1,0 +1,23 @@
+/* base.css - Modern reset & RTL typography */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--color-bg-ink);
+  color: var(--color-parchment);
+  font-family: var(--font-ui);
+  direction: rtl;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}

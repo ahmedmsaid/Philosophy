@@ -1,0 +1,167 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://philosophy-atlas.local/schema/figure.schema.json",
+  "title": "Figure",
+  "description": "Schema for historical figures in the Philosophy Timeline Atlas",
+  "type": "object",
+  "required": [
+    "id",
+    "wikidata",
+    "wikipedia_ar",
+    "name_ar",
+    "name_en",
+    "kind",
+    "legendary",
+    "civilization",
+    "era",
+    "active",
+    "location"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "Unique kebab-case identifier"
+    },
+    "wikidata": {
+      "type": "string",
+      "pattern": "^Q[1-9][0-9]*$",
+      "description": "Wikidata QID, verified by hand"
+    },
+    "wikipedia_ar": {
+      "type": ["string", "null"],
+      "description": "Exact title of the article on ar.wikipedia, or null if none exists"
+    },
+    "name_ar": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Full Arabic name"
+    },
+    "name_en": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Full English name (for reference/search)"
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["philosopher", "sage", "religious-thinker"],
+      "description": "Classification: philosopher, sage (wisdom literature), or religious-thinker"
+    },
+    "legendary": {
+      "type": "boolean",
+      "description": "True if historicity is disputed or legendary"
+    },
+    "civilization": {
+      "type": "string",
+      "enum": [
+        "egypt",
+        "mesopotamia",
+        "persia",
+        "india",
+        "china",
+        "greece"
+      ],
+      "description": "Civilization identifier matching civilizations.json"
+    },
+    "era": {
+      "type": "string",
+      "enum": [
+        "ancient-egypt",
+        "mesopotamia",
+        "ancient-persia",
+        "ancient-india",
+        "ancient-china",
+        "presocratic",
+        "classical-greek",
+        "hellenistic"
+      ],
+      "description": "Era identifier matching CONTEXT.md §5"
+    },
+    "tradition_ar": {
+      "type": "string",
+      "description": "Philosophical or intellectual tradition/school in Arabic"
+    },
+    "birth": {
+      "type": ["object", "null"],
+      "required": ["year", "approx"],
+      "properties": {
+        "year": {
+          "type": "integer",
+          "not": { "const": 0 },
+          "description": "Birth year integer (negative for BCE, positive for CE, no year 0)"
+        },
+        "approx": {
+          "type": "boolean",
+          "description": "True if birth year is approximate"
+        }
+      },
+      "additionalProperties": false
+    },
+    "death": {
+      "type": ["object", "null"],
+      "required": ["year", "approx"],
+      "properties": {
+        "year": {
+          "type": "integer",
+          "not": { "const": 0 },
+          "description": "Death year integer (negative for BCE, positive for CE, no year 0)"
+        },
+        "approx": {
+          "type": "boolean",
+          "description": "True if death year is approximate"
+        }
+      },
+      "additionalProperties": false
+    },
+    "active": {
+      "type": "object",
+      "required": ["from", "to"],
+      "properties": {
+        "from": {
+          "type": "integer",
+          "not": { "const": 0 },
+          "description": "Start of active period (negative for BCE, positive for CE, no year 0)"
+        },
+        "to": {
+          "type": "integer",
+          "not": { "const": 0 },
+          "description": "End of active period (negative for BCE, positive for CE, no year 0)"
+        }
+      },
+      "additionalProperties": false
+    },
+    "location": {
+      "type": "object",
+      "required": ["lat", "lng", "place_ar"],
+      "properties": {
+        "lat": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "lng": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "place_ar": {
+          "type": "string",
+          "minLength": 1
+        },
+        "modern_country_ar": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Internal curator notes"
+    }
+  },
+  "additionalProperties": false
+}

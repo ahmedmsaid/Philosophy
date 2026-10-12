@@ -1,0 +1,17 @@
+/* tokens.css - Philosophy Timeline Atlas Design Tokens */
+:root {
+  /* Colors */
+  --color-bg-ink: #070b14;
+  --color-bg-surface: #0f172a;
+  --color-bg-glass: rgba(15, 23, 42, 0.75);
+  --color-border-glass: rgba(212, 175, 55, 0.2);
+
+  --color-gold: #d4af37;
+  --color-gold-hover: #f3cf55;
+  --color-parchment: #f4ede2;
+  --color-text-muted: #94a3b8;
+
+  /* Typography */
+  --font-ui: 'Cairo', system-ui, -apple-system, sans-serif;
+  --font-body: 'Amiri', 'Traditional Arabic', serif;
+}

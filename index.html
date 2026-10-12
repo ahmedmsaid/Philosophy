@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="أطلس تاريخ الفلسفة - خريطة تفاعلية لتاريخ الفلسفة وأعلام الفكر الإنساني عبر العصور مع خط زمني ذكي." />
+    <title>أطلس تاريخ الفلسفة | Philosophy Timeline Atlas</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="./src/styles/tokens.css" />
+    <link rel="stylesheet" href="./src/styles/base.css" />
+    <link rel="stylesheet" href="./src/styles/components.css" />
+    <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css" />
+  </head>
+  <body>
+    <div id="app" class="app-container">
+      <header id="app-header" class="app-header">
+        <div class="header-brand">
+          <h1 id="app-title">أطلس تاريخ الفلسفة</h1>
+          <span class="header-subtitle">رحلة بصرية في تطور الفكر الإنساني والحكمة القديمة</span>
+        </div>
+      </header>
+
+      <main id="main-content" class="main-content">
+        <div id="map-container" class="map-container" aria-label="خريطة العالم التاريخية">
+          <div id="map" class="map-view"></div>
+        </div>
+      </main>
+
+      <footer id="timeline-container" class="timeline-container" aria-label="شريط التحكم الزمني">
+        <!-- Timeline component mount point -->
+      </footer>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
